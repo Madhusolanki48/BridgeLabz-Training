@@ -33,12 +33,12 @@ BridgeLabz-Training/
 
 ## 📊 Daily Activity Log
 
-| Date | gcr-codebase | scenario-based | leet-code-codebase | Status |
-|-----|-----|----------|----------|--------|
-| 16-12-24 || Repository setup & Git basics | | ✅ |
- |
-| 17-12-24 | 10 basic java programs | - | 6 leetcode problems | ✅ |
-| DD-MM-YY |  |  |  |  |
+| Date      | gcr-codebase              | scenario-based              | leet-code-codebase      | Status |
+|-----------|---------------------------|-----------------------------|--------------------------|--------|
+| 16-12-24  | Repository setup & Git basics | —                       | —                        | ✅     |
+| 17-12-24  | 10 basic Java programs    | —                           | 6 LeetCode problems      | ✅     |
+| DD-MM-YY  |                           |                             |                          |        |
+
 
 ---
 
