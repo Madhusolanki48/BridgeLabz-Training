@@ -32,18 +32,48 @@ BridgeLabz-Training/
 ---
 
 ##  Daily Activity Log
-
-| Date      | gcr-codebase              | scenario-based              | leet-code-codebase      |
-|-----------|---------------------------|-----------------------------|--------------------------|
-| 16-12-24  | Repository setup & Git basics | —                       | —                        | 
-| 17-12-24  | 10 basic Java programs    | —                           | 6 LeetCode problems      | 
-| 
-| 18-12-24  | Java programming elements (Lvl 1 & 2)    | —                           |  —      | 
-| 
-
-
 ---
+**Day 1 — 16-12-2025**
 
+Overview
+Created a GitHub repository named **BridgeLabz-Training** and set up a working branch *core-java-practice*. Structured the project by creating three folders: `gcr-codebase`, `scenario-based`, and `leet-code-codebase`. Learned how to connect a remote GitHub repository to a local folder and understood the basic Git workflow.
+
+Commands Practiced
+```
+git init
+git status
+git branch
+```
+---
+Day 2 — 17-12-2025
+
+Overview
+Added **10 basic Java programs** under the Programming Elements folder in `gcr-codebase` and **solved 6 LeetCode problems** in `leet-code-codebase`. Practiced committing and pushing code to a branch. Faced an issue where commits were pushed to the main branch instead of core-java-practice, which was resolved by verifying and switching the active branch.
+
+Commands Practiced
+```
+git add
+git commit
+git push
+git branch
+git switch
+```
+---
+Day 3 — 18-12-2025
+
+Overview
+Completed **18 Java programs** from Programming Elements** (Level 1 & Level 2) in `gcr-codebase`. Learned to rename files using Git while converting naming conventions from camelCase to PascalCase. Practiced branch handling by cleaning unintended commits from the main branch and ensuring all work remained in core-java-practice.
+
+Commands Practiced
+```
+git mv
+git switch main
+git switch core-java-practice
+git fetch
+git push --force
+git status
+```
+---
 
 ##  Focus Areas
 - Core Java & OOP concepts  
