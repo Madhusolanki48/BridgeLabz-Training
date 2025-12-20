@@ -59,7 +59,7 @@ git switch
 ---
 Day 3 — 18-12-2025
 
-Completed **18 Java programs** from Programming Elements** (Level 1 & Level 2) in `gcr-codebase`. Learned to rename files using Git while converting naming conventions from camelCase to PascalCase. Practiced branch handling by cleaning unintended commits from the main branch and ensuring all work remained in core-java-practice.
+Completed **18 Java programs** in `programming-elements` folder (Level 1 & Level 2) in `gcr-codebase`. Learned to rename files using Git while converting naming conventions from camelCase to PascalCase. Practiced branch handling by cleaning unintended commits from the main branch and ensuring all work remained in core-java-practice.
 
 Commands Practiced
 ```
@@ -74,9 +74,17 @@ git status
 
 Day 4 — 19-12-2025
 
-Worked on **Java Control Flows** Lab Practices and completed **40 Java programs** in a new *control-flows* folder under `gcr-codebase`.The practice included Level-1, Level-2 & Level-3 of Java control flow fundamentals such as boolean data types, boolean expressions, logical operators, conditional statements (if, else if, else), loops (for, while), control statements (break, continue), and the switch statement.This helped strengthen logical thinking and flow control in Java programs.
+Worked on **Java Control Flows** Lab Practices and completed **40 Java programs** in a new `control-flows` folder under `gcr-codebase`.The practice included Level-1, Level-2 & Level-3 of Java control flow fundamentals such as boolean data types, boolean expressions, logical operators, conditional statements (if, else if, else), loops (for, while), control statements (break, continue), and the switch statement.This helped strengthen logical thinking and flow control in Java programs.
 
 ---
+
+Day 5 — 20-12-2025
+
+ - Solved **two real-world scenario-based Java problems** in the `scenario-based` folder under the `core-java-practice` branch, focusing on practical use of variables, input handling, conditional logic, loops, and clean coding practices.
+ - Completed **20 array-based practice programs** in a new `arrays` folder inside `gcr-codebase`, covering array creation, access, modification, looping, and multi-dimensional arrays. This strengthened both real-world problem modeling and core data-structure fundamentals in Java.
+
+---
+
 
 ##  Focus Areas
 - Core Java & OOP concepts  
