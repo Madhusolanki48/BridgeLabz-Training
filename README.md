@@ -82,8 +82,16 @@ Day 5 — 20-12-2025
 
  - Solved **two real-world scenario-based Java problems** in the `scenario-based` folder under the `core-java-practice` branch, focusing on practical use of variables, input handling, conditional logic, loops, and clean coding practices.
  - Completed **20 array-based practice programs** in a new `arrays` folder inside `gcr-codebase`, covering array creation, access, modification, looping, and multi-dimensional arrays. This strengthened both real-world problem modeling and core data-structure fundamentals in Java.
+ - Additionally, **solved 4 array-based DSA problems** in `leet-code-codebase`.
 
 ---
+
+Day 6 — 22-12-2025
+- Completed **20 Java String practice programs (Level 1 & Level 2)** in the `strings` folder under `gcr-codebase`, covering string creation, input handling, escape sequences, built-in `String` methods, ASCII codes, and Java exception handling (checked and unchecked exceptions).
+- Solved **2 string-based LeetCode problems** (Question **28** and **58**) in the `leet-code-codebase`, focusing on string traversal, trimming, and character comparison logic.
+
+---
+
 
 
 ##  Focus Areas
