@@ -92,6 +92,16 @@ Day 6 — 22-12-2025
 
 ---
 
+Day 7 — 23-12-2025  
+
+- Completed **10 Java String practice programs (Level 3)** in the `strings` folder under `gcr-codebase`, focusing on advanced string handling and Java exception concepts.  
+- Solved **two scenario-based Java problems** in the `scenario-based` folder: *Election Booth Manager* and *Metro Smart Card Fare Deduction*, applying conditional logic, loops, ternary operators, and input handling to real-world scenarios.  
+- Studied **SDLC and Agile fundamentals** through supporting materials, including SDLC phases, Scrum workflow, and Agile practices. 
+Understood the role of task tracking tools like **Trello** for managing development progress.
+- Solved **2 LeetCode problems** (**20** and **125**) in the `leet-code-codebase`, focusing on string validation, traversal, and array-based logic.
+
+---
+
 
 
 ##  Focus Areas
