@@ -1,4 +1,4 @@
-#  Bridgelabz x Capgemini | Training Journey
+#  Bridgelabz Training 
 
 ![Java](https://img.shields.io/badge/Java-Core-orange)
 ![DSA](https://img.shields.io/badge/DSA-LeetCode-yellow)
@@ -22,9 +22,15 @@ BridgeLabz-Training/
 ├── core-java-practice/   
 │   │
 │   ├── gcr-codebase/            # Assignments from Google Cloud Classroom
+│   │       ├── programming elements/
+│   │       ├── control-flows/
+│   │       ├── strings/ 
+│   │       ├── arrays/
+|   |       ├── methods/
+│   │
 │   ├── scenario-based/          # Scenario-based & real-world logic problems
 │   └── leetcode-code-codebase/  # Daily DSA practice 
-│
+├── reviews/                     # for reviews done in the classroom
 └── README.md
 
 ```
@@ -101,6 +107,14 @@ Understood the role of task tracking tools like **Trello** for managing developm
 - Solved **2 LeetCode problems** (**20** and **125**) in the `leet-code-codebase`, focusing on string validation, traversal, and array-based logic.
 
 ---
+
+Day 8 — 24-12-2025  
+
+- Completed **23 Java Method practice programs (Level 1 & Level 2)** in the `methods` folder under `gcr-codebase`, covering user-defined methods, method reuse, dynamic parameterization, recursion, static methods, standard library methods, and the `java.lang.Math` class.  
+- Solved **2 LeetCode problems** (**344** and **389**) in the `leetcode-code-codebase`, focusing on string reversal, character comparison, and method-based problem solving.
+
+---
+
 
 
 
