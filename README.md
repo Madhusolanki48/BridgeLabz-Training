@@ -115,6 +115,13 @@ Day 8 — 24-12-2025
 
 ---
 
+Day 9 — 25-12-2025  
+
+- Completed **15 Java Method practice programs (Level 3)** in the `methods` folder under `gcr-codebase`, focusing on advanced method usage, recursion, parameter passing, return values, and method reusability. Also completed **12 additional String practice problems** (EXTRAS), reinforcing string handling, built-in methods, and function-based string operations.  
+- Solved **2 scenario-based problems** in the `scenario-based` folder — *Bus Route Distance Tracker* (looping, cumulative logic, user exit handling) and *Festival Lucky Draw* (conditional logic, modulus operator, loops, and input validation).  
+- Solved **2 LeetCode problems** — *Reverse Vowels of a String* and *Isomorphic Strings* — strengthening string traversal, mapping, and character relationship logic.
+
+---
 
 
 
