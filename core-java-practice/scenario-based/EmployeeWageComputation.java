@@ -19,5 +19,15 @@ public class EmployeeWageComputation {
     public static int getEmployeeType() {
         return random.nextInt(2) + 1; // 1 = Part Time, 2 = Full Time
     }
-    
+    // Use Case-4 : Using Switch case, get working hours
+    public static int getWorkingHours(int employeeType) {
+        switch (employeeType) {
+            case 1:
+                return partTimeWorkingHours;
+            case 2:
+                return fullDayWorkingHours;
+            default:
+                return 0;
+        }
+    }   
 }
