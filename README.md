@@ -115,13 +115,23 @@ Day 8 — 24-12-2025
 
 ---
 
-Day 9 — 25-12-2025  
+Day 9 — 26-12-2025  
 
 - Completed **15 Java Method practice programs (Level 3)** in the `methods` folder under `gcr-codebase`, focusing on advanced method usage, recursion, parameter passing, return values, and method reusability. Also completed **12 additional String practice problems** (EXTRAS), reinforcing string handling, built-in methods, and function-based string operations.  
 - Solved **2 scenario-based problems** in the `scenario-based` folder — *Bus Route Distance Tracker* (looping, cumulative logic, user exit handling) and *Festival Lucky Draw* (conditional logic, modulus operator, loops, and input validation).  
 - Solved **2 LeetCode problems** — *Reverse Vowels of a String* and *Isomorphic Strings* — strengthening string traversal, mapping, and character relationship logic.
 
 ---
+
+Day 10 — 29-12-2025  
+
+- Completed **13 practice programs** in the `extras` folder under `core-java-practice`, focusing on the use of common built-in functions, date/time APIs (`ZonedDateTime`, `ZoneId`, `LocalDate`, `DateTimeFormatter`), date comparison, and some modular function-based problems.  
+- Solved **4 scenario-based problems** in the `scenario-based` folder — *Sandeep’s Fitness Challenge Tracker*, *Movie Ticket Booking App*, *Rohan’s Library Reminder App*, and *Digital Watch Simulation* — applying loops, conditionals, input handling, modular functions, and clean code practices.
+- Also worked on the **Employee Wage Computation** problem covering **6 use cases** including attendance check, daily and part-time wage, switch-case logic, monthly wage calculation, and wage calculation based on total working hours/days.  
+-  Solved **2 LeetCode problems** in `leetcode-code-codebase` — *Reverse Words in a String* and *Roman to Integer* — reinforcing string manipulation and Roman numeral mapping concepts.
+
+---
+
 
 
 
