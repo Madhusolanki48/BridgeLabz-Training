@@ -13,12 +13,12 @@ public class SnakeAndLadderGame {
         // Use Case-2 : The Player rolls the die to get a number between 1 to 6 using Random
 
         Random random = new Random();
+        // Use Case-4 : Repeat till the Player reaches the winning position 100 
+        while (playerPosition < 100) {
         int diceValue = random.nextInt(6) + 1;
         System.out.println("Player rolled the die");
         System.out.println("Dice value : " + diceValue);
-
         // Use Case-3 : Check Option — No Play / Ladder / Snake
-
         int option = random.nextInt(3);  // options: 0 = No Play, 1 = Ladder, 2 = Snake
         switch (option) {
             case 0:    // No play
@@ -41,6 +41,9 @@ public class SnakeAndLadderGame {
         System.out.println("------------------------------------------------------------------");
         System.out.println("Current Player Position = " + playerPosition);
     }
+        System.out.println("\nHurray ! Player reached WINNING POSITION 100");
+    }
 }
+
 	
 	    
