@@ -28,7 +28,13 @@ public class SnakeAndLadderGame {
             case 1:   // Ladder
                 System.out.println("Option selected : LADDER");
                 playerPosition += diceValue;
+        // Use Case-5 : Ensure the player gets to exact winning position 100
+                if (playerPosition>100){
+                    System.out.println("Move exceeds 100, so stay at the same position");
+                    playerPosition-=diceValue;
+                }else{
                 System.out.println("Player climbs the ladder! New position : " + playerPosition);
+                }
                 break;
             case 2:   // Snake
                 System.out.println("Option selected : SNAKE");
