@@ -30,6 +30,11 @@ BridgeLabz-Training/
 │   │
 │   ├── scenario-based/          # Scenario-based & real-world logic problems
 │   └── leetcode-code-codebase/  # Daily DSA practice 
+├── oops-practice/
+│   ├── gcr-codebase/            
+│   │       ├── class-and-object/
+|
+| 
 ├── reviews/                     # for reviews done in the classroom
 └── README.md
 
@@ -131,6 +136,14 @@ Day 10 — 29-12-2025
 -  Solved **2 LeetCode problems** in `leetcode-code-codebase` — *Reverse Words in a String* and *Roman to Integer* — reinforcing string manipulation and Roman numeral mapping concepts.
 
 ---
+
+Day 11 — 30-12-2025  
+
+- Solved **2 scenario-based Java problems** in `scenario-based`— *Line Comparison Problem* (length calculation, equality check, and comparison using `equals()` and `compareTo()`) and *Snake & Ladder Simulator* (single-player and two-player game logic, dice rolls, ladders/snakes, exact win condition, and roll count tracking).  
+- Created a new branch **`oops-practice`** and added a `class-and-object` folder inside `gcr-codebase`, where I completed **10 OOP practice programs** focused on practical understanding of classes, objects, attributes, constructors, encapsulation, and method-based behavior through real-world OOP program implementations.
+
+----
+
 
 
 
