@@ -48,5 +48,15 @@ public class LineComparisonProblem {
         } else {
             System.out.println("\nBoth lines are not Equal in length !");
         }
+
+		// Use Case-3 : Compare two lines based on the end points using compareTo()
+        int result = length.compareTo(length2);
+        if (result == 0) {
+            System.out.println("Both lines are Equal in length !");
+        } else if (result > 0) {
+            System.out.println("First line is GREATER than Second line !");
+        } else {
+            System.out.println("First line is LESS than Second line !");
+        }
     }
 }
