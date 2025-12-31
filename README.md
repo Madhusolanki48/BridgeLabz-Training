@@ -27,12 +27,15 @@ BridgeLabz-Training/
 │   │       ├── strings/ 
 │   │       ├── arrays/
 |   |       ├── methods/
+|   |       ├── extras/
 │   │
 │   ├── scenario-based/          # Scenario-based & real-world logic problems
 │   └── leetcode-code-codebase/  # Daily DSA practice 
+|
 ├── oops-practice/
 │   ├── gcr-codebase/            
-│   │       ├── class-and-object/
+│          ├── class-and-object/
+|          ├── constructors-access-modifiers/
 |
 | 
 ├── reviews/                     # for reviews done in the classroom
@@ -143,7 +146,12 @@ Day 11 — 30-12-2025
 - Created a new branch **`oops-practice`** and added a `class-and-object` folder inside `gcr-codebase`, where I completed **10 OOP practice programs** focused on practical understanding of classes, objects, attributes, constructors, encapsulation, and method-based behavior through real-world OOP program implementations.
 
 ----
+Day 12 — 31-12-2025  
 
+- Completed **13 Java practice programs** in the `constructors-access-modifiers` folder in `gcr-codebase` under `oops-practice`, focusing on constructors, instance vs class variables, access modifiers, object initialization, static vs instance behavior, inheritance basics, and encapsulation. Strengthened understanding of designing constructors, using static members appropriately, and applying `public`, `private`, and `protected` access control.  
+- Solved **3 greedy / array problems** in `leetcode-code-codebase` — *Best Time to Buy and Sell Stock*, *Trapping Rain Water*, and *Gas Station (Complete Circuit)* — practicing running-minimum tracking, two-pointer boundary logic, and cumulative fuel-balance reasoning.
+
+---
 
 
 
