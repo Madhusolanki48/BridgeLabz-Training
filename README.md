@@ -36,6 +36,7 @@ BridgeLabz-Training/
 │   ├── gcr-codebase/            
 │          ├── class-and-object/
 |          ├── constructors-access-modifiers/
+|          ├── this-static-final/
 |
 | 
 ├── reviews/                     # for reviews done in the classroom
@@ -152,6 +153,15 @@ Day 12 — 31-12-2025
 - Solved **3 greedy / array problems** in `leetcode-code-codebase` — *Best Time to Buy and Sell Stock*, *Trapping Rain Water*, and *Gas Station (Complete Circuit)* — practicing running-minimum tracking, two-pointer boundary logic, and cumulative fuel-balance reasoning.
 
 ---
+
+Day 13 — 1-1-2026  
+
+- Completed **7 OOP practice programs Level-1** in the `this-static-final` folder inside `gcr-codebase` under `oops-practice`, focusing on the use of `this`, `static`, `final`, and `instanceof`. Strengthened understanding of shared class members, instance reference handling, immutability constraints, safe type-checking, and clean object-behavior design through real-world modeled systems.  
+- Solved **two scenario-based text-processing problems** — *Sentence Formatter* and *Paragraph Analyzer* in `scenario-based` — applying string manipulation, validation, whitespace normalization, sentence-capitalization logic, word-counting, longest-word detection, and safe replace operations.  
+- Solved **two string-processing LeetCode problems** — *Buddy Strings* and *Reformat String* in `leet-code-codebase`  — practicing character comparison, mismatch detection, duplicate-character handling, and alternating arrangement of letters and digits.
+
+---
+
 
 
 
