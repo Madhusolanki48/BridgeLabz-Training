@@ -162,6 +162,12 @@ Day 13 — 1-1-2026
 
 ---
 
+Day 14 — 2-1-2025  
+
+- Learned **Object-Oriented Design Principles** and applied them by solving **11 design problems** in the `object-oriented-design-principles` folder inside `gcr-codebase` under `oops-practice`, creating **class diagrams, object diagrams, and sequence diagrams** for each scenario.  
+- Studied **System Design fundamentals and UML concepts**, including **visibility symbols(+,-,#,~), relationships(association, aggregation, composition), and modeling structure/behavior**, and created diagrams using the **diagrams.net (draw.io) online tool** to visualize system workflows and object interactions.
+
+
 
 
 
