@@ -167,10 +167,17 @@ Day 14 — 2-1-2025
 - Learned **Object-Oriented Design Principles** and applied them by solving **11 design problems** in the `object-oriented-design-principles` folder inside `gcr-codebase` under `oops-practice`, creating **class diagrams, object diagrams, and sequence diagrams** for each scenario.  
 - Studied **System Design fundamentals and UML concepts**, including **visibility symbols(+,-,#,~), relationships(association, aggregation, composition), and modeling structure/behavior**, and created diagrams using the **diagrams.net (draw.io) online tool** to visualize system workflows and object interactions.
 
+---
+
+Day 15 — 3-1-2025  
+
+- Completed **11 OOP inheritance practice programs** in `inheritance` inside `gcr-codebase` under `oops-practice` , covering *single-level, multilevel, hierarchical, and hybrid inheritance*, along with method overriding, constructor inheritance, polymorphism behavior, access-modifier impact in inheritance, and clean class-design principles.  
+- Worked on **4 scenario-based Java problems** in `scenario-based` involving 2D-array temperature analysis, student score processing and validation, library book search and checkout logic, and quiz evaluation using string and array comparison - reinforcing data traversal, modular method design, input handling, and logical decision-making.  
+- Implemented **2 method-driven scenarios** in `scenario-based` such as account operations and mathematical utility functions (factorial, prime check, GCD, Fibonacci), reinforcing reusable method design and edge-case handling.  
+- Solved **2 array-based LeetCode problems** in `leet-code-codebase` - *Fair Candy Swap* and *Flip and Invert Image* - practicing value-balancing logic, matrix traversal, in-place transformation, and bitwise operation reasoning.
 
 
-
-
+---
 
 ##  Focus Areas
 - Core Java & OOP concepts  
