@@ -1,1 +1,248 @@
-# BridgeLabz-Training
+#  Bridgelabz Training 
+
+![Java](https://img.shields.io/badge/Java-Core-orange)
+![DSA](https://img.shields.io/badge/DSA-LeetCode-yellow)
+![Git](https://img.shields.io/badge/Updates-Daily-success)
+
+ **Duration:** 16 Dec – 30 April  
+ **Program:** Bridgelabz Training  
+
+---
+
+##  About This Repository
+This repository documents my **daily progress, assignments, and practice work** during the Bridgelabz training program.  
+It is designed as a **learning log + code showcase**, reflecting consistency, clarity, and hands-on problem solving in Java.
+
+---
+
+##  Repository Layout
+```
+BridgeLabz-Training/
+│
+├── core-java-practice/   
+│   │
+│   ├── gcr-codebase/            # Assignments from Google Cloud Classroom
+│   │       ├── programming elements/
+│   │       ├── control-flows/
+│   │       ├── strings/ 
+│   │       ├── arrays/
+|   |       ├── methods/
+|   |       ├── extras/
+│   │
+│   ├── scenario-based/          # Scenario-based & real-world logic problems
+│   └── leetcode-code-codebase/  # Daily DSA practice 
+|
+├── oops-practice/
+│   ├── gcr-codebase/            
+│          ├── class-and-object/
+|          ├── constructors-access-modifiers/
+|          ├── this-static-final/
+|
+| 
+├── reviews/                     # for reviews done in the classroom
+└── README.md
+
+```
+
+---
+
+#  Daily Activity Log
+
+## Week 1
+
+**Day 1 — 16-12-2025**
+
+### Focus Area - Repository Setup, Git Workflow & Project Structure
+
+Created a GitHub repository named **BridgeLabz-Training** and set up a working branch *core-java-practice*. Structured the project by creating three folders: `gcr-codebase`, `scenario-based`, and `leet-code-codebase`. Learned how to connect a remote GitHub repository to a local folder and understood the basic Git workflow.
+
+Commands Practiced
+```
+git init
+git status
+git branch
+```
+---
+**Day 2 — 17-12-2025**
+
+### Focus Area - Programming Elements, Branch Handling & DSA Practice
+
+Added **10 basic Java programs** under the Programming Elements folder in `gcr-codebase` and **solved 6 LeetCode problems** in `leet-code-codebase`. Practiced committing and pushing code to a branch. Faced an issue where commits were pushed to the main branch instead of core-java-practice, which was resolved by verifying and switching the active branch.
+
+Commands Practiced
+```
+git add
+git commit
+git push
+git branch
+git switch
+```
+[*View programming-elements solutions*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/programming-elements)<br>
+[*View LeetCode solutions*](https://github.com/Madhusolanki48/BridgeLabz-Training/commit/fdebad02dd16d93f16496710397f7f5537d78609)
+
+---
+
+**Day 3 — 18-12-2025**
+
+### Focus Area - Programming Elements, File Management & Git Operations
+
+Completed **18 Java programs** in `programming-elements` folder (Level 1 & Level 2) in `gcr-codebase`. Learned to rename files using Git while converting naming conventions from camelCase to PascalCase. Practiced branch handling by cleaning unintended commits from the main branch and ensuring all work remained in core-java-practice.
+
+Commands Practiced
+```
+git mv
+git switch main
+git switch core-java-practice
+git fetch
+git push --force
+git status
+```
+
+[*View programming-elements solutions*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/programming-elements)
+
+
+---
+
+**Day 4 — 19-12-2025**
+
+### Focus Area - Java Control Flows & Logic-Building Practice
+
+Worked on **Java Control Flows** Lab Practices and completed **40 Java programs** in a new `control-flows` folder under `gcr-codebase`.The practice included Level-1, Level-2 & Level-3 of Java control flow fundamentals such as boolean data types, boolean expressions, logical operators, conditional statements (if, else if, else), loops (for, while), control statements (break, continue), and the switch statement.This helped strengthen logical thinking and flow control in Java programs.
+
+[*View Java control-flows solutions*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/control-flows)
+
+---
+
+**Day 5 — 20-12-2025**
+
+### Focus Area - Scenario-Based Coding, Arrays Practice & DSA Problems
+
+ - Solved **two real-world scenario-based Java problems** in the `scenario-based` folder under the `core-java-practice` : [*Cafe Coffee Counter*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/CafeCoffeeCounter.java) & [*Maya's BMI Fitness Tracker*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/MayaBMIFitnessTracker.java), focusing on practical use of variables, input handling, conditional logic, loops, and clean coding practices.
+ - Completed **20 array-based practice programs** in a new `arrays` folder inside `gcr-codebase`, covering array creation, access, modification, looping, and multi-dimensional arrays. This strengthened both real-world problem modeling and core data-structure fundamentals in Java. [*View arrays solutions*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/arrays)
+ - Additionally, **solved 4 array-based DSA problems** in `leet-code-codebase` : [*Largest Element in an Array*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/LargestElementInArray.java), [*Search Element in an Array*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/SearchElementInArray.java), [*Sum of Elements in an Array*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/SumOfElementsInArray.java) & [*Two Sum Problem*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/TwoSumProblem.java) - focusing on array traversal, index-based lookup, search strategies, and logic-building for numerical computations.
+  
+---
+## Week 2
+
+**Day 6 — 22-12-2025**
+
+### Focus Area - String Programming and DSA Practice
+- Completed **20 Java String practice programs (Level 1 & Level 2)** in the `strings` folder under `gcr-codebase`, covering string creation, input handling, escape sequences, built-in `String` methods, ASCII codes, and Java exception handling (checked and unchecked exceptions). [*View strings solutions*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/strings)
+- Solved **2 string-based LeetCode problems** in the `leet-code-codebase` : [*Find the Index of the First Occurrence in the String*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/IndexOfFirstOccurance.java) & [*Length of Last Word in a String*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/LengthOfLastWordInString.java), focusing on string traversal, trimming, and character comparison logic. 
+
+---
+
+**Day 7 — 23-12-2025**
+
+### Focus Area - Advanced Strings, Scenario-Based Logic & Agile Learning
+
+- Completed **10 Java String practice programs (Level 3)** in the `strings` folder under `gcr-codebase`, focusing on advanced string handling and Java exception concepts. [*View strings solutions*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/strings) 
+- Solved **two scenario-based Java problems** in the `scenario-based` folder : [*Election Booth Manager*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/ElectionBoothManager.java) & [*Metro Smart Card Fare Deduction*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/MetroSmartCardFareDeduction.java), applying conditional logic, loops, ternary operators, and input handling to real-world scenarios. 
+- Studied **SDLC and Agile fundamentals** through supporting materials, including SDLC phases, Scrum workflow, and Agile practices. 
+Understood the role of task tracking tools like **Trello** for managing development progress. 
+- Solved **2 LeetCode problems** in the `leet-code-codebase` : [*Valid Parentheses*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/ValidParentheses.java) & [*Valid Palindrome String*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/ValidPalindromeString.java) - focusing on string validation, traversal, and array-based logic. 
+
+---
+
+**Day 8 — 24-12-2025** 
+
+### Focus Area - Java Methods Practice & Problem-Solving in DSA
+
+- Completed **23 Java Method practice programs (Level 1 & Level 2)** in the `methods` folder under `gcr-codebase`, covering user-defined methods, method reuse, dynamic parameterization, recursion, static methods, standard library methods, and the `java.lang.Math` class. [*View methods solutions*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/methods) 
+- Solved **2 LeetCode problems** in the `leetcode-code-codebase` : [*Find the Difference*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/FindTheDifference.java) & [*Reverse a String*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/ReverseAString.java), focusing on string reversal, character comparison, and method-based problem solving.
+
+---
+
+**Day 9 — 26-12-2025** 
+
+### Focus Area - Advanced Methods, String Extras, Scenarios & LeetCode
+
+- Completed **15 Java Method practice programs (Level 3)** in the `methods` folder under `gcr-codebase`, focusing on advanced method usage, recursion, parameter passing, return values, and method reusability. [*View methods level-3 solutions*](https://github.com/Madhusolanki48/BridgeLabz-Training/commit/0e280f81fd9101050ed9b62aa28722a03f5b372f)
+- Also completed **12 additional String practice problems** (EXTRAS), reinforcing string handling, built-in methods, and function-based string operations.<br>[*View String extras solutions*](https://github.com/Madhusolanki48/BridgeLabz-Training/commit/e767263482ae8f038faaa2e50eb1e9be3263011b)  
+- Solved **2 scenario-based problems** in the `scenario-based` folder : [*Bus Route Distance Tracker*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/BusRouteDistanceTracker.java) (looping, cumulative logic, user exit handling) & [*Festival Lucky Draw*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/FestivalLuckyDraw.java) (conditional logic, modulus operator, loops, and input validation).   
+- Solved **2 LeetCode problems** : [*Reverse Vowels of a String*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/ReverseVowelsInString.java) & [*Isomorphic Strings*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/IsomorphicStrings.java) - strengthening string traversal, mapping, and character relationship logic.
+
+---
+## Week 3
+
+**Day 10 — 29-12-2025**
+
+### Focus Area - Built-in Functions, Modular Programming & Scenario Practice
+
+- Completed **13 practice programs** in the `extras` folder under `core-java-practice`, focusing on the use of common built-in functions, date/time APIs (`ZonedDateTime`, `ZoneId`, `LocalDate`, `DateTimeFormatter`), date comparison, and some modular function-based problems. [*View built-in extras solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/core-java-practice/core-java-practice/gcr-codebase/extras)  
+- Solved **4 scenario-based problems** in the `scenario-based` folder : [*Sandeep’s Fitness Challenge Tracker*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/FitnessChallengeTracker.java), [*Movie Ticket Booking App*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/MovieTicketBookingApp.java), [*Rohan’s Library Reminder App*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/RohansLibraryReminderApp.java), & [*Digital Watch Simulation*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/DigitalWatchSimulation.java) — applying loops, conditionals, input handling, modular functions, and clean code practices.
+- Also worked on the [*Employee Wage Computation*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/EmployeeWageComputation.java) problem covering **6 use cases** including attendance check, daily and part-time wage, switch-case logic, monthly wage calculation, and wage calculation based on total working hours/days.
+-  Solved **2 LeetCode problems** in `leetcode-code-codebase` : [*Reverse Words in a String*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/ReverseWordsInString.java) & [*Roman to Integer*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/RomanToInteger.java) — reinforcing string manipulation and Roman numeral mapping concepts.
+
+---
+
+**Day 11 — 30-12-2025** 
+
+### Focus Area - Scenario-Based Problem Solving & Core OOP Foundations
+
+- Solved **2 scenario-based Java problems** in `scenario-based` : [*Line Comparison Problem*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/LineComparisonProblem.java) (length calculation, equality check, and comparison using `equals()` and `compareTo()`) and [*Snake & Ladder Simulator*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/SnakeAndLadderGame.java) (single-player and two-player game logic, dice rolls, ladders/snakes, exact win condition, and roll count tracking).
+- Created a new branch **`oops-practice`** and added a `class-and-object` folder inside `gcr-codebase`, where I completed **10 OOP practice programs** focused on practical understanding of classes, objects, attributes, constructors, encapsulation, and method-based behavior through real-world OOP program implementations. [*View class-and-object solutions*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/class-and-object)
+
+----
+**Day 12 — 31-12-2025**  
+
+### Focus Area - Constructors, Access Modifiers & Greedy/Array DSA
+
+- Completed **13 Java practice programs** in the `constructors-access-modifiers` folder in `gcr-codebase` under `oops-practice`, focusing on constructors, instance vs class variables, access modifiers, object initialization, static vs instance behavior, inheritance basics, and encapsulation. Strengthened understanding of designing constructors, using static members appropriately, and applying `public`, `private`, and `protected` access control. [*View contructors-access-modifiers solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/constructors-access-modifiers) 
+- Solved **3 greedy / array problems** in `leetcode-code-codebase` : [*Best Time to Buy and Sell Stock*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/BuyAndSellStock.java), [*Trapping Rain Water*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/TrappingRainWater.java), & [*Gas Station (Complete Circuit)*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/GasStation.java) — practicing running-minimum tracking, two-pointer boundary logic, and cumulative fuel-balance reasoning.
+
+---
+## Week 4
+
+**Day 13 — 1-1-2026**
+
+### Focus Area - OOP Keywords (this, static, final) & String-Based Problem Solving
+
+- Completed **7 OOP practice programs Level-1** in the `this-static-final` folder inside `gcr-codebase` under `oops-practice`, focusing on the use of `this`, `static`, `final`, and `instanceof`. Strengthened understanding of shared class members, instance reference handling, immutability constraints, safe type-checking, and clean object-behavior design through real-world modeled systems. [*View this-static-final solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/this-static-final)  
+- Solved **two scenario-based text-processing problems** : [*Sentence Formatter*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/SentenceFormatter.java) and [*Paragraph Analyzer*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/WordInspector.java) in `scenario-based` — applying string manipulation, validation, whitespace normalization, sentence-capitalization logic, word-counting, longest-word detection, and safe replace operations. 
+- Solved **two string-processing LeetCode problems** : [*Buddy Strings*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/BuddyStrings.java) and [*Reformat String*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/ReformatString.java) in `leet-code-codebase`  — practicing character comparison, mismatch detection, duplicate-character handling, and alternating arrangement of letters and digits.
+
+---
+
+**Day 14 — 2-1-2025** 
+
+### Focus Area - Object-Oriented Design Principles, UML Modeling & System Design
+
+- Learned **Object-Oriented Design Principles** and applied them by solving **11 design problems** in the `object-oriented-design-principles` folder inside `gcr-codebase` under `oops-practice`, creating **class diagrams, object diagrams, and sequence diagrams** for each scenario. [*View object-oriented-design-principles solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/object-oriented-design-principles) 
+- Studied **System Design fundamentals and UML concepts**, including **visibility symbols(+,-,#,~), relationships(association, aggregation, composition), and modeling structure/behavior**, and created diagrams using the **[diagrams.net](https://app.diagrams.net/#) (draw.io) online tool** to visualize system workflows and object interactions.
+
+---
+
+**Day 15 — 3-1-2025** 
+
+### Focus Area - Inheritance & Polymorphism, Scenario-Based Practice, and DSA
+
+- Completed **11 OOP inheritance practice programs** in `inheritance` inside `gcr-codebase` under `oops-practice` , covering *single-level, multilevel, hierarchical, and hybrid inheritance*, along with method overriding, constructor inheritance, polymorphism behavior, access-modifier impact in inheritance, and clean class-design principles. [*View inheritance solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/inheritance)  
+- Worked on **4 scenario-based Java problems** in `scenario-based` involving [*2D-array Temperature Analysis*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/TemperatureAnalyzer.java), [*Student Test Score Manager*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/StudentTestScoreManager.java), [*Library Management System*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/LibraryManagementSystem.java), & [*Student Quiz Grader*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/StudentQuizGrader.java) using string and array comparison - reinforcing data traversal, modular method design, input handling, and logical decision-making.  
+- Implemented **2 method-driven scenarios** in `scenario-based` such as [*Bank Account Manager*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/BankAccountManager.java) & [*Mathematical Utility Functions*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/MathUtilityOperations.java) (factorial, prime check, GCD, Fibonacci), reinforcing reusable method design and edge-case handling.  
+- Solved **2 array-based LeetCode problems** in `leet-code-codebase` : [*Fair Candy Swap*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/FairCandySwap.java) & [*Flip and Invert Image*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/FlippingAnImage.java) - practicing value-balancing logic, matrix traversal, in-place transformation, and bitwise operation reasoning.
+  
+---
+
+##  Focus Areas
+- Core Java & OOP concepts  
+- Scenario-based problem solving  
+- Data Structures & Algorithms  
+- Writing clean, maintainable code  
+
+---
+
+##  Learning Approach
+- Daily hands-on coding  
+- Incremental problem difficulty  
+- Focus on logic before optimization  
+- Regular self-review through README updates  
+
+---
+
+##  Maintained By
+Madhu Solanki  
+  
+
+ *Updated daily to reflect ongoing learning.*
+
