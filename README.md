@@ -224,6 +224,18 @@ Understood the role of task tracking tools like **Trello** for managing developm
   
 ---
 
+**Day 16 — 05-01-2026**  
+
+### Focus Area - OOP Pillars (Encapsulation, Polymorphism, Abstraction & Interfaces), Scenario-Based Practice, and DSA
+
+- Completed **8 OOP pillar practice programs** in the `oops-pillars` folder inside `gcr-codebase` under `oops-practice`, focusing on **encapsulation, polymorphism, abstract classes, interfaces**, constructor behavior, data-hiding, and real-world object modeling. Strengthened understanding of behavior generalization, reusable class hierarchies, and processing multiple object types using a single reference model. [*View oops-pillars solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/oops-pillars) 
+
+- Worked on **4 scenario-based Java problems** in `scenario-based` : [*Invoice Generator for Freelancers*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/InvoiceGeneratorForFreelancers.java), [*Cafeteria Menu App*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/CafeteriaMenuApp.java), [*Student Score Analyzer with Exception Handling*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/StudentScoreAnalyzer.java), [*Invoice Generator for Freelancers with Exception Handling*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/InvoiceGeneratorWithExceptionHandling.java) involving array-driven analytics, string-based processing, invoice generation, menu-selection logic, modular method design, user interaction handling, and **custom exception handling** for invalid input and format-validation cases.   
+
+- Solved **2 DSA problems** in `leet-code-codebase` : [*Distribute Candies*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/DistributeCandies.java) & [*Relative Ranks*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/RelativeRanks.java) , practicing ranking logic, count-based reasoning, score comparison, and mapping ranked positions to medals and result outputs.
+
+
+
 ##  Focus Areas
 - Core Java & OOP concepts  
 - Scenario-based problem solving  
