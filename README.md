@@ -192,7 +192,6 @@ Understood the role of task tracking tools like **Trello** for managing developm
 - Solved **3 greedy / array problems** in `leetcode-code-codebase` : [*Best Time to Buy and Sell Stock*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/BuyAndSellStock.java), [*Trapping Rain Water*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/TrappingRainWater.java), & [*Gas Station (Complete Circuit)*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/leet-code-codebase/GasStation.java) — practicing running-minimum tracking, two-pointer boundary logic, and cumulative fuel-balance reasoning.
 
 ---
-## Week 4
 
 **Day 13 — 1-1-2026**
 
@@ -223,6 +222,7 @@ Understood the role of task tracking tools like **Trello** for managing developm
 - Solved **2 array-based LeetCode problems** in `leet-code-codebase` : [*Fair Candy Swap*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/FairCandySwap.java) & [*Flip and Invert Image*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/FlippingAnImage.java) - practicing value-balancing logic, matrix traversal, in-place transformation, and bitwise operation reasoning.
   
 ---
+## Week 4
 
 **Day 16 — 05-01-2026**  
 
@@ -234,6 +234,16 @@ Understood the role of task tracking tools like **Trello** for managing developm
 
 - Solved **2 DSA problems** in `leet-code-codebase` : [*Distribute Candies*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/DistributeCandies.java) & [*Relative Ranks*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/RelativeRanks.java) , practicing ranking logic, count-based reasoning, score comparison, and mapping ranked positions to medals and result outputs.
 
+---
+
+**Day 17 — 06-01-2026**  
+
+### Focus Area - Scenario-Based Practice (Collections, Strings & Exceptions) and DSA
+- Worked on **4 scenario-based Java problems** in the `scenario-based` folder : [*Phone Contact Organizer*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/PhoneContactOrganizer.java), [*Online Quiz Platform – Result Processor*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/OnlineQuizPlatformExecptionHandling.java), [*Student Report Generator*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/StudentReportGeneratorExceptionHandling.java) & [*Library Management System – Book Search and Checkout*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/LibraryManagementExceptionHandling.java) with Exception Handling - focusing on **List and ArrayList usage, string handling, modular methods, input validation, and custom exception handling** (invalid data formats, duplicate entries, unavailable resources, and mark validation). The exercises emphasized **data organization, search operations, reporting logic, and clean structured program design**.  
+
+- Solved **2 LeetCode problems** in `leet-code-codebase` : [*Parking System*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/ParkingSystem.java) & [*Range Sum Query — Immutable*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/RangeSumQueryImmutable.java), practicing constructor-based initialization, state encapsulation, prefix-sum preprocessing, and efficient lookup/query logic.
+
+---
 
 
 ##  Focus Areas
