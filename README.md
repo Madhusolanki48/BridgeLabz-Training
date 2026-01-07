@@ -245,6 +245,20 @@ Understood the role of task tracking tools like **Trello** for managing developm
 
 ---
 
+**Day 18 — 07-01-2026**  
+
+### Focus Area - Scenario-Based OOP Systems & DSA Problem Solving
+
+- Completed **2 scenario-based OOP programs** in the `scenario-based` folder : [*Cab Booking / Ride Management System*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/CabBookingManagementSystem.java) & 
+[*Online Banking System*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/OnlineBankingSystem.java)
+implementing real-world system behavior through **CRUD operations, abstraction, inheritance, interfaces, polymorphism, custom exceptions, and modular service design** — reinforcing concepts such as role-based objects, validation, transaction flow, pricing logic, and safe operation handling (including concurrency-aware behavior where applicable).  
+
+- Solved **4 LeetCode problems** in `leet-code-codebase` — [*Jewels and Stones*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/JewelsAndStones.java), [*Single Number*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/SingleNumber.java), [*Kids With the Greatest Number of Candies*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/KidsWithGreatestCandies.java), & [*Max Consecutive Ones*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/MaxConsecutiveOnes.java) — practicing array traversal, frequency counting, conditional evaluation, and iterative logic building.
+
+
+
+
+
 
 ##  Focus Areas
 - Core Java & OOP concepts  
