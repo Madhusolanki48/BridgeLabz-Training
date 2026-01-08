@@ -34,11 +34,21 @@ BridgeLabz-Training/
 |
 ├── oops-practice/
 │   ├── gcr-codebase/            
-│          ├── class-and-object/
-|          ├── constructors-access-modifiers/
-|          ├── this-static-final/
+│   |      ├── class-and-object/
+|   |      ├── constructors-access-modifiers/
+|   |      |── inheritance/ 
+|   |      ├── oops-pillars/
+|   |      ├── object-oriented-design-principles/
+|   |      ├── this-static-final/
+|   |      
+|   |
+|   ├── scenario-based/          # Scenario-based & real-world logic problems
+│   └── leetcode-code-codebase/  # Daily DSA practice 
 |
-| 
+├── dsa-practice/
+│   ├── gcr-codebase/
+|           ├── linkedlist/
+|     
 ├── reviews/                     # for reviews done in the classroom
 └── README.md
 
@@ -254,6 +264,17 @@ Understood the role of task tracking tools like **Trello** for managing developm
 implementing real-world system behavior through **CRUD operations, abstraction, inheritance, interfaces, polymorphism, custom exceptions, and modular service design** — reinforcing concepts such as role-based objects, validation, transaction flow, pricing logic, and safe operation handling (including concurrency-aware behavior where applicable).  
 
 - Solved **4 LeetCode problems** in `leet-code-codebase` — [*Jewels and Stones*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/JewelsAndStones.java), [*Single Number*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/SingleNumber.java), [*Kids With the Greatest Number of Candies*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/KidsWithGreatestCandies.java), & [*Max Consecutive Ones*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/leet-code-codebase/MaxConsecutiveOnes.java) — practicing array traversal, frequency counting, conditional evaluation, and iterative logic building.
+
+---
+
+**Day 19 — 08-01-2026**  
+
+### Focus Area - Linked Lists (DSA), Best Practices & LeetCode
+
+- Created a new branch **`dsa-practice`** and worked on **Linked List implementations** in the `linkedlist` folder under `gcr-codebase`, covering **singly, doubly, and circular linked lists**. Implemented multiple real-world management systems to practice **node insertion/deletion, searching, updating records, traversal (forward & reverse), sorting, and circular iteration**. Emphasized **head/tail management, null checks, pointer safety, boundary handling, modular design, and prevention of infinite loops** as core Linked List best practices. [*View linkedlist solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/linkedlist) 
+
+- Solved **2 LeetCode problems** in `leet-code-codebase` : [*Running Sum of 1D Array*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/RunningSumOf1DArray.java) & [*Defanging an IP Address*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/DefangingIPAddress.java), focusing on prefix-sum computation, array traversal, string iteration, and efficient character replacement using string-building techniques.
+
 
 
 
