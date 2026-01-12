@@ -275,6 +275,30 @@ implementing real-world system behavior through **CRUD operations, abstraction, 
 
 - Solved **2 LeetCode problems** in `leet-code-codebase` : [*Running Sum of 1D Array*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/RunningSumOf1DArray.java) & [*Defanging an IP Address*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/DefangingIPAddress.java), focusing on prefix-sum computation, array traversal, string iteration, and efficient character replacement using string-building techniques.
 
+---
+**Day 20 — 09-01-2026**  
+
+### Focus Area - OOP-Based CRUD Systems & Linked List DSA
+
+- Implemented **2 OOP-based CRUD applications** problems in `scenario-based` under `oops-practice` : [*Hospital Patient Management System*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/HospitalPatientManagementSystem.java) & [*Vehicle Rental System*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/VehicleRentalApplication.java), applying **encapsulation, inheritance, interfaces, polymorphism, and access modifiers** to model real-world workflows with clean class design.  
+
+- Solved **2 Linked List LeetCode problems** in `leet-code-codebase` : [*Reverse Linked List*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/ReverseLinkedList.java) & [*Middle of the Linked List*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/MiddleOfLinkedList.java), practicing iterative pointer manipulation, slow–fast pointer technique, and efficient traversal of singly linked lists.
+
+---
+## Week 5
+**Day 21 — 12-01-2026**  
+
+### Focus Area - Scenario-Based CRUD Systems & Linked List DSA
+
+- Completed **6 scenario-based Java systems** focusing on real-world **CRUD workflows** in `scenario-based` under `oops-practice`:
+- [*Flight Booking System*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/oops-practice/oops-practice/scenario-based/FlightBookingSystem.java)
+- [*Student Course Registration System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/StudentCourseRegistrationSystem)
+- [*Inventory Management System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/InventoryManagementSystem)
+- [*Online Examination System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/OnlineExaminationSystem)
+- [*Hotel Reservation System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/HotelReservationSystem)
+- [*E-Commerce Order Management System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/ECommerceOrderManagementSystem)<br>
+Practiced **OOP modeling, interfaces, abstraction, inheritance, polymorphism strategies, exception handling**, and efficient data handling using **arrays, lists, and string-based searching**.  
+- Solved **1 LeetCode problem** in `leet-code-codebase` : [*Delete Node In LinkedList*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/DeleteNodeInLinkedList.java), practiced node deletion without head reference by shifting values forward and updating links to remove the target node.
 
 
 
