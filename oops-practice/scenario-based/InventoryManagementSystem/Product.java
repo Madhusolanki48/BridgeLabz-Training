@@ -1,0 +1,46 @@
+package InventoryManagementSystem;
+
+//product class
+public class Product {
+	//attributes
+	private int productId;
+	private String productName;
+	private double price;
+	private int stock;
+
+	//constructor
+	public Product(int productId, String productName, double price, int stock) {
+		this.productId = productId;
+		this.productName = productName;
+		this.price = price;
+		this.stock = stock;
+	}
+
+	//getters
+	public int getId() {
+		return productId;
+	}
+
+	public String getName() {
+		return productName;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public int getStock() {
+		return stock;
+	}
+
+	//setters
+	public void setStock(int stock) {
+		this.stock = stock;
+	}
+
+	@Override
+	public String toString() {
+		return "Product Details [ " + "Id - " + productId + " | Name - " + productName + " | Price - " + price
+				+ " | Stock - " + stock+" ]";
+	}
+}
