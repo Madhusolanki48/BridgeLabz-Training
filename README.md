@@ -300,6 +300,27 @@ implementing real-world system behavior through **CRUD operations, abstraction, 
 Practiced **OOP modeling, interfaces, abstraction, inheritance, polymorphism strategies, exception handling**, and efficient data handling using **arrays, lists, and string-based searching**.  
 - Solved **1 LeetCode problem** in `leet-code-codebase` : [*Delete Node In LinkedList*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/DeleteNodeInLinkedList.java), practiced node deletion without head reference by shifting values forward and updating links to remove the target node.
 
+---
+**Day 22 — 13-01-2026**
+
+### Focus Area — Scenario-Based CRUD Systems, Array DSA & Git Merge Conflict Practice
+
+- Completed **3 scenario-based Java systems** focused on real-world **CRUD workflows** in `scenario-based` under `oops-practice`:<br>
+➤ [*Hospital Management System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/HospitalManagementSystem)<br>
+➤ [*Online Voting System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/OnlineVotingSystem)<br>
+➤ [*Digital Wallet System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/DigitalWalletSystem)<br>
+which strengthened implementation of **OOP class modeling, inheritance, abstraction/interfaces, polymorphism-based fee/transfer logic, and custom exception handling**.  
+  
+- Created a Git practice repository **`Merge-Conflict-Demo`** (Calculator) using feature branches (add, subtract, multiply, divide) to practice `git stash/stash pop`, `git pull`, branch merging with `git merge`, and intentional **merge conflict creation + resolution** with proper commits.
+
+- Solved **2 array-based LeetCode problems** in `leet-code-codebase` - practicing frequency counting, index-based rearrangement, and efficient traversal-based logic:<br>
+◆ [*Number of Good Pairs*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/NumberOfGoodPairs.java)<br>
+◆ [*Shuffle the Array*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/ShuffleTheArray.java)<br>
+
+
+
+
+
 
 
 
