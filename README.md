@@ -317,6 +317,22 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ◆ [*Number of Good Pairs*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/NumberOfGoodPairs.java)<br>
 ◆ [*Shuffle the Array*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/ShuffleTheArray.java)<br>
 
+---
+**Day 23 — 14-01-2026**
+
+### Focus Area — Stack/Queue, HashMaps & LeetCode (Stack)
+
+- Practiced **5 Stack & Queue problems** in `stack-queue` under `dsa-practice`, focusing on stack-based operations, queue simulation, window processing, and traversal-based logic.<br>
+➤ [*[stack-queue solution]*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/stack-queue) 
+
+- Practiced **5 HashMap problems** in `hashmaps` under `dsa-practice`, focusing on prefix-sum hashing, frequency mapping, pair-sum detection, sequence tracking, and custom hash map implementation.<br>
+➤ [*[hashmaps solution]*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/hashmaps)  
+
+- Solved **2 LeetCode stack problems** in `leet-code-codebase`- practicing stack-based validation and stack simulation for scoring operations:<br>
+◆ [*Valid Parentheses*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/ValidParenthesesUsingStack.java)<br>
+◆ [*Baseball Game*](http://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/BaseballGame.java)<br>
+
+
 
 
 
