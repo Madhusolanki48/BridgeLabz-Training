@@ -332,6 +332,26 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ◆ [*Valid Parentheses*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/ValidParenthesesUsingStack.java)<br>
 ◆ [*Baseball Game*](http://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/BaseballGame.java)<br>
 
+--- 
+**Day 24 — 15-01-2026**
+
+### Focus Area — Sorting Algorithms & LeetCode (Sorting)
+
+- Practiced **sorting algorithms** in the `sorting-algorithms` folder under `gcr-codebase` in `dsa-practice`:<br>
+➤ [*Bubble Sort*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/gcr-codebase/sorting-algorithms/BubbleSortStudentMarks.java)<br>
+➤ [*Insertion Sort*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/gcr-codebase/sorting-algorithms/InsertionSortEmployeeIDs.java)<br>
+➤ [*Merge Sort*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/gcr-codebase/sorting-algorithms/MergeSortBookPrices.java)<br>
+➤ [*Quick Sort*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/gcr-codebase/sorting-algorithms/QuickSortProductPrices.java)<br>
+➤ [*Selection Sort*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/gcr-codebase/sorting-algorithms/SelectionSortExamScores.java)<br>
+➤ [*Heap Sort*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/gcr-codebase/sorting-algorithms/HeapSortSalary.java)<br>
+➤ [*Counting Sort*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/gcr-codebase/sorting-algorithms/CountingSortStudentAges.java)<br>
+
+- Solved **2 LeetCode sorting problems** in `leet-code-codebase`- based on counting sort:<br>
+◆ [*Relative Sort Array*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/RelativeSortArray.java)<br>
+◆ [*Height Checker*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/HeightChecker.java)<br>
+
+
+
 
 
 
