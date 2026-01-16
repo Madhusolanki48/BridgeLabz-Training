@@ -349,6 +349,24 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 - Solved **2 LeetCode sorting problems** in `leet-code-codebase`- based on counting sort:<br>
 ◆ [*Relative Sort Array*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/RelativeSortArray.java)<br>
 ◆ [*Height Checker*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/HeightChecker.java)<br>
+---
+
+**Day 25 — 16-01-2026**
+
+### Focus Area — StringBuilder/StringBuffer Practice, Address Book (OOP) & LeetCode (Stack)
+
+- Practiced **StringBuilder/StringBuffer** programs in `stringbuilder_stringbuffer` under `dsa-practice` for string reversal, duplicate removal, efficient concatenation, and performance comparison.<br>
+➤ [*stringbuilder_stringbuffer Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/stringbuilder_stringbuffer)
+  
+- Built **`AddressBook`** in `gcr-codebase` under `oops-practice` and completed:<br>
+➤ **UC-1:** Create contact with complete details.<br> 
+➤ **UC-2:** Add a new contact via console using OOP (AddressBook–Contact relationship).<br>
+➤ [*AddressBook Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/AddressBook) 
+
+- Solved **2 stack-based LeetCode problems** in `leet-code-codebase`-strengthening stack operations:<br>
+◆ [*Remove All Adjacent Duplicates*](http://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/RemoveAllAdjacentDuplicates.java)<br>
+◆ [*Maximum Nesting Depth*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/MaximumNestingDepth.java)
+
 
 
 
