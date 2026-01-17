@@ -1,0 +1,8 @@
+------------------------------  Artificial Intelligence  -----------------------------
+
+AI is the technology that enables machines to perform intelligent tasks like learning,
+reasoning, and decision-making. AI is widely used in daily life through smartphones, 
+voice assistants, and recommendation systems. It improves efficiency, saves time, 
+and helps in solving complex problems in fields like healthcare, education, and 
+transportation. AI is shaping the future, but its responsible use is necessary to 
+avoid risks like privacy concerns and job loss.
