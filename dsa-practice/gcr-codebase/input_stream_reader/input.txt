@@ -1,0 +1,11 @@
+My name is Madhu Solanki.
+I am learning Java File Handling.
+InputStreamReader converts byte stream into character stream.
+This file is saved in UTF-8 encoding.
+
+Special characters test:
+Rupee: ₹
+Copyright: ©
+
+End of file.
+Thank you.
