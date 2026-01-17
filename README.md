@@ -367,6 +367,27 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ◆ [*Remove All Adjacent Duplicates*](http://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/RemoveAllAdjacentDuplicates.java)<br>
 ◆ [*Maximum Nesting Depth*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/MaximumNestingDepth.java)
 
+---
+**Day 26 — 17-01-2026**
+
+### Focus Area — Java I/O (Readers) + Searching Algorithms & LeetCode
+
+- Practiced **Java I/O Reader programs** in `file_reader` and `input_stream_reader` under `gcr-codebase` in `dsa-practice` covering:<br>
+- file reading (line-by-line)
+- word occurrence counting
+- console input writing to file
+- basic performance comparison with string builders/buffers<br>
+➤ [*file_reader Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/file_reader)<br>
+➤ [input_stream_reader Solution](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/input_stream_reader)<br>
+
+
+- Practiced **Linear & Binary Search problems** in `linear_binary_search` under `gcr-codebase` in `dsa-practice`:<br>
+➤ [*linear_binary_search Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/linear_binary_search)
+- Solved **2 LeetCode problems** in `leet-code-codebase` focused on linear search: <br>
+◆ [*Search Insert Position*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/SearchInsertPosition.java)<br>
+◆ [*Check If N and Its Double Exist*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/CheckIfNAndItsDoubleExist.java)<br>
+
+
 
 
 
