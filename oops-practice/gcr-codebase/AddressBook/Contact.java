@@ -94,4 +94,16 @@ public class Contact {
 				"\nEmail       : " + email +
 				"\n----------------------------------------------";
 	}
+	// UC-7: Prevent Duplicate Contact Entry by Person Name
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) return true;
+		if (obj == null || getClass() != obj.getClass()) return false;
+		Contact other = (Contact) obj;
+		return firstName.equalsIgnoreCase(other.firstName) && lastName.equalsIgnoreCase(other.lastName);
+	}
+	@Override
+	public int hashCode() {
+		return (firstName.toLowerCase() + lastName.toLowerCase()).hashCode();
+	}
 }

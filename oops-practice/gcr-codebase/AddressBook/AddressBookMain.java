@@ -76,7 +76,7 @@ public class AddressBookMain {
                     if (added) {
                         System.out.println("Contact Added Successfully!");
                     } else {
-                        System.out.println("Failed to add contact!");
+                        System.out.println("Duplicate Contact! Person already exists in this Address Book!");
                     }
                     System.out.println("--------------------------------------------");
                     break;

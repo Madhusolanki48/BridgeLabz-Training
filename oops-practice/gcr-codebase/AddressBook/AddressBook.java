@@ -25,6 +25,10 @@ public class AddressBook {
 		if(contactList==null){
 			return false;
 		}
+		// UC-7 Duplicate Check
+		if (contactList.contains(contactPerson)) {
+			return false;
+		}
 		contactList.add(contactPerson);
 		return true;
 	}
