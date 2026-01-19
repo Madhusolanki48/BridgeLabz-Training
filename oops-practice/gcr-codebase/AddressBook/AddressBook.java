@@ -85,7 +85,34 @@ public class AddressBook {
 			}
 			return false;
 		}
+// UC-8: Search Person in a City across multiple Address Books
+		public ArrayList<Contact> searchPersonByCity(String city) {
+			ArrayList<Contact> result = new ArrayList<Contact>();
+			for (String bookName : addressBookMap.keySet()) {
+				ArrayList<Contact> contactList = addressBookMap.get(bookName);
+				for (Contact contact : contactList) {
+					if (contact.getCity().equalsIgnoreCase(city)) {
+						result.add(contact);
+					}
+				}
+			}
+			return result;
+		}
+// UC-8: Search Person in a State across multiple Address Books
+public ArrayList<Contact> searchPersonByState(String state) {
+	ArrayList<Contact> result = new ArrayList<Contact>();
+	for (String bookName : addressBookMap.keySet()) {
+		ArrayList<Contact> contactList = addressBookMap.get(bookName);
+		for (Contact contact : contactList) {
+			if (contact.getState().equalsIgnoreCase(state)) {
+				result.add(contact);
+			}
+		}
 	}
+	return result;
+}
+}
+	
 			
 
 

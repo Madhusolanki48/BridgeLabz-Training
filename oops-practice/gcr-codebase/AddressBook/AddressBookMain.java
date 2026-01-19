@@ -1,5 +1,7 @@
 package AddressBook;
+
 import java.util.*;
+
 //main class
 public class AddressBookMain {
     public static void main(String[] args) {
@@ -17,7 +19,10 @@ public class AddressBookMain {
             System.out.println("4. Edit Contact");
             System.out.println("5. Delete Contact");
             System.out.println("6. Display Contacts");
-            System.out.println("7. Exit");
+            System.out.println("7. Search Person by City");
+            System.out.println("8. Search Person by State");
+            System.out.println("9. Exit");
+
             System.out.print("Enter your choice: ");
 
             choice = sc.nextInt();
@@ -71,8 +76,9 @@ public class AddressBookMain {
                     System.out.print("Enter Email: ");
                     String email = sc.nextLine();
 
-                    Contact contact = new Contact(firstName, lastName, address, city, state, zipCode, phoneNumber,email);
-                    boolean added=service.addContact(currentAddressBook, contact);
+                    Contact contact = new Contact(firstName, lastName, address, city, state, zipCode, phoneNumber,
+                            email);
+                    boolean added = service.addContact(currentAddressBook, contact);
                     if (added) {
                         System.out.println("Contact Added Successfully!");
                     } else {
@@ -100,7 +106,8 @@ public class AddressBookMain {
                     String newPhone = sc.nextLine();
                     System.out.print("Enter New Email: ");
                     String newEmail = sc.nextLine();
-                    boolean edited = service.editContact(currentAddressBook, editName, newAddress, newCity, newState, newZip, newPhone,newEmail);
+                    boolean edited = service.editContact(currentAddressBook, editName, newAddress, newCity, newState,
+                            newZip, newPhone, newEmail);
                     if (edited) {
                         System.out.println("Contact Updated Successfully!");
                         System.out.println("--------------------------------------------");
@@ -142,18 +149,50 @@ public class AddressBookMain {
                     }
                     break;
                 case 7:
+                    System.out.print("Enter City to Search: ");
+                    String searchCity = sc.nextLine();
+
+                    ArrayList<Contact> cityResult = service.searchPersonByCity(searchCity);
+
+                    if (cityResult.size() > 0) {
+                        System.out.println("\nPersons Found in City: " + searchCity);
+                        for (Contact c : cityResult) {
+                            System.out.println(c);
+                        }
+                    } else {
+                        System.out.println("No person found in this city!");
+                    }
+                    break;
+
+                case 8:
+                    System.out.print("Enter State to Search: ");
+                    String searchState = sc.nextLine();
+
+                    ArrayList<Contact> stateResult = service.searchPersonByState(searchState);
+
+                    if (stateResult.size() > 0) {
+                        System.out.println("\nPersons Found in State: " + searchState);
+                        for (Contact c : stateResult) {
+                            System.out.println(c);
+                        }
+                    } else {
+                        System.out.println("No person found in this state!");
+                    }
+                    break;
+
+                case 9:
                     System.out.println("Exiting Program...");
                     System.out.println("--------------------------------------------");
                     break;
                 default:
                     System.out.println("Invalid choice!");
             }
-            if (choice != 7) {
+            if (choice != 9) {
                 System.out.print("\nPress Enter to continue...");
                 sc.nextLine();
             }
 
-        } while (choice != 7);
+        } while (choice != 9);
         System.out.println("Thank you for using Address Book!");
         System.out.println("--------------------------------------------");
     }

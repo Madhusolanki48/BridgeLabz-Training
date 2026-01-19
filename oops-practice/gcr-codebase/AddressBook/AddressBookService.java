@@ -29,4 +29,12 @@ public class AddressBookService {
     public boolean deleteContact(String addressBookName, String firstName) {
         return addressBook.deleteContact(addressBookName, firstName);
     }
+    // UC-8: Search Person by City across multiple Address Books
+    public ArrayList<Contact> searchPersonByCity(String city) {
+        return addressBook.searchPersonByCity(city);
+    }
+    // UC-8: Search Person by State across multiple Address Books
+    public ArrayList<Contact> searchPersonByState(String state) {
+	    return addressBook.searchPersonByState(state);
+    }
 }
