@@ -387,6 +387,27 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ◆ [*Search Insert Position*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/SearchInsertPosition.java)<br>
 ◆ [*Check If N and Its Double Exist*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/CheckIfNAndItsDoubleExist.java)<br>
 
+--- 
+## WEEK 5
+
+**Day 26 — 19-01-2026**
+
+### Focus Area — AddressBook (Use Cases) & LeetCode (Binary Search)
+
+- Updated **`AddressBook`** in `gcr-codebase` under `oops-practice` and completed:<br>
+➤ **UC-3:** Add multiple contacts.<br>
+➤ **UC-4:** Edit contact.<br>
+➤ **UC-5:** Multiple Address Books (unique name).<br>
+➤ **UC-6:** Prevent duplicates.<br>
+➤ **UC-7:** Override `equals()` for duplicate validation.<br>
+➤ **UC-8:** Search by City/State.<br>
+➤ **UC-9:** View by City/State.<br>
+➤ [*AddressBook Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/AddressBook)  
+
+- Solved **2 Binary-Search LeetCode problems** -practicing efficient searching and boundary handling:<br>
+◆ [*Sqrt(x)*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/SqrtX.java)<br>
+◆ [*Guess Number Higher or Lower*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/GuessNumberHigherOrLower.java) 
+
 
 
 
