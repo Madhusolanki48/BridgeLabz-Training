@@ -21,7 +21,9 @@ public class AddressBookMain {
             System.out.println("6. Display Contacts");
             System.out.println("7. Search Person by City");
             System.out.println("8. Search Person by State");
-            System.out.println("9. Exit");
+            System.out.println("9. View Persons by City");
+            System.out.println("10. View Persons by State");
+            System.out.println("11. Exit");
 
             System.out.print("Enter your choice: ");
 
@@ -179,20 +181,52 @@ public class AddressBookMain {
                         System.out.println("No person found in this state!");
                     }
                     break;
-
                 case 9:
+                    HashMap<String, ArrayList<Contact>> cityMap = service.viewPersonsByCity();
+
+                    if (cityMap.size() == 0) {
+                        System.out.println("No person found!");
+                        break;
+                    }
+
+                    System.out.println("\n------ Persons Grouped By City ------");
+                    for (String cityName : cityMap.keySet()) {
+                        System.out.println("\nCity: " + cityName);
+                        for (Contact c : cityMap.get(cityName)) {
+                            System.out.println(c);
+                        }
+                    }
+                    break;
+                case 10:
+                    HashMap<String, ArrayList<Contact>> stateMap = service.viewPersonsByState();
+
+                    if (stateMap.size() == 0) {
+                        System.out.println("No person found!");
+                        break;
+                    }
+
+                    System.out.println("\n------ Persons Grouped By State ------");
+                    for (String stateName : stateMap.keySet()) {
+                        System.out.println("\nState: " + stateName);
+                        for (Contact c : stateMap.get(stateName)) {
+                            System.out.println(c);
+                        }
+                    }
+                    break;
+
+                case 11:
                     System.out.println("Exiting Program...");
                     System.out.println("--------------------------------------------");
                     break;
                 default:
                     System.out.println("Invalid choice!");
             }
-            if (choice != 9) {
+            if (choice !=11) {
                 System.out.print("\nPress Enter to continue...");
                 sc.nextLine();
             }
 
-        } while (choice != 9);
+        } while (choice != 11);
         System.out.println("Thank you for using Address Book!");
         System.out.println("--------------------------------------------");
     }
