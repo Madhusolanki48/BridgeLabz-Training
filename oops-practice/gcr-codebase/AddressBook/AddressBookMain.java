@@ -9,7 +9,7 @@ public class AddressBookMain {
         Scanner sc = new Scanner(System.in);
         AddressBookService service = new AddressBookService();
         String currentAddressBook = null;
-        int choice;
+        int choice = 0;
         do {
             System.out.println("\n---------- Address Book Home Page ----------");
             System.out.println("Current AddressBook: " + (currentAddressBook == null ? "None" : currentAddressBook));
@@ -23,15 +23,19 @@ public class AddressBookMain {
             System.out.println("8. Search Person by State");
             System.out.println("9. View Persons by City");
             System.out.println("10. View Persons by State");
-            System.out.println("11. Exit");
+            System.out.println("11. Count Persons by City");
+            System.out.println("12. Count Persons by State");
+            System.out.println("13. Exit");
 
             System.out.print("Enter your choice: ");
-
+            if (!sc.hasNextInt()) {
+                System.out.println("Invalid input! Please enter a number (1-13).");
+                sc.nextLine();
+                continue;
+            }
             choice = sc.nextInt();
             sc.nextLine();
-
             switch (choice) {
-
                 // UC-6: Multiple Address Books System
                 case 1:
                     System.out.print("Enter Address Book Name: ");
@@ -42,9 +46,16 @@ public class AddressBookMain {
                     } else {
                         System.out.println("Address Book already exists!");
                     }
+                    System.out.println("--------------------------------------------");
                     break;
 
                 case 2:
+                    Set<String> books = service.getAllAddressBookNames();
+                    if (books.size() == 0) {
+                        System.out.println("No Address Book available! Create one first.");
+                        System.out.println("--------------------------------------------");
+                        break;
+                    }
                     System.out.println("Available Address Books: " + service.getAllAddressBookNames());
                     System.out.print("Enter Address Book Name to Select: ");
                     String selectBook = sc.nextLine();
@@ -54,11 +65,13 @@ public class AddressBookMain {
                     } else {
                         System.out.println("Address Book not found!");
                     }
+                    System.out.println("--------------------------------------------");
                     break;
 
                 case 3:
                     if (currentAddressBook == null) {
                         System.out.println("Please select an Address Book first!");
+                        System.out.println("--------------------------------------------");
                         break;
                     }
                     System.out.print("Enter First Name: ");
@@ -92,6 +105,7 @@ public class AddressBookMain {
                 case 4:
                     if (currentAddressBook == null) {
                         System.out.println("Please select an Address Book first!");
+                        System.out.println("--------------------------------------------");
                         break;
                     }
                     System.out.print("Enter First Name to Edit: ");
@@ -112,30 +126,39 @@ public class AddressBookMain {
                             newZip, newPhone, newEmail);
                     if (edited) {
                         System.out.println("Contact Updated Successfully!");
-                        System.out.println("--------------------------------------------");
                     } else {
                         System.out.println("Name not found!");
                     }
+                    System.out.println("--------------------------------------------");
                     break;
 
                 case 5:
                     if (currentAddressBook == null) {
                         System.out.println("Please select an Address Book first!");
+                        System.out.println("--------------------------------------------");
                         break;
                     }
                     System.out.print("Enter First Name to Delete: ");
                     String deleteName = sc.nextLine();
-                    boolean deleted = service.deleteContact(currentAddressBook, deleteName);
-                    if (deleted) {
-                        System.out.println("Contact Deleted Successfully!");
-                        System.out.println("--------------------------------------------");
+                    System.out.print("Are you sure you want to delete this contact? (Y/N): ");
+                    char confirm = sc.nextLine().charAt(0);
+
+                    if (confirm == 'Y' || confirm == 'y') {
+                        boolean deleted = service.deleteContact(currentAddressBook, deleteName);
+                        if (deleted) {
+                            System.out.println("Contact Deleted Successfully!");
+                        } else {
+                            System.out.println("Name not found!");
+                        }
                     } else {
-                        System.out.println("Name not found!");
+                        System.out.println("Delete cancelled!");
                     }
+                    System.out.println("--------------------------------------------");
                     break;
                 case 6:
                     if (currentAddressBook == null) {
                         System.out.println("Please select an Address Book first!");
+                        System.out.println("--------------------------------------------");
                         break;
                     }
                     System.out.println("Contacts in Address Book: " + currentAddressBook);
@@ -155,6 +178,7 @@ public class AddressBookMain {
                     String searchCity = sc.nextLine();
 
                     ArrayList<Contact> cityResult = service.searchPersonByCity(searchCity);
+                    System.out.println("\n------ Search Result By City: " + searchCity + " ------");
 
                     if (cityResult.size() > 0) {
                         System.out.println("\nPersons Found in City: " + searchCity);
@@ -171,6 +195,7 @@ public class AddressBookMain {
                     String searchState = sc.nextLine();
 
                     ArrayList<Contact> stateResult = service.searchPersonByState(searchState);
+                    System.out.println("\n------ Search Result By State: " + searchState + " ------");
 
                     if (stateResult.size() > 0) {
                         System.out.println("\nPersons Found in State: " + searchState);
@@ -186,6 +211,7 @@ public class AddressBookMain {
 
                     if (cityMap.size() == 0) {
                         System.out.println("No person found!");
+                        System.out.println("--------------------------------------------");
                         break;
                     }
 
@@ -202,6 +228,7 @@ public class AddressBookMain {
 
                     if (stateMap.size() == 0) {
                         System.out.println("No person found!");
+                        System.out.println("--------------------------------------------");
                         break;
                     }
 
@@ -213,20 +240,52 @@ public class AddressBookMain {
                         }
                     }
                     break;
-
                 case 11:
+                    HashMap<String, Integer> cityCount = service.countByCity();
+
+                    if (cityCount.size() == 0) {
+                        System.out.println("No person found!");
+                        System.out.println("--------------------------------------------");
+                        break;
+                    }
+
+                    System.out.println("\n------ Count of Persons By City ------");
+                    for (String cityName : cityCount.keySet()) {
+                        System.out.println(cityName + " : " + cityCount.get(cityName));
+                    }
+                    System.out.println("--------------------------------------------");
+                    break;
+
+                case 12:
+                    HashMap<String, Integer> stateCount = service.countByState();
+
+                    if (stateCount.size() == 0) {
+                        System.out.println("No person found!");
+                        System.out.println("--------------------------------------------");
+                        break;
+                    }
+
+                    System.out.println("\n------ Count of Persons By State ------");
+                    for (String stateName : stateCount.keySet()) {
+                        System.out.println(stateName + " : " + stateCount.get(stateName));
+                    }
+                    System.out.println("--------------------------------------------");
+                    break;
+
+                case 13:
                     System.out.println("Exiting Program...");
                     System.out.println("--------------------------------------------");
                     break;
                 default:
-                    System.out.println("Invalid choice!");
+                    System.out.println("Invalid choice! Please enter number between 1 and 13.");
+                    System.out.println("--------------------------------------------");
             }
-            if (choice !=11) {
+            if (choice != 13) {
                 System.out.print("\nPress Enter to continue...");
                 sc.nextLine();
             }
 
-        } while (choice != 11);
+        } while (choice != 13);
         System.out.println("Thank you for using Address Book!");
         System.out.println("--------------------------------------------");
     }

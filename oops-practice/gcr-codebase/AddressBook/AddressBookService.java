@@ -54,4 +54,14 @@ public class AddressBookService {
         return addressBook.viewPersonsByState();
     }
 
+    // UC-10: Count Persons by City
+    public HashMap<String, Integer> countByCity() {
+        return addressBook.countByCity();
+    }
+
+    // UC-10: Count Persons by State
+    public HashMap<String, Integer> countByState() {
+        return addressBook.countByState();
+    }
+
 }

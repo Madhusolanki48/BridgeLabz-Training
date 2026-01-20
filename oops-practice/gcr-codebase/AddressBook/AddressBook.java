@@ -149,4 +149,24 @@ public class AddressBook {
 		return stateMap;
 	}
 
+	// UC-10: Count Persons by City
+	public HashMap<String, Integer> countByCity() {
+		HashMap<String, Integer> cityCountMap = new HashMap<String, Integer>();
+
+		for (String city : cityMap.keySet()) {
+			cityCountMap.put(city, cityMap.get(city).size());
+		}
+		return cityCountMap;
+	}
+
+	// UC-10: Count Persons by State
+	public HashMap<String, Integer> countByState() {
+		HashMap<String, Integer> stateCountMap = new HashMap<String, Integer>();
+
+		for (String state : stateMap.keySet()) {
+			stateCountMap.put(state, stateMap.get(state).size());
+		}
+		return stateCountMap;
+	}
+
 }
