@@ -390,7 +390,7 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 --- 
 ## WEEK 5
 
-**Day 26 — 19-01-2026**
+**Day 27 — 19-01-2026**
 
 ### Focus Area — AddressBook (Use Cases) & LeetCode (Binary Search)
 
@@ -407,6 +407,35 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 - Solved **2 Binary-Search LeetCode problems** -practicing efficient searching and boundary handling:<br>
 ◆ [*Sqrt(x)*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/SqrtX.java)<br>
 ◆ [*Guess Number Higher or Lower*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/GuessNumberHigherOrLower.java) 
+
+---
+**Day 28 — 20-01-2026**
+
+### Focus Area — AddressBook (UC-10), Scenario-Based DSA/OOP, Performance Analysis & LeetCode
+
+- Updated **`AddressBook`** in `oops-practice` and completed :<br>
+➤ **UC-10:** Count contacts by City and by State.<br>
+➤ [*AddressBook Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/AddressBook) 
+
+- Worked on **Performance Analysis Programs** & **Big-O Notation** in `algorithm_runtimeanalysis` under `dsa-practice` :<br>
+➤ [*algorithm_runtimeanalysis Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/algorithm_runtimeanalysis) 
+
+- Completed **6 scenario-based DSA problems** in `scenario-based` under`dsa-practice`:<br>
+➤ *[TrafficManager – Roundabout Vehicle Flow](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/TrafficManager)*<br>
+➤ *[BookShelf – Library Organizer](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/BookShelf)*<br>
+➤ *[BrowserBuddy – Tab History Manager](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/BrowserBuddy)*<br>
+➤ *[ParcelTracker – Delivery Chain Management](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ParcelTracker)*<br>
+➤ *[ExamProctor – Online Exam Review System](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/ExamProctor)*<br>
+➤ *[CinemaTime – Movie Schedule Manager](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/CinemaTime)*<br>
+
+- Completed **2 OOP scenario-based problems** in `scenario-based` under `oops-practice`:<br>
+➤ *[Banking Account Hierarchy](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/BankingAccountHierarchy)* (abstract class + polymorphic fee calculation)<br>
+➤ [*Employee Role Polymorphism*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/EmployeeRole) (role-based bonus logic with immutability)<br>
+
+- Solved **2 Stack-based LeetCode** problems : <br>
+◆ [*Backspace String Compare*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/BackspaceStringCompare.java)<br>
+◆ [*Remove Outermost Parentheses*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/RemoveOutermostParentheses.java) 
+
 
 
 
