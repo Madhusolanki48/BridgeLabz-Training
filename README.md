@@ -47,7 +47,35 @@ BridgeLabz-Training/
 |
 ├── dsa-practice/
 │   ├── gcr-codebase/
-|           ├── linkedlist/
+|   |      ├── algorithm_runtimeanalysis/
+|   |      ├── file_reader/
+|   |      ├── hashmaps/
+|   |      ├── input_stream_reader/
+|   |      ├── linear_binary_search/
+|   |      ├── linkedlist/
+|   |      ├── sorting-algorithms/
+|   |      ├── stack-queue/
+|   |      ├── stringbuilder_stringbuffer/
+|   |
+|   |
+|   ├── leetcode-code-codebase/          # Daily DSA practice
+│   └── scenario-based/                  # Scenario-based & real-world logic problems|
+|          ├── BookShelf – Library Organizer/
+|          ├── BrowserBuddy – Tab History Manager/
+|          ├── CinemaTime – Movie Schedule Manager/
+|          ├── ExamProctor – Online Exam Review System/
+|          ├── ParcelTracker – Delivery Chain Management/
+|          ├── TrafficManager – Roundabout Vehicle Flow/
+|                 
+|
+├── collections-practice/
+│   ├── gcr-codebase/
+|   |      ├── generics/
+|   |
+|   |
+|   ├── leetcode-code-codebase/          # Daily DSA practice
+│   └── scenario-based/                  # Scenario-based & real-world logic problems
+|
 |     
 ├── reviews/                     # for reviews done in the classroom
 └── README.md
@@ -435,6 +463,24 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 - Solved **2 Stack-based LeetCode** problems : <br>
 ◆ [*Backspace String Compare*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/BackspaceStringCompare.java)<br>
 ◆ [*Remove Outermost Parentheses*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leet-code-codebase/RemoveOutermostParentheses.java) 
+
+---
+**Day 29 — 21-01-2026**
+
+### Focus Area — Java Generics Practice & LeetCode (HashSet)
+
+- Created a new branch `collections-practice` and completed **5 Java Generics programs** in `generics` under `gcr-codebase` :
+- practicing generic classes/methods, bounded type parameters, and wildcards:<br>
+➤ [*Smart Warehouse Management System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/generics/SmartWarehouseManagementSystem)<br>
+➤ [*Dynamic Online Marketplace*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/generics/DynamicOnlineMarketplace)<br>
+➤ [*Multi-Level University Course Management System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/generics/CourseManagementSystem)<br>
+➤ [*Personalized Meal Plan Generator*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/generics/PersonalizedMealPlanGenerator)<br>
+➤ [*AI-Driven Resume Screening System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/generics/AIDrivenResumeScreeningSystem)<br>
+
+- Solved **2 LeetCode problems** collection-based Array problems:<br>
+◆ [*Contains Duplicate*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/ContainsDuplicate.java)<br>
+◆ [*Intersection of Two Arrays*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/IntersectionOfTwoArrays.java)
+
 
 
 
