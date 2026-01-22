@@ -71,6 +71,7 @@ BridgeLabz-Training/
 ├── collections-practice/
 │   ├── gcr-codebase/
 |   |      ├── generics/
+|   |      ├── collections/
 |   |
 |   |
 |   ├── leetcode-code-codebase/          # Daily DSA practice
@@ -480,6 +481,23 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 - Solved **2 LeetCode problems** collection-based Array problems:<br>
 ◆ [*Contains Duplicate*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/ContainsDuplicate.java)<br>
 ◆ [*Intersection of Two Arrays*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/IntersectionOfTwoArrays.java)
+
+---
+
+**Day 30 — 22-01-2026**
+
+### Focus Area — Collections Framework Practice & LeetCode (HashMap)
+
+- Practiced **Collections Framework** problems in`collections` inside `gcr-codebase` under `collections-practice` using : <br>
+➤ [*List Interface*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/collections/list_interface)<br>
+➤ [*Set Interface*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/collections/set_interface)<br>
+➤ [*Queue Interface*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/collections/queue_interface)<br>
+➤ [*Map Interface*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/collections/map_interface)
+
+- Solved **2 LeetCode problems** of Java Collections using HashMap:<br>
+◆ [*Two Sum*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/TwoSum.java)<br>
+◆ [*Valid Anagram*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/ValidAnagram.java)
+
 
 
 
