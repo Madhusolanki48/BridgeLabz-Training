@@ -498,6 +498,19 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ◆ [*Two Sum*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/TwoSum.java)<br>
 ◆ [*Valid Anagram*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/ValidAnagram.java)
 
+---
+**Day 31 — 23-01-2026**
+
+### Focus Area — Scenario-Based Collections (Set/Map) & LeetCode (HashMap)
+
+- Completed **2 scenario-based programs** of **Collections** in `scenario-based` under `collections-practice` implementing : <br>
+➤ [*Insurance Policy Management System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/InsurancePolicyManagementSystem) (Set): Managed unique policies using HashSet, LinkedHashSet, TreeSet with retrieval and performance comparison.<br>
+➤ [*Insurance Policy Management System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/InsurancePolicyManagementUsingMap) (Map): Managed policies using HashMap, LinkedHashMap, TreeMap with retrieval, expiry filtering, and expired removal.  
+- Solved **2 LeetCode problems** practicing **HashMap** frequency counting and two-way character mapping :<br>
+◆ [*First Unique Character*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/FirstUniqueCharacter.java)<br>
+◆ [*Isomorphic Strings*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/IsomorphicStringsUsingHashmap.java)
+
+
 
 
 
