@@ -1,0 +1,6 @@
+System started successfully
+Connection established
+ERROR: Database connection failed
+User logged in
+error: null pointer exception occurred
+Process completed
