@@ -511,6 +511,38 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ◆ [*Isomorphic Strings*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/IsomorphicStringsUsingHashmap.java)
 
 
+--- 
+**Additional Practice — (26-01-26)**<br>
+- Practiced **Java Streams & I/O** in `java_streams` under `collections-practice` : <br>
+➤ Implemented file operations using different I/O streams<br>
+➤ Applied buffering, serialization, and inter-thread communication<br>
+➤ Handled exceptions and large-file processing<br>
+➤ [*java_streams Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java_streams)
+
+
+---
+**Day 32 — 27-01-2026**
+
+### Focus Area — Exception Handling, Core Java Scenario & LeetCode
+
+- Practiced **Java Exception Handling** in `exceptions` in `gcr-codebase` under `collections-practice` :<br>
+➤ Used checked, unchecked, and custom exceptions<br>
+➤ Implemented try–catch, multiple catch, finally, and try-with-resources<br>
+➤ Demonstrated exception propagation and custom exception usage<br>
+➤ [*exceptions Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/exceptions)<br>
+
+- Implemented **LexicalTwist** `scenario-based` Java program in `core-java-practice` :<br>
+➤ Added input validation and reverse-word check<br>
+➤ Performed vowel/consonant analysis with conditional output<br>
+➤ [*LexicalTwist Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/LexicalTwist.java)<br>
+
+- Solved **2 LeetCode problems** using HashSet & HashMap:<br>
+◆ [*Find the Difference of Two Arrays*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/FindDifferenceOfTwoArrays.java)<br>
+◆ [*Uncommon Words from Two Sentences*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/UncommonWordsFromTwoSentences.java)
+
+
+
+
 
 
 
