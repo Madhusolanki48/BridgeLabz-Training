@@ -540,6 +540,26 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ◆ [*Find the Difference of Two Arrays*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/FindDifferenceOfTwoArrays.java)<br>
 ◆ [*Uncommon Words from Two Sentences*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/UncommonWordsFromTwoSentences.java)
 
+---
+**Day 33 — 28-01-2026**
+
+### Focus Area — Core Java String Logic, Collections Scenarios & LeetCode
+
+- Implemented **FlipKey Logical Problem** in `scenario-based` under `core-java-practice` using String Manipulation:<br>
+➤ Validated input length and characters<br>
+➤ Filtered out characters with even ASCII values<br>
+➤ Reversed the remaining string<br>
+➤ Converted characters at even positions to uppercase<br>
+➤ [*FlipKeyLogicalProblem Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/core-java-practice/core-java-practice/scenario-based/FlipKeyLogicalProblem.java)
+
+- Completed **2 scenario-based programs** in `collections-practice`:<br>
+➤ [*Restaurant Table Reservation System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/RestaurantTableReservationSystem) — table booking using Map/List with time-slot validation and exception handling<br>
+➤ [*File Backup Scheduler*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/FileBackupScheduler) — priority-based backup execution using PriorityQueue and Comparable<br>
+
+- Solved **2 LeetCode problems** using HashMap & HashSet:<br>
+◆ [*Equal Character Occurrences*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/EqualCharacterOccurrences.java)<br>
+◆ [*Unique Morse Code Words*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/UniqueMorseCodeWords.java)<br>
+
 
 
 
