@@ -560,6 +560,22 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ◆ [*Equal Character Occurrences*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/EqualCharacterOccurrences.java)<br>
 ◆ [*Unique Morse Code Words*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/UniqueMorseCodeWords.java)<br>
 
+---
+**Day 34 — 29-01-2026**
+
+### Focus Area — Regular Expressions (Java) & Leetcode (Hashmap)
+
+- Implemented **15 Java programs** using **Regular Expressions** in `regex` under `collections-practice` :<br>
+➤ Covered input validation (username, IP, SSN, credit card, etc.)<br>
+➤ Performed data extraction (emails, dates, URLs, currencies, words)<br>
+➤ Applied string modification (space normalization, word censoring)<br>
+➤ Used `java.util.regex.Pattern` and `Matcher` with clean output<br>
+➤ [*regex Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/regex)
+
+- Solved **1 Leetcode Program** of HashMap used HashMap frequency counting with digit-sum logic :<br> 
+◆ [*Maximum Number Of Balls In A Box*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/MaximumNumberOfBallsInABox.java)
+
+
 
 
 
