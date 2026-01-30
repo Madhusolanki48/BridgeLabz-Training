@@ -575,6 +575,26 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 - Solved **1 Leetcode Program** of HashMap used HashMap frequency counting with digit-sum logic :<br> 
 ◆ [*Maximum Number Of Balls In A Box*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/MaximumNumberOfBallsInABox.java)
 
+---
+**Day 35 — 30-01-2026**
+
+### Focus Area — OOP Scenario & LeetCode (Design)
+
+- Implemented **FutureLogistics** in `scenario-based` under `oops-practice` :<br>
+➤ Java-based logistics billing system<br>
+➤ OOP with abstraction & inheritance<br>
+➤ Brick & Timber transport handling<br>
+➤ Vehicle-based charge calculation<br>
+➤ Transport ID validation & billing output<br>
+➤ [*FutureLogistics Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/scenario-based/FutureLogistics)
+
+
+- Solved **2 LeetCode problems** in `collections-practice`, practiced OOP design using Collections : <br>
+◆ [*Design HashSet*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/DesignHashSet.java)<br>
+◆ [*Design HashMap*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/DesignHashMap.java)<br>
+
+
+
 
 
 
