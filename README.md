@@ -593,6 +593,23 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ◆ [*Design HashSet*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/DesignHashSet.java)<br>
 ◆ [*Design HashMap*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/DesignHashMap.java)<br>
 
+---
+**Additional Practice — (31-01-26)**<br>
+### Focus Area — JUnit & Maven
+
+- Implemented a **JUnit + Maven project** in `j_unit` under `collections-practice` :<br>
+➤ Created clean **main vs test** file separation using **JUnit 5**<br>
+➤ Tested **exceptions, lifecycle hooks, parameterized tests, and timeouts**<br>
+➤ Verified **file handling** for success and failure scenarios<br>
+➤ Implemented **business logic testing** (banking, password, user registration)<br>
+➤ Covered **valid, invalid, and edge cases** for reliable code<br>
+➤ [*j_unit Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/j_unit)
+
+- Solved **2 LeetCode problems** using Collections :<br>
+◆ [*Maximum Product of Two Elements*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/MaximumProductOfTwoElements.java) — single-pass max tracking<br>
+◆ [*Two Out of Three*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/TwoOutOfThree.java) — HashSet-based set comparison across arrays<br>
+
+
 
 
 
