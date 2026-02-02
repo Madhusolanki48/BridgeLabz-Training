@@ -609,6 +609,20 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ◆ [*Maximum Product of Two Elements*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/MaximumProductOfTwoElements.java) — single-pass max tracking<br>
 ◆ [*Two Out of Three*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/TwoOutOfThree.java) — HashSet-based set comparison across arrays<br>
 
+---
+**Day 36 — 02-02-2026**
+
+### Focus Area — CSV Data Handling
+
+- Practiced **CSV data handling** in `csv_data_handling` :<br>
+➤ Read/write, search, filter, update, and sort CSV records<br>
+➤ Applied **regex validation**, duplicate detection, and object mapping<br>
+➤ Handled **large-file processing**, CSV merge, and report generation<br>
+➤ Implemented **JSON <-> CSV conversion** and **encryption/decryption** of fields<br>
+➤ [*csv_data_handling Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/csv_data_handling)
+
+
+
 
 
 
