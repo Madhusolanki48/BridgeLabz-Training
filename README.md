@@ -621,6 +621,42 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ➤ Implemented **JSON <-> CSV conversion** and **encryption/decryption** of fields<br>
 ➤ [*csv_data_handling Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/csv_data_handling)
 
+---
+**Day 37 — 03-02-2026**
+
+### Focus Area — Reflection, Annotations, Scenario-Based Systems & LeetCode
+
+- Learned **Java Reflection** from basic to advanced level in `reflections` under `collections-practice` :<br>
+➤ Inspect classes, fields, methods, and constructors<br>
+➤ Access private members and static fields<br>
+➤ Invoke methods and create objects dynamically<br>
+➤ Work with annotations at runtime<br>
+➤ Build advanced features like proxies, DI, and object mapping<br>
+➤ [*reflection Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/reflection)
+
+- Practiced **Java Annotations** in `annotation` under `collections-practice` :<br>
+➤ Practice built-in and custom Java annotations<br>
+➤ Use Reflection to read annotations at runtime<br>
+➤ Apply annotations for validation, logging, and control<br>
+➤ Implement advanced use cases like access control and caching<br>
+➤ [*annotation Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/annotation)
+
+- Implemented **StreamBuzz** in `scenario-based` under `collections-practice` :<br>
+➤ Manages creator engagement by storing weekly likes for 4 weeks<br>
+➤ Identifies top-performing creators based on a like threshold<br>
+➤ Calculates overall average weekly likes across all creators<br>
+➤ [*StreamBuzz Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/StreamBuzz)
+
+- Implemented **Factory Robot Hazard Analyzer** in `scenario-based` under `dsa-practice` :<br>
+➤ Calculates factory robot hazard risk score<br>
+➤ Validates inputs using a custom exception<br>
+➤ Applies a fixed risk formula with state factors<br>
+➤ [*FactoryRobotHazardAnalyzer Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/FactoryRobotHazardAnalyzer)
+
+- Solved a **LeetCode problem**of Collections using HashMap-based frequency counting :<br>
+◆ [*Maximum Number of Balloons*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/MaximumNumberOfBalloons.java)
+
+
 
 
 
