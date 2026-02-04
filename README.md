@@ -72,10 +72,34 @@ BridgeLabz-Training/
 │   ├── gcr-codebase/
 |   |      ├── generics/
 |   |      ├── collections/
+|   |      ├── exceptions/
+|   |      ├── java_streams/
+|   |      ├── regex/
+|   |      ├── j_unit/
+|   |      ├── annotation/
+|   |      ├── reflection/
 |   |
 |   |
 |   ├── leetcode-code-codebase/          # Daily DSA practice
 │   └── scenario-based/                  # Scenario-based & real-world logic problems
+|
+|
+├── io-programming-practice/
+│   ├── gcr-codebase/
+|   |      ├── csv_file_handling/
+|   |      ├── json/
+|
+|
+|
+|
+|
+├── java8-features-practice/
+│   ├── gcr-codebase/
+|   |      ├── lambda_expression/
+|   |      ├── 
+|
+|
+|
 |
 |     
 ├── reviews/                     # for reviews done in the classroom
@@ -655,6 +679,28 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 
 - Solved a **LeetCode problem**of Collections using HashMap-based frequency counting :<br>
 ◆ [*Maximum Number of Balloons*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/MaximumNumberOfBalloons.java)
+
+---
+**Day 38 — 04-02-2026**
+
+### Focus Area — JSON Processing & Java 8 Features
+
+- Practiced **JSON** in `json` in `gcr-codebase` under `io-programming-practice` :<br>
+➤ JSON creation, parsing, and validation<br>
+➤ Java object <-> JSON conversion<br>
+➤ JSON data filtering and extraction<br>
+➤ CSV <-> JSON conversion<br>
+➤ IPL data processing (JSON & CSV)<br>
+➤ Team masking and player redaction with censored output<br>
+➤ [*json Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/io-programming-practice/io-programming-practice/gcr-codebase/json)
+
+- Created a new branch **`java8-features-practice`** and practiced **Java 8 features** in `lambda_expression` under `gcr-codebase` :<br>
+➤ Practiced Lambda Expressions<br>
+➤ Implemented sorting logic dynamically<br>
+➤ Applied filtering using functional interfaces<br>
+➤ Used Streams API<br>
+➤ Practiced Method References<br>
+➤ [*lambda_expression Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/gcr-codebase/lambda_expression)
 
 
 
