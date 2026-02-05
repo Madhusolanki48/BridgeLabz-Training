@@ -694,6 +694,11 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ➤ Team masking and player redaction with censored output<br>
 ➤ [*json Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/io-programming-practice/io-programming-practice/gcr-codebase/json)
 
+- Implemented **AeroVigil** problem in `scenario-based` under `dsa-practice` :<br>
+➤ Validates flight details (number, name, passengers) using custom exceptions<br>
+➤ Calculates required fuel only when all checks pass<br>
+➤ [*AeroVigil Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/AeroVigil)
+
 - Created a new branch **`java8-features-practice`** and practiced **Java 8 features** in `lambda_expression` under `gcr-codebase` :<br>
 ➤ Practiced Lambda Expressions<br>
 ➤ Implemented sorting logic dynamically<br>
@@ -701,6 +706,25 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ➤ Used Streams API<br>
 ➤ Practiced Method References<br>
 ➤ [*lambda_expression Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/gcr-codebase/lambda_expression)
+
+---
+**Day 39 — 05-02-2026**
+
+### Focus Area — Java 8 Stream Collectors & LeetCode (Streams)
+
+- Practiced **Java Stream Collectors** using lambda expressions and method references in `collectors` under `java8-features-practice`:<br>
+➤ [*Student Result Grouping*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/gcr-codebase/collectors/StudentResultGrouping.java)<br>
+➤ [*Word Frequency Counter*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/gcr-codebase/collectors/WordFrequencyCounter.java)<br>
+➤ [*Order Revenue Summary*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/gcr-codebase/collectors/OrderRevenueSummary.java)<br>
+➤ [*Employee Salary Categorization*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/gcr-codebase/collectors/EmployeeSalaryCategorization.java)<br>
+➤ [*Library Book Statistics*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/gcr-codebase/collectors/LibraryBookStatistics.java)
+
+
+
+- Solved **2 LeetCode problems** using Java 8 Streams:<br>
+◆ [*Contains Duplicate Using Streams*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/leet-code-codebase/ContainsDuplicateUsingStreams.java) — used `distinct`, `filter`, and set-based collection<br>
+◆ [*Intersection of Two Arrays Using Streams*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/leet-code-codebase/IntersectionOfTwoArraysUsingStreams.java) — applied stream filtering and collection logic<br>
+
 
 
 
