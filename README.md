@@ -724,7 +724,28 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 - Solved **2 LeetCode problems** using Java 8 Streams:<br>
 ◆ [*Contains Duplicate Using Streams*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/leet-code-codebase/ContainsDuplicateUsingStreams.java) — used `distinct`, `filter`, and set-based collection<br>
 ◆ [*Intersection of Two Arrays Using Streams*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/leet-code-codebase/IntersectionOfTwoArraysUsingStreams.java) — applied stream filtering and collection logic<br>
+---
 
+**Day 40 — 06-02-2026**
+
+### Focus Area — Java 8 Functional Interfaces & Stream API
+
+- Practiced **Functional Interfaces** in `functional-interface` under `java8-features-practice` :<br>
+➤ Used interfaces for shared behavior.<br>
+➤ Applied functional interfaces for logic.<br>
+➤ Used Predicate, Function, Runnable.<br>
+➤ Centralized utilities via static methods.<br>
+➤ Added features using default methods.<br>
+➤ Used marker interfaces for special handling.<br>
+➤ [*functional_interface Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/gcr-codebase/functional_interface)
+
+
+- Practiced **Stream API programs** in `stream_api` under `java8-features-practice` :<br>
+➤ Implemented multiple Java programs using Stream API<br>
+➤ Applied `filter`, `map`, `sorted`, and `forEach` operations<br>
+➤ Performed grouping and average calculations on data<br>
+➤ Solved real-world scenarios using streams<br>
+➤ [*stream_api Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/gcr-codebase/stream_api)
 
 
 
