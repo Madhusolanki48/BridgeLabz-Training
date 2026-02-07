@@ -746,6 +746,20 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ➤ Performed grouping and average calculations on data<br>
 ➤ Solved real-world scenarios using streams<br>
 ➤ [*stream_api Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/gcr-codebase/stream_api)
+---
+
+**Day 41 — 07-02-2026**
+
+### Focus Area — Collections Scenario-Based System
+
+- Implemented **OceanFleet** in `scenario-based` under `collections-practice` :<br>
+➤ Developed a Java-based system to track and manage vessel performance<br>
+➤ Modeled vessel details using a dedicated `Vessel` class<br>
+➤ Implemented utility methods to add vessels and retrieve data by ID<br>
+➤ Identified and displayed vessels with the highest average speed<br>
+➤ [*OceanFleet Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/OceanFleet)
+
+
 
 
 
