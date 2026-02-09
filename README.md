@@ -759,6 +759,39 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ➤ Identified and displayed vessels with the highest average speed<br>
 ➤ [*OceanFleet Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/OceanFleet)
 
+---
+
+**Day 42 — 09-02-2026**
+
+### Focus Area — Multithreading, GoF Design Patterns & Collections Scenarios
+
+- Created a new branch `multithreading-practice` and practiced **Core Java Multithreading** in `multithreading`:<br>
+➤ Implemented core **Java multithreading** concepts<br>
+➤ Created threads using **Thread** and **Runnable**<br>
+➤ Demonstrated **concurrent execution**<br>
+➤ Explained **thread life cycle and states**<br>
+➤ Used essential thread methods (**start**, **sleep**)<br>
+➤[*multithreading Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/multithreading-practice/multithreading-practice/gcr-codebase/multithreading)
+
+
+- Created a new branch **`solution-designing-practice`** and implemented **GoF Design Patterns** in `design-pattern` :<br>
+➤ Implemented a centralized library catalog using **Singleton** pattern<br>
+➤ Created dynamic user roles using **Factory** pattern<br>
+➤ Enabled automatic notifications using **Observer** pattern<br>
+➤ Built flexible book objects using **Builder** pattern<br>
+➤ Demonstrated integrated system behavior using multiple GoF patterns<br>
+➤ [*design_pattern Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/solution-designing-practice/solution-designing-practice/gcr-codebase/design-pattern)
+
+- Implemented **2 real-world systems** in `collections-practice` using Java Collections & OOP :<br>
+➤ [*Online Classroom Attendance Tracker*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/sonarqube) :<br>
+➤ Maven-based Java project<br>
+➤ Code quality analyzed using **SonarQube**<br>
+➤ Clean structure with no duplicate or unused code<br>
+➤ [*Food Delivery Order Routing System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/FoodDeliveryOrderRoutingSystem) :<br>
+➤ FIFO order handling using **Queue**<br>
+➤ Agent assignment using **List** with exception handling<br>
+
+
 
 
 
