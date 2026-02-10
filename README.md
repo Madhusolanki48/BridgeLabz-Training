@@ -791,6 +791,20 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ➤ FIFO order handling using **Queue**<br>
 ➤ Agent assignment using **List** with exception handling<br>
 
+---
+**Day 43 — 10-02-2026**
+
+### Focus Area — JUnit Scenario-Based Testing
+
+- Implemented **JUnit test cases** for **Bank Account** in `scenario-based` under `collections-practice` :<br>
+➤ Created unit tests using **JUnit**<br>
+➤ Validated deposit functionality with valid and negative amounts<br>
+➤ Tested withdrawal logic for sufficient and insufficient balance<br>
+➤ Verified balance updates and exception handling<br>
+➤ [*bank_account_junit Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/bank_account_junit)
+
+
+
 
 
 
