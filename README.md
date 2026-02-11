@@ -803,6 +803,26 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ➤ Verified balance updates and exception handling<br>
 ➤ [*bank_account_junit Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/bank_account_junit)
 
+---
+**Day 44 — 11-02-2026**
+
+### Focus Area — Scenario-Based Collections & OOP
+- Implemented two problems in `scenario-based` under `collections-practice` :<br>
+- [*Employee Leave Management System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/EmployeeLeaveManagementSystem)<br>
+➤ Managed employee leave requests using OOP<br>
+➤ Stored employees using `Map<EmployeeID, Employee>`<br>
+➤ Tracked leave requests using `List<LeaveRequest>`<br>
+➤ Validated leave balance before approval<br>
+➤ Used custom exception for insufficient balance<br>
+➤ Supported leave approval and rejection via methods<br>
+
+- [*Music Playlist Manager*](http://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/MusicPlaylistManager)<br>
+➤ Managed playlists using OOP principles<br>
+➤ Maintained playlist order using `LinkedList<Song>`<br>
+➤ Tracked recently played songs using `Stack<Song>`<br>
+➤ Prevented duplicate songs using `Set<Song>`<br>
+➤ Used custom exception for duplicate song handling<br>
+
 
 
 
