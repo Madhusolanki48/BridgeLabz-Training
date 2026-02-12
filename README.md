@@ -823,6 +823,27 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ➤ Prevented duplicate songs using `Set<Song>`<br>
 ➤ Used custom exception for duplicate song handling<br>
 
+---
+**Day 45 — 12-02-2026**
+
+### Focus Area — Scenario-Based Collections & OOP
+- Implemented two problems in `scenario-based` under `collections-practice` :<br>
+- [*Smart Parking Slot Allocation System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/SmartParkingSystem): <br>
+➤ Managed parking slots dynamically using OOP<br>
+➤ Stored slots using `Map<Integer, ParkingSlot>`<br>
+➤ Maintained waiting vehicles using `Queue<Vehicle>`<br>
+➤ Allocated nearest available slot<br>
+➤ Used inheritance (`Vehicle`, `Car`, `Bike`)<br>
+➤ Handled unavailability using custom exception<br>
+
+- [*Courier Staff Shift Scheduler*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/collections-practice/collections-practice/scenario-based/CourierStaffShiftScheduler): <br>
+➤ Managed courier staff shift assignments using OOP<br>
+➤ Stored employees using `List<Employee>`<br>
+➤ Assigned shifts using `Map<ShiftTime, List<Employee>>`<br>
+➤ Prevented duplicate shift assignments<br>
+➤ Used custom exception for duplicate handling<br>
+
+
 
 
 
