@@ -843,6 +843,23 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ➤ Prevented duplicate shift assignments<br>
 ➤ Used custom exception for duplicate handling<br>
 
+---
+**Day 46 — 13-02-2026**
+
+### Focus Area — Java 8 Scenario-Based System
+
+- Implemented **Online Course Enrollment Manager** in `scenario-based` under `java8-features-practice` :<br>
+➤ Developed system using **Java 8 features**<br>
+➤ Managed student enrollments (name, course, category, date)<br>
+➤ Filtered data by course name and category<br>
+➤ Grouped enrollments by course name<br>
+➤ Counted total enrollments per category<br>
+➤ Sorted enrollments by date<br>
+➤ Applied **Streams, Lambda, Method References, and Collectors**<br>
+➤ [*OnlineCourseEnrollmentManager Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/scenario-based/OnlineCourseEnrollmentManager)
+
+
+
 
 
 
