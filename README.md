@@ -857,6 +857,28 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ➤ Sorted enrollments by date<br>
 ➤ Applied **Streams, Lambda, Method References, and Collectors**<br>
 ➤ [*OnlineCourseEnrollmentManager Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/scenario-based/OnlineCourseEnrollmentManager)
+---
+**Day 47 — 14-02-2026**
+
+### Focus Area — Solution Designing (Scenario-Based Systems)
+
+- Implemented two problem in  (`scenario-based`) under `solution-designing-practice` :<br>
+- [*Disaster Relief Resource Allocation System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/solution-designing-practice/solution-designing-practice/scenario-based/DisasterReliefResourceAllocationSystem) : <br>
+➤ Used `Map` for relief centers and `HashMap` for inventory<br>
+➤ Implemented FIFO request handling using `Queue`<br>
+➤ Allocated resources based on availability<br>
+➤ Added custom exception for insufficient stock<br>
+➤ Structured using layered architecture<br>
+➤ Demonstrated OOP and Java Collections usage<br>
+
+- [*Smart Water Tank Monitoring System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/solution-designing-practice/solution-designing-practice/scenario-based/SmartWaterTankMonitoringSystem) : <br>
+➤ Stored tanks using `List` and calculated usage percentage<br>
+➤ Generated alerts below threshold level<br>
+➤ Validated inputs using custom exceptions<br>
+➤ Sorted tanks by lowest level using `Comparator`<br>
+➤ Designed using layered architecture<br>
+➤ Applied OOP and core Java concepts<br>
+
 
 
 
