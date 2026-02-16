@@ -178,7 +178,14 @@ public class EmployeeWageService {
 			}
 
 			totalHours += hours;
-			totalWage += hours * company.getWagePerHour();
+			int dailyWage = hours * company.getWagePerHour();
+
+			totalHours += hours;
+			totalWage += dailyWage;
+
+			//UC-13: store daily wage
+			company.addDailyWage(dailyWage);
+
 		}
 
 		//UC-9 main requirement

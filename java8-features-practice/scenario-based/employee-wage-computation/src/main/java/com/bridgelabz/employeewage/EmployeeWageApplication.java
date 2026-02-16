@@ -47,6 +47,8 @@ public class EmployeeWageApplication {
         	System.out.println("Computing Wage for: " + companies[i].getCompanyName());
         	System.out.println("----------------------------------------");
         	System.out.println("Total Wage: " + companies[i].getTotalWage());
+        	//UC-13: show stored daily wages
+            System.out.println("Daily Wages: " + companies[i].getDailyWages());
         }
 	}
 }
