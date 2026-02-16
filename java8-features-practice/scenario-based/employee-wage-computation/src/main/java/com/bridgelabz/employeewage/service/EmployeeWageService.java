@@ -61,4 +61,16 @@ public class EmployeeWageService {
 		int wage = hours * WAGE_PER_HOUR;
 		return new Employee(hours > 0, hours, wage);
 	}
+	//UC-5: calculate monthly wage for 20 working days
+	public int calculateMonthlyWage() {
+	    int totalWage = 0;
+
+	    //loop for 20 days
+	    for (int day = 1; day <= 20; day++) {
+	        Employee emp = calculateWageWithSwitch();
+	        totalWage += emp.getDailyWage();
+	    }
+
+	    return totalWage;
+	}
 }

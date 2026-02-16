@@ -18,6 +18,10 @@ public class EmployeeWageApplication {
 		System.out.println("Employee Present: " + emp.isPresent());
 		System.out.println("Working Hours: " + emp.getWorkingHours());
 		System.out.println("Daily Wage: " + emp.getDailyWage());
+		
+		//UC-5: calculate wages for a month assuming 20 working days
+		int monthlyWage = service.calculateMonthlyWage();
+		System.out.println("Monthly Wage (20 days): " + monthlyWage);
 	}
 
 
