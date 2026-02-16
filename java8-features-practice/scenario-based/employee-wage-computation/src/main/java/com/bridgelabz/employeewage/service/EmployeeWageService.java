@@ -73,4 +73,23 @@ public class EmployeeWageService {
 
 	    return totalWage;
 	}
+
+	//UC-6: calculate wage till max hours OR max days reached
+	public int calculateWageTillCondition() {
+		int totalHours = 0;
+		int totalDays = 0;
+		int totalWage = 0;
+
+		//stop when either condition hits
+		while (totalHours <= 100 && totalDays < 20) {
+
+			totalDays++;
+			Employee emp = calculateWageWithSwitch();
+
+			totalHours += emp.getWorkingHours();
+			totalWage += emp.getDailyWage();
+		}
+
+		return totalWage;
+	}
 }
