@@ -3,11 +3,15 @@ import com.bridgelabz.employeewage.model.Employee;
 import com.bridgelabz.employeewage.service.EmployeeWageService;
 import com.bridgelabz.employeewage.service.EmpWageBuilder;
 import com.bridgelabz.employeewage.model.CompanyEmployeeWage;
+import com.bridgelabz.employeewage.service.IEmpWageBuilder;
+
 
 
 public class EmployeeWageController {
     private final EmployeeWageService service = new EmployeeWageService();
-    private final EmpWageBuilder builder = new EmpWageBuilder();
+//    private final EmpWageBuilder builder = new EmpWageBuilder();
+    private final IEmpWageBuilder builder = new EmpWageBuilder();
+
 
 
     // UC-1

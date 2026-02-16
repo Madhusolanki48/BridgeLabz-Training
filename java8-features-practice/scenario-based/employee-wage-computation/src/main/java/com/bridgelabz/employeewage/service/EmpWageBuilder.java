@@ -1,9 +1,11 @@
 package com.bridgelabz.employeewage.service;
 import com.bridgelabz.employeewage.model.CompanyEmployeeWage;
+import com.bridgelabz.employeewage.service.IEmpWageBuilder;
+
 
 //UC-10: Manages multiple companies
 
-public class EmpWageBuilder {
+public class EmpWageBuilder implements IEmpWageBuilder {
 
 	private static final int MAX_COMPANIES = 10;
 	private final CompanyEmployeeWage[] companies = new CompanyEmployeeWage[MAX_COMPANIES];
