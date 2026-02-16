@@ -31,10 +31,18 @@ public class EmployeeWageApplication {
 //		System.out.println("Total Wage (Max hours or days): " + totalWage);
 		
 		//UC-7: compute employee wage using class method and class variables
-		int totalWage = controller.getComputedEmployeeWage();
-		System.out.println("Computed Total Employee Wage: " + totalWage);
+//		int totalWage = controller.getComputedEmployeeWage();
+//		System.out.println("Computed Total Employee Wage: " + totalWage);
+		
+		//UC-8: multiple companies
+		int tcsWage = controller.getComputedEmployeeWage("TCS", 20, 20, 100);
+
+		System.out.println("TCS Total Wage: " + tcsWage);
+
+		int infosysWage = controller.getComputedEmployeeWage("Infosys", 25, 22, 120);
+
+		System.out.println("Infosys Total Wage: " + infosysWage);
 
 	}
-
 
 }

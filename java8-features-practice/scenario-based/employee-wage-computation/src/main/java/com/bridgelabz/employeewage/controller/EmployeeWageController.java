@@ -33,4 +33,10 @@ public class EmployeeWageController {
     public int getComputedEmployeeWage() {
         return service.computeEmployeeWage();
     }
+
+	//UC-8
+	public int getComputedEmployeeWage(String companyName, int wagePerHour, int maxDays, int maxHours) {
+		return service.computeEmployeeWage(companyName, wagePerHour, maxDays, maxHours);
+	}
+
 }

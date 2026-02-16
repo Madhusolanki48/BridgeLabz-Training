@@ -118,4 +118,38 @@ public class EmployeeWageService {
 
 		return totalWage;
 	}
+
+	//UC-8: compute wage for a company using function parameters
+	public int computeEmployeeWage(String companyName, int wagePerHour, int maxWorkingDays, int maxWorkingHours) {
+		int totalHours = 0;
+		int totalDays = 0;
+		int totalWage = 0;
+
+		System.out.println("\n--- Computing for " + companyName + " ---");
+
+		while (totalHours <= maxWorkingHours && totalDays < maxWorkingDays) {
+
+			totalDays++;
+
+			int empCheck = random.nextInt(3);
+			int hours;
+
+			switch (empCheck) {
+			case FULL_TIME:
+				hours = FULL_DAY_HOUR;
+				break;
+			case PART_TIME:
+				hours = PART_TIME_HOUR;
+				break;
+			default:
+				hours = 0;
+			}
+
+			totalHours += hours;
+			totalWage += hours * wagePerHour;
+		}
+
+		return totalWage;
+	}
+
 }
