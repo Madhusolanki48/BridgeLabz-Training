@@ -1,9 +1,14 @@
 package com.bridgelabz.employeewage.controller;
 import com.bridgelabz.employeewage.model.Employee;
 import com.bridgelabz.employeewage.service.EmployeeWageService;
+import com.bridgelabz.employeewage.service.EmpWageBuilder;
+import com.bridgelabz.employeewage.model.CompanyEmployeeWage;
+
 
 public class EmployeeWageController {
     private final EmployeeWageService service = new EmployeeWageService();
+    private final EmpWageBuilder builder = new EmpWageBuilder();
+
 
     // UC-1
     public Employee checkEmployeeAttendance() {
@@ -42,5 +47,24 @@ public class EmployeeWageController {
 	public void computeEmployeeWage(com.bridgelabz.employeewage.model.CompanyEmployeeWage company) {
 		service.computeEmployeeWage(company);
 	}
+	//UC-10: add company to builder
+	public void addCompany(CompanyEmployeeWage company) {
+	    builder.addCompany(company);
+	}
+
+	//UC-10: compute all companies
+	public void computeAllWages() {
+	    builder.computeAllWages();
+	}
+
+	//UC-10: getters for results
+	public CompanyEmployeeWage[] getCompanies() {
+	    return builder.getCompanies();
+	}
+
+	public int getCompanyCount() {
+	    return builder.getCompanyCount();
+	}
+
 
 }

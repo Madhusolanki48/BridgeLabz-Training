@@ -157,9 +157,9 @@ public class EmployeeWageService {
 		int totalHours = 0;
 		int totalDays = 0;
 		int totalWage = 0;
-		System.out.println("----------------------------------------");
-		System.out.println("\n--- Computing for " + company.getCompanyName() + " ---");
-		System.out.println("----------------------------------------");
+//		System.out.println("----------------------------------------");
+//		System.out.println("\n--- Computing for " + company.getCompanyName() + " ---");
+//		System.out.println("----------------------------------------");
 
 		while (totalHours <= company.getMaxWorkingHours() && totalDays < company.getMaxWorkingDays()) {
 			totalDays++;

@@ -29,14 +29,24 @@ public class EmployeeWageApplication {
 		System.out.println("Monthly Wage (20 days): " + monthlyWage);
 		
 		
-		// UC-9: using company objects
+		//UC-10: manage multiple companies via builder
 		CompanyEmployeeWage tcs = new CompanyEmployeeWage("TCS", 20, 20, 100);
 		CompanyEmployeeWage infosys = new CompanyEmployeeWage("Infosys", 25, 22, 120);
+		
+		controller.addCompany(tcs);
+        controller.addCompany(infosys);
 
-		controller.computeEmployeeWage(tcs);
-		System.out.println("TCS Total Wage: " + tcs.getTotalWage());
+        controller.computeAllWages();
 
-		controller.computeEmployeeWage(infosys);
-		System.out.println("Infosys Total Wage: " + infosys.getTotalWage());
+        // print results
+        CompanyEmployeeWage[] companies = controller.getCompanies();
+        int count = controller.getCompanyCount();
+
+        for (int i = 0; i < count; i++) {
+        	System.out.println("\n--------------------------------------");
+        	System.out.println("Computing Wage for: " + companies[i].getCompanyName());
+        	System.out.println("----------------------------------------");
+        	System.out.println("Total Wage: " + companies[i].getTotalWage());
+        }
 	}
 }
