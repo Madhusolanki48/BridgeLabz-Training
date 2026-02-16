@@ -40,5 +40,18 @@ public class EmpWageBuilder implements IEmpWageBuilder {
 	public int getCompanyCount() {
 	    return companies.size();
 	}
+	//UC-14: search and return total wage
+	@Override
+	public int getTotalWageByCompany(String companyName) {
+
+	    for (CompanyEmployeeWage company : companies) {
+	        if (company.getCompanyName().equalsIgnoreCase(companyName)) {
+	            return company.getTotalWage();
+	        }
+	    }
+
+	    return -1; // company not found
+	}
+
 
 }

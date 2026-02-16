@@ -4,7 +4,7 @@ import com.bridgelabz.employeewage.service.EmployeeWageService;
 import com.bridgelabz.employeewage.service.EmpWageBuilder;
 import com.bridgelabz.employeewage.model.CompanyEmployeeWage;
 import com.bridgelabz.employeewage.service.IEmpWageBuilder;
-
+import com.bridgelabz.employeewage.service.IEmpWageBuilder;
 
 
 public class EmployeeWageController {
@@ -68,6 +68,10 @@ public class EmployeeWageController {
 
 	public int getCompanyCount() {
 	    return builder.getCompanyCount();
+	}
+	//UC-14
+	public int getTotalWageByCompany(String companyName) {
+	    return builder.getTotalWageByCompany(companyName);
 	}
 
 

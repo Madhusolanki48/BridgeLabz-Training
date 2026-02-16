@@ -13,4 +13,8 @@ public interface IEmpWageBuilder {
 	CompanyEmployeeWage[] getCompanies();
 
 	int getCompanyCount();
+	
+	//UC-14: get total wage by company name
+	int getTotalWageByCompany(String companyName);
+
 }

@@ -43,12 +43,23 @@ public class EmployeeWageApplication {
         int count = controller.getCompanyCount();
 
         for (int i = 0; i < count; i++) {
-        	System.out.println("\n--------------------------------------");
+        	System.out.println("\n----------------------------------------");
         	System.out.println("Computing Wage for: " + companies[i].getCompanyName());
         	System.out.println("----------------------------------------");
         	System.out.println("Total Wage: " + companies[i].getTotalWage());
         	//UC-13: show stored daily wages
             System.out.println("Daily Wages: " + companies[i].getDailyWages());
         }
+        //UC-14: query total wage by company name
+        System.out.println("\n----------------------------------------");
+        System.out.println("------------  Query Result  ------------");
+        System.out.println("----------------------------------------");
+
+        int tcsTotal = controller.getTotalWageByCompany("TCS");
+        System.out.println("Queried Total Wage for TCS: " + tcsTotal);
+
+        int infosysTotal = controller.getTotalWageByCompany("Infosys");
+        System.out.println("Queried Total Wage for Infosys: " + infosysTotal);
+
 	}
 }
