@@ -29,4 +29,8 @@ public class EmployeeWageController {
     public int getWageTillCondition() {
         return service.calculateWageTillCondition();
     }
+    // UC-7
+    public int getComputedEmployeeWage() {
+        return service.computeEmployeeWage();
+    }
 }

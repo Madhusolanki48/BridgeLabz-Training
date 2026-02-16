@@ -18,6 +18,7 @@ public class EmployeeWageApplication {
 		Employee emp = controller.getWageWithSwitch();
 
 		System.out.println("Employee Present: " + emp.isPresent());
+		System.out.println("Employee Type: " + emp.getEmployeeType());
 		System.out.println("Working Hours: " + emp.getWorkingHours());
 		System.out.println("Daily Wage: " + emp.getDailyWage());
 		
@@ -26,8 +27,12 @@ public class EmployeeWageApplication {
 		System.out.println("Monthly Wage (20 days): " + monthlyWage);
 		
 		//UC-6: calculate wages till max working hours or days reached
-		int totalWage = controller.getWageTillCondition();
-		System.out.println("Total Wage (Max hours or days): " + totalWage);
+//		int totalWage = controller.getWageTillCondition();
+//		System.out.println("Total Wage (Max hours or days): " + totalWage);
+		
+		//UC-7: compute employee wage using class method and class variables
+		int totalWage = controller.getComputedEmployeeWage();
+		System.out.println("Computed Total Employee Wage: " + totalWage);
 
 	}
 

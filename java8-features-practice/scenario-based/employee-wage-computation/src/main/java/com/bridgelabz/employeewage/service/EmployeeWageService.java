@@ -11,10 +11,12 @@ public class EmployeeWageService {
 	private static final int PART_TIME = 2;
 	private static final int PART_TIME_HOUR = 8;
 	private static final int FULL_TIME = 1;
+	private static final int MAX_WORKING_DAYS = 20;
+	private static final int MAX_WORKING_HOURS = 100;
 	private final Random random = new Random();
 
 	public Employee checkAttendance() {
-		int check = new Random().nextInt(2); //random
+		int check = random.nextInt(2);
 		return new Employee(check == IS_PRESENT, 0, 0);
 	}
 
@@ -46,20 +48,24 @@ public class EmployeeWageService {
 	public Employee calculateWageWithSwitch() {
 		int empCheck = random.nextInt(3);
 		int hours;
+		String type;
 
 		switch (empCheck) {
-		case FULL_TIME:
-			hours = FULL_DAY_HOUR;
-			break;
-		case PART_TIME:
-			hours = PART_TIME_HOUR;
-			break;
-		default:
-			hours = 0;
+		    case FULL_TIME:
+		        hours = FULL_DAY_HOUR;
+		        type = "FULL_TIME";
+		        break;
+		    case PART_TIME:
+		        hours = PART_TIME_HOUR;
+		        type = "PART_TIME";
+		        break;
+		    default:
+		        hours = 0;
+		        type = "ABSENT";
 		}
 
 		int wage = hours * WAGE_PER_HOUR;
-		return new Employee(hours > 0, hours, wage);
+		return new Employee(hours > 0, hours, wage,type);
 	}
 	//UC-5: calculate monthly wage for 20 working days
 	public int calculateMonthlyWage() {
@@ -81,9 +87,29 @@ public class EmployeeWageService {
 		int totalWage = 0;
 
 		//stop when either condition hits
-		while (totalHours <= 100 && totalDays < 20) {
+		while (totalHours <= MAX_WORKING_HOURS && totalDays < MAX_WORKING_DAYS) {
 
 			totalDays++;
+			Employee emp = calculateWageWithSwitch();
+
+			totalHours += emp.getWorkingHours();
+			totalWage += emp.getDailyWage();
+		}
+
+		return totalWage;
+	}
+
+	//UC-7: compute employee wage using class method & class variables
+	public int computeEmployeeWage() {
+
+		int totalHours = 0;
+		int totalDays = 0;
+		int totalWage = 0;
+
+		while (totalHours <= MAX_WORKING_HOURS && totalDays < MAX_WORKING_DAYS) {
+
+			totalDays++;
+
 			Employee emp = calculateWageWithSwitch();
 
 			totalHours += emp.getWorkingHours();
