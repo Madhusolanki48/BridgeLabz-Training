@@ -1,36 +1,44 @@
 package com.bridgelabz.employeewage.service;
 import com.bridgelabz.employeewage.model.CompanyEmployeeWage;
 import com.bridgelabz.employeewage.service.IEmpWageBuilder;
+import java.util.ArrayList;
+import java.util.List;
 
 
 //UC-10: Manages multiple companies
 
 public class EmpWageBuilder implements IEmpWageBuilder {
 
-	private static final int MAX_COMPANIES = 10;
-	private final CompanyEmployeeWage[] companies = new CompanyEmployeeWage[MAX_COMPANIES];
-	private int companyCount = 0;
+//	private static final int MAX_COMPANIES = 10;
+//	private final CompanyEmployeeWage[] companies = new CompanyEmployeeWage[MAX_COMPANIES];
+//	private int companyCount = 0;
+	
+	//UC12: refactor EmpWageBuilder to use ArrayList instead of array
+	private final List<CompanyEmployeeWage> companies = new ArrayList<>();
 
 	private final EmployeeWageService service = new EmployeeWageService();
 
-	// UC-10: add company
+	@Override
 	public void addCompany(CompanyEmployeeWage company) {
-		companies[companyCount++] = company;
+	    companies.add(company);
 	}
 
-	// UC-10: compute wages for all companies
+	@Override
 	public void computeAllWages() {
-		for (int i = 0; i < companyCount; i++) {
-			service.computeEmployeeWage(companies[i]);
-		}
+	    for (CompanyEmployeeWage company : companies) {
+	        service.computeEmployeeWage(company);
+	    }
 	}
 
-	// helper for main
+
+	@Override
 	public CompanyEmployeeWage[] getCompanies() {
-		return companies;
+	    return companies.toArray(new CompanyEmployeeWage[0]);
 	}
 
+	@Override
 	public int getCompanyCount() {
-		return companyCount;
+	    return companies.size();
 	}
+
 }
