@@ -10,7 +10,8 @@ public class EmployeeWageApplication {
 		System.out.println("--------------------------------------------");
 		EmployeeWageService service = new EmployeeWageService();
 		//UC-2: calculate daily employee wage
-		Employee emp = service.calculateDailyWage();
+//		Employee emp = service.calculateDailyWage();
+		Employee emp = service.calculateWageWithPartTime();
 
 		System.out.println("Employee Present: " + emp.isPresent());
 		System.out.println("Working Hours: " + emp.getWorkingHours());
