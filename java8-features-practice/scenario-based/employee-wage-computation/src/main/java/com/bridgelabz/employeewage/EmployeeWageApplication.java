@@ -9,13 +9,13 @@ public class EmployeeWageApplication {
 		System.out.println("Welcome to Employee Wage Computation Program");
 		System.out.println("--------------------------------------------");
 		EmployeeWageService service = new EmployeeWageService();
-		Employee emp = service.checkAttendance();
-        //UC-1: check employee present or absent using random
-		if (emp.isPresent()) {
-		    System.out.println("Employee is PRESENT!");
-		} else {
-		    System.out.println("Employee is ABSENT!");
-		}
+		//UC-2: calculate daily employee wage
+		Employee emp = service.calculateDailyWage();
+
+		System.out.println("Employee Present: " + emp.isPresent());
+		System.out.println("Working Hours: " + emp.getWorkingHours());
+		System.out.println("Daily Wage: " + emp.getDailyWage());
 	}
+
 
 }
