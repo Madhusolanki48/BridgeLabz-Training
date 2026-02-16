@@ -879,6 +879,57 @@ which strengthened implementation of **OOP class modeling, inheritance, abstract
 ➤ Designed using layered architecture<br>
 ➤ Applied OOP and core Java concepts<br>
 
+**Day 48 — 16-02-2026**
+
+### Focus Area — Employee Wage Computation (Java 8, Maven, Layered Architecture)
+
+- Implemented **Employee Wage Computation System** in `scenario-based` under `java8-features-practice` :<br>
+➤ Created **Maven project** with 4-layer architecture (controller, model, repository, service)<br>
+➤ Completed **14 use cases** with progressive refactoring<br>
+➤ Applied OOP, interfaces, and Java 8 design practices<br>
+
+**Use Cases Implemented:**<br>
+➤ UC-1: Attendance using random<br>
+➤ UC-2: Daily employee wage calculation<br>
+➤ UC-3: Part-time employee wage<br>
+➤ UC-4: Switch-case based solution<br>
+➤ UC-5: Monthly wage computation<br>
+➤ UC-6: Wage till condition reached<br>
+➤ UC-7: Class methods and variables<br>
+➤ UC-8: Multiple companies computation<br>
+➤ UC-9: Store total wage per company<br>
+➤ UC-10: Manage multiple companies<br>
+➤ UC-11: Interface-based implementation<br>
+➤ UC-12: Company management using ArrayList<br>
+➤ UC-13: Store daily + total wage<br>
+➤ UC-14: Retrieve total wage by company<br>
+
+### 📁 Project Structure
+```
+BridgeLabz-Training-java8-features-practice/
+└── src/
+├── main/java/com/bridgelabz/employeewage/
+│ ├── controller/
+│ │ └── EmployeeWageController.java
+│ ├── model/
+│ │ ├── CompanyEmployeeWage.java
+│ │ └── Employee.java
+│ ├── repository/
+│ │ └── CompanyRepository.java
+│ ├── service/
+│ │ ├── EmployeeWageService.java
+│ │ ├── EmpWageBuilder.java
+│ │ └── IEmpWageBuilder.java
+│ └── EmployeeWageApplication.java
+└── test/
+```
+
+➤ [*employee-wage-computation Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/scenario-based/employee-wage-computation)
+
+---
+
+
+
 
 
 
