@@ -38,5 +38,9 @@ public class EmployeeWageController {
 	public int getComputedEmployeeWage(String companyName, int wagePerHour, int maxDays, int maxHours) {
 		return service.computeEmployeeWage(companyName, wagePerHour, maxDays, maxHours);
 	}
+	//UC-9
+	public void computeEmployeeWage(com.bridgelabz.employeewage.model.CompanyEmployeeWage company) {
+		service.computeEmployeeWage(company);
+	}
 
 }

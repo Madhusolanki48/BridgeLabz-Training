@@ -2,6 +2,8 @@ package com.bridgelabz.employeewage;
 import java.util.*;
 import com.bridgelabz.employeewage.model.Employee;
 import com.bridgelabz.employeewage.controller.EmployeeWageController;
+import com.bridgelabz.employeewage.model.CompanyEmployeeWage;
+
 
 
 public class EmployeeWageApplication {
@@ -26,23 +28,15 @@ public class EmployeeWageApplication {
 		int monthlyWage = controller.getMonthlyWage();
 		System.out.println("Monthly Wage (20 days): " + monthlyWage);
 		
-		//UC-6: calculate wages till max working hours or days reached
-//		int totalWage = controller.getWageTillCondition();
-//		System.out.println("Total Wage (Max hours or days): " + totalWage);
 		
-		//UC-7: compute employee wage using class method and class variables
-//		int totalWage = controller.getComputedEmployeeWage();
-//		System.out.println("Computed Total Employee Wage: " + totalWage);
-		
-		//UC-8: multiple companies
-		int tcsWage = controller.getComputedEmployeeWage("TCS", 20, 20, 100);
+		// UC-9: using company objects
+		CompanyEmployeeWage tcs = new CompanyEmployeeWage("TCS", 20, 20, 100);
+		CompanyEmployeeWage infosys = new CompanyEmployeeWage("Infosys", 25, 22, 120);
 
-		System.out.println("TCS Total Wage: " + tcsWage);
+		controller.computeEmployeeWage(tcs);
+		System.out.println("TCS Total Wage: " + tcs.getTotalWage());
 
-		int infosysWage = controller.getComputedEmployeeWage("Infosys", 25, 22, 120);
-
-		System.out.println("Infosys Total Wage: " + infosysWage);
-
+		controller.computeEmployeeWage(infosys);
+		System.out.println("Infosys Total Wage: " + infosys.getTotalWage());
 	}
-
 }

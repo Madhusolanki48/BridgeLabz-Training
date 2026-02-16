@@ -152,4 +152,37 @@ public class EmployeeWageService {
 		return totalWage;
 	}
 
+	//UC-9: compute wage using company object (instance variables)
+	public void computeEmployeeWage(com.bridgelabz.employeewage.model.CompanyEmployeeWage company) {
+		int totalHours = 0;
+		int totalDays = 0;
+		int totalWage = 0;
+		System.out.println("----------------------------------------");
+		System.out.println("\n--- Computing for " + company.getCompanyName() + " ---");
+		System.out.println("----------------------------------------");
+
+		while (totalHours <= company.getMaxWorkingHours() && totalDays < company.getMaxWorkingDays()) {
+			totalDays++;
+			int empCheck = random.nextInt(3);
+			int hours;
+
+			switch (empCheck) {
+			case FULL_TIME:
+				hours = FULL_DAY_HOUR;
+				break;
+			case PART_TIME:
+				hours = PART_TIME_HOUR;
+				break;
+			default:
+				hours = 0;
+			}
+
+			totalHours += hours;
+			totalWage += hours * company.getWagePerHour();
+		}
+
+		//UC-9 main requirement
+		company.setTotalWage(totalWage);
+	}
+
 }
