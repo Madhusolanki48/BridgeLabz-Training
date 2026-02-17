@@ -1,6 +1,10 @@
 package AddressBook;
 import java.io.*;
 import java.util.*;
+import java.io.FileReader;
+import java.io.FileWriter;
+import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
 
 // UC-2: Add new Contact using Console + OOP
 public class AddressBook {
@@ -292,6 +296,62 @@ public class AddressBook {
 
 	    } catch (IOException e) {
 	        System.out.println("Error reading file!");
+	    }
+	}
+
+	// UC-14: Write Address Book to CSV using OpenCSV
+	public void writeToCSV(String addressBookName, String fileName) {
+		ArrayList<Contact> list = addressBookMap.get(addressBookName);
+
+		if (list == null) {
+			System.out.println("Address Book not found!");
+			return;
+		}
+
+		try (CSVWriter writer = new CSVWriter(new FileWriter(fileName))) {
+
+			// header
+			String[] header = { "FirstName", "LastName", "Address", "City", "State", "Zip", "Phone", "Email" };
+			writer.writeNext(header);
+
+			for (Contact c : list) {
+				String[] data = { c.getFirstName(), c.getLastName(), c.getAddress(), c.getCity(), c.getState(),
+						c.getZipCode(), c.getPhone(), c.getEmail() };
+				writer.writeNext(data);
+			}
+
+			System.out.println("Address Book written to CSV successfully!");
+
+		} catch (Exception e) {
+			System.out.println("Error writing CSV: " + e.getMessage());
+		}
+	}
+	// UC-14: Read Address Book from CSV using OpenCSV
+	public void readFromCSV(String addressBookName, String fileName) {
+
+	    try (CSVReader reader = new CSVReader(new FileReader(fileName))) {
+
+	        addressBookMap.putIfAbsent(addressBookName, new ArrayList<Contact>());
+	        ArrayList<Contact> list = addressBookMap.get(addressBookName);
+
+	        String[] row;
+	        reader.readNext(); 
+
+	        while ((row = reader.readNext()) != null) {
+
+	            Contact contact = new Contact(
+	                row[0], row[1], row[2], row[3],
+	                row[4], row[5], row[6], row[7]
+	            );
+
+	            list.add(contact);
+	            updateCityStateMap(contact); 
+	        }
+
+	        System.out.println("Address Book loaded from CSV successfully!");
+
+	    } catch (Exception e) {
+	        System.out.println("Error reading CSV: " + e.getMessage());
 	    }
 	}
 

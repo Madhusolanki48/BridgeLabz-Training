@@ -90,5 +90,14 @@ public class AddressBookService {
     public void readFromFile(String addressBookName, String fileName) {
         addressBook.readFromFile(addressBookName, fileName);
     }
+    // UC-14: Write CSV
+    public void writeToCSV(String addressBookName, String fileName) {
+        addressBook.writeToCSV(addressBookName, fileName);
+    }
+
+    // UC-14: Read CSV
+    public void readFromCSV(String addressBookName, String fileName) {
+        addressBook.readFromCSV(addressBookName, fileName);
+    }
 
 }
