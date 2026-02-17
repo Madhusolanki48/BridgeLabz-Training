@@ -921,12 +921,32 @@ BridgeLabz-Training-java8-features-practice/
 │ │ ├── EmpWageBuilder.java
 │ │ └── IEmpWageBuilder.java
 │ └── EmployeeWageApplication.java
-└── test/
+└── test/java/com/bridgelabz/employeewage/service
+  ├── EmployeeWageServiceTest.java/
+  └── EmpWageBuilderTest.java
+
+
 ```
 
 ➤ [*employee-wage-computation Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/scenario-based/employee-wage-computation)
 
 ---
+**Day 49 — 16-02-2026**
+
+### Focus Area — JUnit Testing & AddressBook Refactor
+
+- Added **JUnit test files** to **Employee Wage Computation** under `java8-features-practice`:<br>
+➤ [*EmployeeWageServiceTest*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/scenario-based/employee-wage-computation/src/test/java/com/bridgelabz/employeewage/service/EmployeeWageServiceTest.java) — validates wage calculation logic and tests daily & total wage<br>
+➤ [*EmpWageBuilderTest*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/scenario-based/employee-wage-computation/src/test/java/com/bridgelabz/employeewage/service/EmpWageBuilderTest.java) — tests multi-company management and verifies wage retrieval by company<br>
+
+- Refactored **AddressBook** `gcr-codebase` under `oops-practice` and implemented new use cases :<br>
+➤ UC-11: Sort Contacts by Name<br>
+➤ UC-12: Sort Contacts by City, State, and Zip<br>
+➤ UC-13: Read/Write Address Book using File IO<br>
+➤ UC-14: Read/Write Address Book as CSV<br>
+➤ UC-15: Read/Write Address Book as JSON<br>
+➤ [*AddressBook Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/AddressBook)
+
 
 
 
