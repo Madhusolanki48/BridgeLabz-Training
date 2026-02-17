@@ -168,5 +168,23 @@ public class AddressBook {
 		}
 		return stateCountMap;
 	}
+	// UC-11: sort contacts alphabetically by person's name
+	public ArrayList<Contact> sortContactsByName(String addressBookName) {
+	    ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+
+	    if (contactList == null) {
+	        return new ArrayList<Contact>();
+	    }
+
+	    //collection library for sorting
+	    Collections.sort(contactList, new Comparator<Contact>() {
+	        @Override
+	        public int compare(Contact c1, Contact c2) {
+	            return c1.getFirstName().compareToIgnoreCase(c2.getFirstName());
+	        }
+	    });
+
+	    return contactList;
+	}
 
 }

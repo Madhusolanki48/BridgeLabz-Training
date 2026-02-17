@@ -63,5 +63,9 @@ public class AddressBookService {
     public HashMap<String, Integer> countByState() {
         return addressBook.countByState();
     }
+    // UC-11: Sort contacts by name
+    public ArrayList<Contact> sortContactsByName(String addressBookName) {
+        return addressBook.sortContactsByName(addressBookName);
+    }
 
 }

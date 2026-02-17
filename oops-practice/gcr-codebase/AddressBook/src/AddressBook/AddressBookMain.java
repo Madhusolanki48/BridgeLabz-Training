@@ -25,7 +25,8 @@ public class AddressBookMain {
             System.out.println("10. View Persons by State");
             System.out.println("11. Count Persons by City");
             System.out.println("12. Count Persons by State");
-            System.out.println("13. Exit");
+            System.out.println("13. Sort Contacts By Name");
+            System.out.println("14. Exit");
 
             System.out.print("Enter your choice: ");
             if (!sc.hasNextInt()) {
@@ -271,8 +272,28 @@ public class AddressBookMain {
                     }
                     System.out.println("--------------------------------------------");
                     break;
-
                 case 13:
+                    if (currentAddressBook == null) {
+                        System.out.println("Please select an Address Book first!");
+                        System.out.println("--------------------------------------------");
+                        break;
+                    }
+
+                    ArrayList<Contact> sortedList = service.sortContactsByName(currentAddressBook);
+
+                    if (sortedList.size() == 0) {
+                        System.out.println("No contact found!");
+                        break;
+                    }
+
+                    System.out.println("\n------ Contacts Sorted By Name ------");
+                    for (Contact c : sortedList) {
+                        System.out.println(c);
+                    }
+                    System.out.println("--------------------------------------------");
+                    break;
+
+                case 14:
                     System.out.println("Exiting Program...");
                     System.out.println("--------------------------------------------");
                     break;
@@ -280,12 +301,12 @@ public class AddressBookMain {
                     System.out.println("Invalid choice! Please enter number between 1 and 13.");
                     System.out.println("--------------------------------------------");
             }
-            if (choice != 13) {
+            if (choice != 14) {
                 System.out.print("\nPress Enter to continue...");
                 sc.nextLine();
             }
 
-        } while (choice != 13);
+        } while (choice != 14);
         System.out.println("Thank you for using Address Book!");
         System.out.println("--------------------------------------------");
     }
