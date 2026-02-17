@@ -1,5 +1,5 @@
 package AddressBook;
-
+import java.io.*;
 import java.util.*;
 
 // UC-2: Add new Contact using Console + OOP
@@ -236,6 +236,63 @@ public class AddressBook {
 		});
 
 		return contactList;
+	}
+	// UC-13: Write Address Book to File
+	public void writeToFile(String addressBookName, String fileName) {
+	    ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+
+	    if (contactList == null) {
+	        System.out.println("Address Book not found!");
+	        return;
+	    }
+
+	    try {
+	        FileWriter writer = new FileWriter(fileName);
+
+	        for (Contact c : contactList) {
+	            writer.write(
+	                c.getFirstName() + "," +
+	                c.getLastName() + "," +
+	                c.getAddress() + "," +
+	                c.getCity() + "," +
+	                c.getState() + "," +
+	                c.getZipCode() + "," +
+	                c.getPhone() + "," +
+	                c.getEmail() + "\n"
+	            );
+	        }
+
+	        writer.close();
+	        System.out.println("Contacts written to file successfully!");
+
+	    } catch (IOException e) {
+	        System.out.println("Error writing to file!");
+	    }
+	}
+	// UC-13: Read Address Book from File
+	public void readFromFile(String addressBookName, String fileName) {
+
+	    try {
+	        BufferedReader reader = new BufferedReader(new FileReader(fileName));
+	        String line;
+
+	        while ((line = reader.readLine()) != null) {
+	            String[] data = line.split(",");
+
+	            Contact contact = new Contact(
+	                data[0], data[1], data[2], data[3],
+	                data[4], data[5], data[6], data[7]
+	            );
+
+	            addContact(addressBookName, contact);
+	        }
+
+	        reader.close();
+	        System.out.println("Contacts loaded from file successfully!");
+
+	    } catch (IOException e) {
+	        System.out.println("Error reading file!");
+	    }
 	}
 
 }

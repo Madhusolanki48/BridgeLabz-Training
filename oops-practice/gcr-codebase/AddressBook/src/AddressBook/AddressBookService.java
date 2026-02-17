@@ -81,5 +81,14 @@ public class AddressBookService {
     public ArrayList<Contact> sortContactsByZip(String addressBookName) {
         return addressBook.sortContactsByZip(addressBookName);
     }
+    // UC-13: Write to file
+    public void writeToFile(String addressBookName, String fileName) {
+        addressBook.writeToFile(addressBookName, fileName);
+    }
+
+    // UC-13: Read from file
+    public void readFromFile(String addressBookName, String fileName) {
+        addressBook.readFromFile(addressBookName, fileName);
+    }
 
 }

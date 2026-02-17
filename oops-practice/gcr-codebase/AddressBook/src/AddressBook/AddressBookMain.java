@@ -29,7 +29,9 @@ public class AddressBookMain {
             System.out.println("14. Sort Contacts by City");
             System.out.println("15. Sort Contacts by State");
             System.out.println("16. Sort Contacts by Zip");
-            System.out.println("17. Exit");
+            System.out.println("17. Write Address Book to File");
+            System.out.println("18. Read Address Book from File");
+            System.out.println("19. Exit");
 
             System.out.print("Enter your choice: ");
             if (!sc.hasNextInt()) {
@@ -60,7 +62,7 @@ public class AddressBookMain {
                         System.out.println("--------------------------------------------");
                         break;
                     }
-                    System.out.println("Available Address Books: " + service.getAllAddressBookNames());
+                    System.out.println("Available Address Books: " + books);
                     System.out.print("Enter Address Book Name to Select: ");
                     String selectBook = sc.nextLine();
                     if (service.getAllAddressBookNames().contains(selectBook)) {
@@ -334,22 +336,38 @@ public class AddressBookMain {
                         System.out.println(c);
                     }
                     break;
-
                 case 17:
+                    if (currentAddressBook == null) {
+                        System.out.println("Please select an Address Book first!");
+                        break;
+                    }
+
+                    service.writeToFile(currentAddressBook, "addressbook.txt");
+                    break;
+                case 18:
+                    if (currentAddressBook == null) {
+                        System.out.println("Please select an Address Book first!");
+                        break;
+                    }
+
+                    service.readFromFile(currentAddressBook, "addressbook.txt");
+                    break;
+
+                case 19:
                     System.out.println("Exiting Program...");
                     System.out.println("--------------------------------------------");
                     break;
                     
                 default:
-                    System.out.println("Invalid choice! Please enter number between 1 and 13.");
+                    System.out.println("Invalid choice! Please enter number between 1 and 19.");
                     System.out.println("--------------------------------------------");
             }
-            if (choice != 17) {
+            if (choice != 19) {
                 System.out.print("\nPress Enter to continue...");
                 sc.nextLine();
             }
 
-        } while (choice != 17);
+        } while (choice != 19);
         System.out.println("Thank you for using Address Book!");
         System.out.println("--------------------------------------------");
     }
