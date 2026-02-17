@@ -17,7 +17,7 @@ public class EmployeeWageService {
 
 	public Employee checkAttendance() {
 		int check = random.nextInt(2);
-		return new Employee(check == IS_PRESENT, 0, 0);
+		return new Employee(check == IS_PRESENT, 0, 0,"ABSENT");
 	}
 
 	//UC-2:calculate daily wage for employee
@@ -28,7 +28,12 @@ public class EmployeeWageService {
 		int hours = emp.isPresent() ? FULL_DAY_HOUR : 0;
 		int wage = hours * WAGE_PER_HOUR;
 
-		return new Employee(emp.isPresent(), hours, wage);
+		return new Employee(
+		        emp.isPresent(),
+		        hours,
+		        wage,
+		        hours == 0 ? "ABSENT" : "FULL_TIME"
+		);
 	}
 
 //    //UC-3:calculate wage including part-time employee
