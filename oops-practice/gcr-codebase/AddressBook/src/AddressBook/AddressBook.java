@@ -187,4 +187,55 @@ public class AddressBook {
 	    return contactList;
 	}
 
+	// UC-12: Sort contacts by City
+	public ArrayList<Contact> sortContactsByCity(String addressBookName) {
+		ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+
+		if (contactList == null) {
+			return new ArrayList<Contact>();
+		}
+		Collections.sort(contactList, new Comparator<Contact>() {
+			@Override
+			public int compare(Contact c1, Contact c2) {
+				return c1.getCity().compareToIgnoreCase(c2.getCity());
+			}
+		});
+
+		return contactList;
+	}
+
+	// UC-12: Sort contacts by State
+	public ArrayList<Contact> sortContactsByState(String addressBookName) {
+		ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+
+		if (contactList == null) {
+			return new ArrayList<Contact>();
+		}
+		Collections.sort(contactList, new Comparator<Contact>() {
+			@Override
+			public int compare(Contact c1, Contact c2) {
+				return c1.getState().compareToIgnoreCase(c2.getState());
+			}
+		});
+
+		return contactList;
+	}
+
+	// UC-12: Sort contacts by Zip
+	public ArrayList<Contact> sortContactsByZip(String addressBookName) {
+		ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+
+		if (contactList == null) {
+			return new ArrayList<Contact>();
+		}
+		Collections.sort(contactList, new Comparator<Contact>() {
+			@Override
+			public int compare(Contact c1, Contact c2) {
+				return c1.getZipCode().compareToIgnoreCase(c2.getZipCode());
+			}
+		});
+
+		return contactList;
+	}
+
 }

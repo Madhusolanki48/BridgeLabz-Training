@@ -26,7 +26,10 @@ public class AddressBookMain {
             System.out.println("11. Count Persons by City");
             System.out.println("12. Count Persons by State");
             System.out.println("13. Sort Contacts By Name");
-            System.out.println("14. Exit");
+            System.out.println("14. Sort Contacts by City");
+            System.out.println("15. Sort Contacts by State");
+            System.out.println("16. Sort Contacts by Zip");
+            System.out.println("17. Exit");
 
             System.out.print("Enter your choice: ");
             if (!sc.hasNextInt()) {
@@ -292,21 +295,61 @@ public class AddressBookMain {
                     }
                     System.out.println("--------------------------------------------");
                     break;
-
                 case 14:
+                    if (currentAddressBook == null) {
+                        System.out.println("Please select an Address Book first!");
+                        break;
+                    }
+
+                    ArrayList<Contact> citySorted = service.sortContactsByCity(currentAddressBook);
+
+                    System.out.println("\n------ Contacts Sorted By City ------");
+                    for (Contact c : citySorted) {
+                        System.out.println(c);
+                    }
+                    break;
+                case 15:
+                    if (currentAddressBook == null) {
+                        System.out.println("Please select an Address Book first!");
+                        break;
+                    }
+
+                    ArrayList<Contact> stateSorted = service.sortContactsByState(currentAddressBook);
+
+                    System.out.println("\n------ Contacts Sorted By State ------");
+                    for (Contact c : stateSorted) {
+                        System.out.println(c);
+                    }
+                    break;
+                case 16:
+                    if (currentAddressBook == null) {
+                        System.out.println("Please select an Address Book first!");
+                        break;
+                    }
+
+                    ArrayList<Contact> zipSorted = service.sortContactsByZip(currentAddressBook);
+
+                    System.out.println("\n------ Contacts Sorted By Zip ------");
+                    for (Contact c : zipSorted) {
+                        System.out.println(c);
+                    }
+                    break;
+
+                case 17:
                     System.out.println("Exiting Program...");
                     System.out.println("--------------------------------------------");
                     break;
+                    
                 default:
                     System.out.println("Invalid choice! Please enter number between 1 and 13.");
                     System.out.println("--------------------------------------------");
             }
-            if (choice != 14) {
+            if (choice != 17) {
                 System.out.print("\nPress Enter to continue...");
                 sc.nextLine();
             }
 
-        } while (choice != 14);
+        } while (choice != 17);
         System.out.println("Thank you for using Address Book!");
         System.out.println("--------------------------------------------");
     }

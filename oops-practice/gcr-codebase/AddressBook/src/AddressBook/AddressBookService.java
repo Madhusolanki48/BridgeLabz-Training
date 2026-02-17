@@ -67,5 +67,19 @@ public class AddressBookService {
     public ArrayList<Contact> sortContactsByName(String addressBookName) {
         return addressBook.sortContactsByName(addressBookName);
     }
+    // UC-12: Sort by City
+    public ArrayList<Contact> sortContactsByCity(String addressBookName) {
+        return addressBook.sortContactsByCity(addressBookName);
+    }
+
+    // UC-12: Sort by State
+    public ArrayList<Contact> sortContactsByState(String addressBookName) {
+        return addressBook.sortContactsByState(addressBookName);
+    }
+
+    // UC-12: Sort by Zip
+    public ArrayList<Contact> sortContactsByZip(String addressBookName) {
+        return addressBook.sortContactsByZip(addressBookName);
+    }
 
 }
