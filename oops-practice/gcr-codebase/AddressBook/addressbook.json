@@ -1,0 +1,12 @@
+[
+  {
+    "firstName": "madhu",
+    "lastName": "solanki",
+    "address": "abc street",
+    "city": "abc",
+    "state": "abc",
+    "zipCode": "345678",
+    "phoneNumber": "234567890",
+    "email": "madhu@gmail.com"
+  }
+]

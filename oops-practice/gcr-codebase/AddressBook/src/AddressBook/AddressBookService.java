@@ -99,5 +99,14 @@ public class AddressBookService {
     public void readFromCSV(String addressBookName, String fileName) {
         addressBook.readFromCSV(addressBookName, fileName);
     }
+    // UC-15: Write to JSON
+    public void writeToJson(String addressBookName, String fileName) {
+        addressBook.writeToJson(addressBookName, fileName);
+    }
+
+    // UC-15: Read from JSON
+    public void readFromJson(String addressBookName, String fileName) {
+        addressBook.readFromJson(addressBookName, fileName);
+    }
 
 }

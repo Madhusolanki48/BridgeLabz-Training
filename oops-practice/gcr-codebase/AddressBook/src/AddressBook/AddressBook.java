@@ -354,5 +354,41 @@ public class AddressBook {
 	        System.out.println("Error reading CSV: " + e.getMessage());
 	    }
 	}
+	// UC-15: Write Address Book to JSON
+	public void writeToJson(String addressBookName, String fileName) {
+	    try {
+	        com.google.gson.Gson gson = new com.google.gson.GsonBuilder().setPrettyPrinting().create();
+	        java.io.FileWriter writer = new java.io.FileWriter(fileName);
+
+	        ArrayList<Contact> list = getAllContacts(addressBookName);
+	        gson.toJson(list, writer);
+
+	        writer.close();
+	        System.out.println("Address Book written to JSON successfully!");
+
+	    } catch (Exception e) {
+	        System.out.println("Error writing JSON: " + e.getMessage());
+	    }
+	}
+
+	// UC-15: Read Address Book from JSON
+	public void readFromJson(String addressBookName, String fileName) {
+	    try {
+	        com.google.gson.Gson gson = new com.google.gson.Gson();
+	        java.io.FileReader reader = new java.io.FileReader(fileName);
+
+	        Contact[] contacts = gson.fromJson(reader, Contact[].class);
+
+	        for (Contact c : contacts) {
+	            addContact(addressBookName, c);
+	        }
+
+	        reader.close();
+	        System.out.println("Address Book loaded from JSON successfully!");
+
+	    } catch (Exception e) {
+	        System.out.println("Error reading JSON: " + e.getMessage());
+	    }
+	}
 
 }
