@@ -1,4 +1,4 @@
-#  Bridgelabz Training 
+7#  Bridgelabz Training 
 
 ![Java](https://img.shields.io/badge/Java-Core-orange)
 ![DSA](https://img.shields.io/badge/DSA-LeetCode-yellow)
@@ -931,7 +931,7 @@ BridgeLabz-Training-java8-features-practice/
 ➤ [*employee-wage-computation Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/java8-features-practice/java8-features-practice/scenario-based/employee-wage-computation)
 
 ---
-**Day 49 — 16-02-2026**
+**Day 49 — 17-02-2026**
 
 ### Focus Area — JUnit Testing & AddressBook Refactor
 
@@ -946,6 +946,28 @@ BridgeLabz-Training-java8-features-practice/
 ➤ UC-14: Read/Write Address Book as CSV<br>
 ➤ UC-15: Read/Write Address Book as JSON<br>
 ➤ [*AddressBook Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/AddressBook)
+
+---
+**Day 50 — 18-02-2026**
+
+### Focus Area — Solution Designing Scenario Systems
+- Implemented **2 scenario-based** problems in `solution-designing-practice` :<br>
+- [*Railway Platform Allocation System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/solution-designing-practice/solution-designing-practice/scenario-based/RailwayPlatformAllocationSystem):<br>
+➤ Assigns platforms to incoming trains<br>
+➤ Uses Map and PriorityQueue<br>
+➤ Prevents platform conflicts<br>
+➤ Implements Comparable for train sorting<br>
+➤ Handles errors via custom exception<br>
+➤ Clean OOP-based design<br>
+
+- [*Digital Subscription Renewal System*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/solution-designing-practice/solution-designing-practice/scenario-based/DigitalSubscriptionRenewalSystem) :<br>
+➤ Manages user subscription renewals<br>
+➤ Detects expired accounts<br>
+➤ Applies discount using Strategy Pattern<br>
+➤ Uses Java Date/Time API<br>
+➤ Handles payment failures with custom exception<br>
+
+- Created a new repository **`QuantityMeasurementApp`**
 
 
 
