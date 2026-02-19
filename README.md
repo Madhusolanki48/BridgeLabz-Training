@@ -968,8 +968,16 @@ BridgeLabz-Training-java8-features-practice/
 ➤ Handles payment failures with custom exception<br>
 
 - Created a new repository **`QuantityMeasurementApp`**
+---
+**Day 51 — 19-02-2026**
 
+### Focus Area — Java 8 Streams (LeetCode)
 
+- Solved **2 LeetCode problems** in `java8-features-practice` :<br>
+➤ [*RunningSumUsingStreams*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/leet-code-codebase/RunningSumUsingStreams.java) — lambda-based accumulation using Streams<br>
+➤ [*NumberOfGoodPairsUsingStreams*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/leet-code-codebase/NumberOfGoodPairsUsingStreams.java) — `groupingBy` frequency counting with Streams<br>
+
+---
 
 
 
