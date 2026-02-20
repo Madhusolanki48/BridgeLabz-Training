@@ -978,6 +978,14 @@ BridgeLabz-Training-java8-features-practice/
 ➤ [*NumberOfGoodPairsUsingStreams*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/leet-code-codebase/NumberOfGoodPairsUsingStreams.java) — `groupingBy` frequency counting with Streams<br>
 
 ---
+**Day 52 — 20-02-2026**
+
+### Focus Area — LeetCode (Collections & HashMap)
+
+- Solved **2 LeetCode problems** in `collections-practice` :<br>
+➤ [*TopKFrequentElements*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/TopKFrequentElements.java) — HashMap frequency counting with list sorting to find top-k elements<br>
+➤ [*FindLuckyInteger*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/FindLuckyInteger.java) — HashMap frequency mapping to detect value equal to its frequency<br>
+---
 
 
 
