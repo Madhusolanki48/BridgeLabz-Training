@@ -987,6 +987,23 @@ BridgeLabz-Training-java8-features-practice/
 ➤ [*FindLuckyInteger*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/collections-practice/collections-practice/leet-code-codebase/FindLuckyInteger.java) — HashMap frequency mapping to detect value equal to its frequency<br>
 ---
 
+**Day 53 — 21-02-2026**
+
+### Focus Area — Solution Designing & Java 8 Streams
+
+- Implemented **Smart Traffic Fine Collection System** in `scenario-based` under `solution-designing-practice` :<br>
+➤ Violations stored using `Map<VehicleNumber, List<Violation>>`<br>
+➤ Fine calculated based on violation type<br>
+➤ Repeat offenders handled using polymorphism<br>
+➤ Monthly report generation added<br>
+➤ Custom `InvalidVehicleException` implemented<br>
+➤ [*SmartTrafficFineCollectionSystem Solution*](https://github.com/Madhusolanki48/BridgeLabz-Training/tree/solution-designing-practice/solution-designing-practice/scenario-based/SmartTrafficFineCollectionSystem/src)
+
+
+- Solved **2 LeetCode problems** in `java8-features-practice` :<br>
+➤ [*SquaresOfSortedArrayUsingStreams*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/leet-code-codebase/SquaresOfSortedArrayUsingStreams.java) — used Java 8 `map` and `sorted` for squared ordering<br>
+➤ [*AverageSalaryUsingStreams*](https://github.com/Madhusolanki48/BridgeLabz-Training/blob/java8-features-practice/java8-features-practice/leet-code-codebase/AverageSalaryUsingStreams.java) — used `summaryStatistics` to compute average excluding min & max<br>
+
 
 
 
