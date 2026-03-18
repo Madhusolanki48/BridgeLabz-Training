@@ -1,5 +1,7 @@
 package app;
+import service.DoctorService;
 import service.PatientService;
+import model.Doctor;
 import model.Patient;
 import java.sql.Date;
 import java.util.*;
@@ -44,5 +46,55 @@ public class TestPatientApp {
 		}
 		//UC-1.4 : view history
 		service.viewVisitHistory(1);
+		
+		//----------------------- UC-2 -----------------------------
+
+		DoctorService docService = new DoctorService();
+		// UC-2.1 : Add Doctor
+		Doctor d = new Doctor("Dr. John", "9999999999", 500.0, 1);
+		int doctorId = docService.addDoctor(d);
+		if (doctorId == -1) {
+		    System.out.println("Doctor already exists!");
+		    doctorId = 1; 
+		} else {
+		    System.out.println("Doctor added successfully! (ID: " + doctorId + ")");
+		}
+
+		System.out.println("----------------------------------");
+
+		// UC-2.2 : Update Specialty
+		boolean updated1 = docService.updateSpecialty(doctorId, 2);
+
+		if (updated1) {
+		    System.out.println("Doctor specialty updated!");
+		} else {
+		    System.out.println("Update failed!");
+		}
+
+		System.out.println("----------------------------------");
+
+		// UC-2.3 : View Doctors by Specialty
+		List<Doctor> list1 = docService.getDoctorsBySpecialty("Dermatology"); // ✅ FIXED
+
+		if (list1.isEmpty()) {
+		    System.out.println("No doctors found.");
+		} else {
+		    for (Doctor doc : list1) {
+		        System.out.println("ID: " + doc.getDoctorId());
+		        System.out.println("Name: " + doc.getName());
+		        System.out.println("Contact: " + doc.getContact());
+		        System.out.println("Fee: " + doc.getConsultationFee());
+		        System.out.println("----------------------------------");
+		    }
+		}
+
+		// UC-2.4 : Deactivate Doctor
+		boolean deactivated = docService.deactivateDoctor(doctorId);
+
+		if (deactivated) {
+		    System.out.println("Doctor deactivated successfully!");
+		} else {
+		    System.out.println("Deactivation failed!");
+		}
 	}
 }
