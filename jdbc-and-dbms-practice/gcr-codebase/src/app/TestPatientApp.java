@@ -1,9 +1,12 @@
 package app;
+import service.AppointmentService;
 import service.DoctorService;
 import service.PatientService;
+import model.Appointment;
 import model.Doctor;
 import model.Patient;
 import java.sql.Date;
+import java.sql.Time;
 import java.util.*;
 
 public class TestPatientApp {
@@ -95,6 +98,78 @@ public class TestPatientApp {
 		    System.out.println("Doctor deactivated successfully!");
 		} else {
 		    System.out.println("Deactivation failed!");
+		}
+		
+		//----------------------- UC-3 -----------------------------
+
+		AppointmentService appService = new AppointmentService();
+		System.out.println("\n------ Check Doctor Availability -------");
+
+		boolean available = appService.checkAvailability(1, Date.valueOf("2026-03-21"), Time.valueOf("11:00:00"));
+
+		System.out.println("Doctor ID      : 1");
+		System.out.println("Date           : 2026-03-21");
+		System.out.println("Time           : 11:00 AM");
+
+		if (available) {
+			System.out.println("Status         : Available!");
+		} else {
+			System.out.println("Status         : Not Available!");
+		}
+
+		// UC-3.1 Book
+		System.out.println("\n----------- Book Appointment ---------");
+		Appointment a = new Appointment();  
+		a.setPatientId(1);
+		a.setDoctorId(1);
+		a.setAppointmentDate(Date.valueOf("2026-03-21"));
+		a.setAppointmentTime(Time.valueOf("11:00:00"));
+		a.setStatus("SCHEDULED");
+
+		boolean booked = appService.book(a);
+
+		if (booked) {
+			System.out.println("Appointment booked successfully!");
+		} else {
+			System.out.println("Booking failed!");
+		}
+
+		// UC-3.3 Cancel
+		System.out.println("\n--------- Cancel Appointment ---------");
+
+		boolean cancelled = appService.cancel(1);
+
+		if (cancelled) {
+			System.out.println("Appointment cancelled successfully!");
+		} else {
+			System.out.println("Cancellation failed!");
+		}
+
+		// UC-3.4 Reschedule
+		System.out.println("\n------- Reschedule Appointment -------");
+
+		boolean rescheduled = appService.reschedule(1, 1, Date.valueOf("2026-03-22"), Time.valueOf("12:00:00"));
+
+		if (rescheduled) {
+			System.out.println("Appointment rescheduled successfully!");
+		} else {
+			System.out.println("Reschedule failed!");
+		}
+
+		// UC-3.5 View
+		System.out.println("\n----------- Daily Schedule -----------");
+		List<String> schedule = appService.getSchedule(Date.valueOf("2026-03-22"));
+
+		if (schedule.isEmpty()) {
+			System.out.println("No appointments found.");
+		} else {
+			int count = 1;
+			for (String s : schedule) {
+				System.out.println("Appointment #" + count++);
+				System.out.println("--------------------------------------------------------------------");
+				System.out.println(s);
+				System.out.println("--------------------------------------------------------------------");
+			}
 		}
 	}
 }
