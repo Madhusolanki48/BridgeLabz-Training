@@ -89,7 +89,8 @@ public class PatientRepository {
 	}
 	//UC-1.4 : get visit history of a patient
 	public void getVisitHistory(int patientId) {
-		String sql = "SELECT visit_id, doctor_name, diagnosis, visit_date FROM visits WHERE patient_id=? ORDER BY visit_date DESC";
+		String sql = "SELECT visit_id, d.name AS doctor_name,v.diagnosis, v.visit_date FROM visits v JOIN appointments a ON v.appointment_id = a.appointment_id "+""
+				+ "JOIN doctors d ON a.doctor_id = d.doctor_id WHERE a.patient_id=? ORDER BY v.visit_date DESC";
 		try (Connection conn = DBConnection.getConnection(); PreparedStatement ps = conn.prepareStatement(sql)) {
 			ps.setInt(1, patientId);
 			ResultSet rs = ps.executeQuery();

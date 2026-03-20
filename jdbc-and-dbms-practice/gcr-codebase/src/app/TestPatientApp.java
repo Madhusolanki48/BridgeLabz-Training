@@ -1,5 +1,6 @@
 package app;
 import service.AppointmentService;
+import service.BillService;
 import service.DoctorService;
 import service.PatientService;
 import service.VisitService;
@@ -220,6 +221,35 @@ public class TestPatientApp {
 
 		for (String h : history) {
 			System.out.println(h);
+		}
+		
+		// ----------------------- UC-5 -----------------------------
+
+		BillService billService = new BillService();
+
+		// UC-5.1 Generate Bill
+		System.out.println("\n------ Generate Bill ------");
+		int billId = billService.generateBill(1);
+		System.out.println("Bill generated! ID: " + billId);
+
+		// UC-5.2 Payment
+		System.out.println("\n----- Record Payment ------");
+		boolean paid = billService.payBill(billId, 500, "CASH");
+		System.out.println(paid ? "Payment successful!" : "Payment failed!");
+
+		// UC-5.3 Outstanding Bills
+		System.out.println("\n---- Outstanding Bills ----");
+		List<String> pending = billService.getOutstandingBills();
+		for (String p4 : pending) {
+			System.out.println(p4);
+		}
+
+		// UC-5.4 Revenue Report
+		System.out.println("\n----- Revenue Report ------");
+		List<String> report = billService.getRevenueReport("2026-03-01", "2026-03-30");
+
+		for (String r : report) {
+			System.out.println(r);
 		}
 	}
 }
