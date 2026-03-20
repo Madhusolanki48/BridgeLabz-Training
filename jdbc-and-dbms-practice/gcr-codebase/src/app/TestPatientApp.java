@@ -2,9 +2,13 @@ package app;
 import service.AppointmentService;
 import service.DoctorService;
 import service.PatientService;
+import service.VisitService;
 import model.Appointment;
 import model.Doctor;
 import model.Patient;
+import model.Prescription;
+import model.Visit;
+
 import java.sql.Date;
 import java.sql.Time;
 import java.util.*;
@@ -170,6 +174,52 @@ public class TestPatientApp {
 				System.out.println(s);
 				System.out.println("--------------------------------------------------------------------");
 			}
+		}
+		
+		// ----------------------- UC-4 -----------------------------
+		VisitService visitService = new VisitService();
+		// UC-4.1 Record Visit
+		System.out.println("\n--- Record Visit ---");
+		Visit v = new Visit();
+		v.setAppointmentId(1);
+		v.setDiagnosis("Fever");
+		v.setNotes("Take rest");
+
+		int visitId = visitService.recordVisit(v);
+
+		System.out.println("Visit recorded! ID: " + visitId);
+
+		// UC-4.3 Add Prescriptions
+		System.out.println("\n--- Add Prescriptions ---");
+
+		List<Prescription> presList = new ArrayList<>();
+
+		Prescription p1 = new Prescription();
+		p1.setVisitId(visitId);
+		p1.setMedicineName("Paracetamol");
+		p1.setDosage("500mg");
+		p1.setDuration("3 days");
+
+		Prescription p2 = new Prescription();
+		p2.setVisitId(visitId);
+		p2.setMedicineName("Vitamin C");
+		p2.setDosage("1 tablet");
+		p2.setDuration("5 days");
+
+		presList.add(p1);
+		presList.add(p2);
+
+		visitService.addPrescriptions(presList);
+
+		System.out.println("Prescriptions added!");
+
+		// UC-4.2 View History
+		System.out.println("\n--- Medical History ---");
+
+		List<String> history = visitService.getHistory(1);
+
+		for (String h : history) {
+			System.out.println(h);
 		}
 	}
 }

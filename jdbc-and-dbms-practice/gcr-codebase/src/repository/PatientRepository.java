@@ -1,11 +1,7 @@
 package repository;
 import db.DBConnection;
 import model.Patient;
-import service.Connection;
-import service.PreparedStatement;
-import service.SQLException;
 import java.util.*;
-
 import java.sql.*;
 
 public class PatientRepository {
