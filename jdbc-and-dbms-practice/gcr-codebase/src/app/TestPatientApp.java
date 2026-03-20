@@ -1,4 +1,5 @@
 package app;
+import service.AdminService;
 import service.AppointmentService;
 import service.BillService;
 import service.DoctorService;
@@ -8,6 +9,7 @@ import model.Appointment;
 import model.Doctor;
 import model.Patient;
 import model.Prescription;
+import model.Specialty;
 import model.Visit;
 
 import java.sql.Date;
@@ -250,6 +252,24 @@ public class TestPatientApp {
 
 		for (String r : report) {
 			System.out.println(r);
+		}
+		//----------------------- UC-6 -----------------------------
+
+		AdminService adminService = new AdminService();
+
+		// UC-6.1 CRUD
+		System.out.println("\n----- Add Specialty -----");
+		adminService.addSpecialty("Neurology");
+
+		System.out.println("\n---- All Specialties ----");
+		for (Specialty s : adminService.getAllSpecialties()) {
+		    System.out.println(s.getSpecialtyId() + " - " + s.getSpecialtyName());
+		}
+
+		// UC-6.3 Audit Logs
+		System.out.println("\n------ Audit Logs ------");
+		for (String log : adminService.getAuditLogs()) {
+		    System.out.println(log);
 		}
 	}
 }
