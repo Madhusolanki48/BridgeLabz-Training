@@ -1,4 +1,4 @@
-7#  Bridgelabz Training 
+#  Bridgelabz Training 
 
 ![Java](https://img.shields.io/badge/Java-Core-orange)
 ![DSA](https://img.shields.io/badge/DSA-LeetCode-yellow)
