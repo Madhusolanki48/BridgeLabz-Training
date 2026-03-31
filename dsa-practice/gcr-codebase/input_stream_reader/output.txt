@@ -1,0 +1,5 @@
+Today I practiced InputStreamReader.
+I learned how to take console input.
+This data is written into a file line by line.
+Java file handling is easy when practiced daily.
+Thank you...
