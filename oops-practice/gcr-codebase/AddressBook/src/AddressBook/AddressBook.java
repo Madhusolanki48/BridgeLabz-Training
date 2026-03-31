@@ -1,0 +1,394 @@
+package AddressBook;
+import java.io.*;
+import java.util.*;
+import java.io.FileReader;
+import java.io.FileWriter;
+import com.opencsv.CSVReader;
+import com.opencsv.CSVWriter;
+
+// UC-2: Add new Contact using Console + OOP
+public class AddressBook {
+
+	// UC-5: Ability to add multiple person to Address Book using Collection Class
+	// private ArrayList<Contact> contactList = new ArrayList<Contact>();
+	// UC-6: Multiple Address Books with unique name using Dictionary
+	private HashMap<String, ArrayList<Contact>> addressBookMap = new HashMap<String, ArrayList<Contact>>();
+	// UC-9: Dictionary of City -> Persons and State -> Persons
+	private HashMap<String, ArrayList<Contact>> cityMap = new HashMap<String, ArrayList<Contact>>();
+	private HashMap<String, ArrayList<Contact>> stateMap = new HashMap<String, ArrayList<Contact>>();
+
+	public boolean addAddressBook(String addressBookName) {
+		if (addressBookMap.containsKey(addressBookName)) {
+			return false;
+		}
+		addressBookMap.put(addressBookName, new ArrayList<Contact>());
+		return true;
+	}
+
+	public Set<String> getAllAddressBookNames() {
+		return addressBookMap.keySet();
+	}
+
+	// UC-5 + UC-6: Add contact to selected Address Book
+	public boolean addContact(String addressBookName, Contact contactPerson) {
+		ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+		if (contactList == null) {
+			return false;
+		}
+		// UC-7 Duplicate Check
+		if (contactList.contains(contactPerson)) {
+			return false;
+		}
+		contactList.add(contactPerson);
+		// UC-9: Store in City/State dictionary
+		updateCityStateMap(contactPerson);
+		return true;
+	}
+
+	// UC-9: Update City and State Dictionaries
+	private void updateCityStateMap(Contact contactPerson) {
+		String city = contactPerson.getCity();
+		String state = contactPerson.getState();
+		if (!cityMap.containsKey(city)) {
+			cityMap.put(city, new ArrayList<Contact>());
+		}
+		cityMap.get(city).add(contactPerson);
+		if (!stateMap.containsKey(state)) {
+			stateMap.put(state, new ArrayList<Contact>());
+		}
+		stateMap.get(state).add(contactPerson);
+	}
+
+	// UC-5 : return all contacts
+	public ArrayList<Contact> getAllContacts(String addressBookName) {
+		ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+		if (contactList == null) {
+			return new ArrayList<Contact>();
+		}
+		return contactList;
+	}
+
+	// find contact by first name
+	public Contact findContactByName(String addressBookName, String firstName) {
+		ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+
+		if (contactList == null) {
+			return null;
+		}
+		for (Contact contact : contactList) {
+			if (contact.getFirstName().equalsIgnoreCase(firstName)) {
+				return contact;
+			}
+		}
+		return null;
+	}
+
+	// UC-3: Edit Existing Contact Details by Name using Console (using setters)
+	public boolean editContact(String addressBookName, String firstName, String address, String city, String state,
+			String zipCode, String phoneNumber, String email) {
+		Contact contactPerson = findContactByName(addressBookName, firstName);
+		if (contactPerson == null) {
+			return false;
+		}
+		contactPerson.setAddress(address);
+		contactPerson.setCity(city);
+		contactPerson.setState(state);
+		contactPerson.setZipCode(zipCode);
+		contactPerson.setPhoneNumber(phoneNumber);
+		contactPerson.setEmail(email);
+
+		return true;
+	}
+
+	// UC-4: Delete a person using person's name - Use Console to delete a person
+	public boolean deleteContact(String addressBookName, String firstName) {
+		ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+		if (contactList == null) {
+			return false;
+		}
+		for (int i = 0; i < contactList.size(); i++) {
+			if (contactList.get(i).getFirstName().equalsIgnoreCase(firstName)) {
+				contactList.remove(i);
+				return true;
+			}
+		}
+		return false;
+	}
+
+	// UC-8: Search Person in a City across multiple Address Books
+	public ArrayList<Contact> searchPersonByCity(String city) {
+		ArrayList<Contact> result = new ArrayList<Contact>();
+		for (String bookName : addressBookMap.keySet()) {
+			ArrayList<Contact> contactList = addressBookMap.get(bookName);
+			for (Contact contact : contactList) {
+				if (contact.getCity().equalsIgnoreCase(city)) {
+					result.add(contact);
+				}
+			}
+		}
+		return result;
+	}
+
+	// UC-8: Search Person in a State across multiple Address Books
+	public ArrayList<Contact> searchPersonByState(String state) {
+		ArrayList<Contact> result = new ArrayList<Contact>();
+		for (String bookName : addressBookMap.keySet()) {
+			ArrayList<Contact> contactList = addressBookMap.get(bookName);
+			for (Contact contact : contactList) {
+				if (contact.getState().equalsIgnoreCase(state)) {
+					result.add(contact);
+				}
+			}
+		}
+		return result;
+	}
+
+	// UC-9: View Persons by City
+	public HashMap<String, ArrayList<Contact>> viewPersonsByCity() {
+		return cityMap;
+	}
+
+	// UC-9: View Persons by State
+	public HashMap<String, ArrayList<Contact>> viewPersonsByState() {
+		return stateMap;
+	}
+
+	// UC-10: Count Persons by City
+	public HashMap<String, Integer> countByCity() {
+		HashMap<String, Integer> cityCountMap = new HashMap<String, Integer>();
+
+		for (String city : cityMap.keySet()) {
+			cityCountMap.put(city, cityMap.get(city).size());
+		}
+		return cityCountMap;
+	}
+
+	// UC-10: Count Persons by State
+	public HashMap<String, Integer> countByState() {
+		HashMap<String, Integer> stateCountMap = new HashMap<String, Integer>();
+
+		for (String state : stateMap.keySet()) {
+			stateCountMap.put(state, stateMap.get(state).size());
+		}
+		return stateCountMap;
+	}
+	// UC-11: sort contacts alphabetically by person's name
+	public ArrayList<Contact> sortContactsByName(String addressBookName) {
+	    ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+
+	    if (contactList == null) {
+	        return new ArrayList<Contact>();
+	    }
+
+	    //collection library for sorting
+	    Collections.sort(contactList, new Comparator<Contact>() {
+	        @Override
+	        public int compare(Contact c1, Contact c2) {
+	            return c1.getFirstName().compareToIgnoreCase(c2.getFirstName());
+	        }
+	    });
+
+	    return contactList;
+	}
+
+	// UC-12: Sort contacts by City
+	public ArrayList<Contact> sortContactsByCity(String addressBookName) {
+		ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+
+		if (contactList == null) {
+			return new ArrayList<Contact>();
+		}
+		Collections.sort(contactList, new Comparator<Contact>() {
+			@Override
+			public int compare(Contact c1, Contact c2) {
+				return c1.getCity().compareToIgnoreCase(c2.getCity());
+			}
+		});
+
+		return contactList;
+	}
+
+	// UC-12: Sort contacts by State
+	public ArrayList<Contact> sortContactsByState(String addressBookName) {
+		ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+
+		if (contactList == null) {
+			return new ArrayList<Contact>();
+		}
+		Collections.sort(contactList, new Comparator<Contact>() {
+			@Override
+			public int compare(Contact c1, Contact c2) {
+				return c1.getState().compareToIgnoreCase(c2.getState());
+			}
+		});
+
+		return contactList;
+	}
+
+	// UC-12: Sort contacts by Zip
+	public ArrayList<Contact> sortContactsByZip(String addressBookName) {
+		ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+
+		if (contactList == null) {
+			return new ArrayList<Contact>();
+		}
+		Collections.sort(contactList, new Comparator<Contact>() {
+			@Override
+			public int compare(Contact c1, Contact c2) {
+				return c1.getZipCode().compareToIgnoreCase(c2.getZipCode());
+			}
+		});
+
+		return contactList;
+	}
+	// UC-13: Write Address Book to File
+	public void writeToFile(String addressBookName, String fileName) {
+	    ArrayList<Contact> contactList = addressBookMap.get(addressBookName);
+
+	    if (contactList == null) {
+	        System.out.println("Address Book not found!");
+	        return;
+	    }
+
+	    try {
+	        FileWriter writer = new FileWriter(fileName);
+
+	        for (Contact c : contactList) {
+	            writer.write(
+	                c.getFirstName() + "," +
+	                c.getLastName() + "," +
+	                c.getAddress() + "," +
+	                c.getCity() + "," +
+	                c.getState() + "," +
+	                c.getZipCode() + "," +
+	                c.getPhone() + "," +
+	                c.getEmail() + "\n"
+	            );
+	        }
+
+	        writer.close();
+	        System.out.println("Contacts written to file successfully!");
+
+	    } catch (IOException e) {
+	        System.out.println("Error writing to file!");
+	    }
+	}
+	// UC-13: Read Address Book from File
+	public void readFromFile(String addressBookName, String fileName) {
+
+	    try {
+	        BufferedReader reader = new BufferedReader(new FileReader(fileName));
+	        String line;
+
+	        while ((line = reader.readLine()) != null) {
+	            String[] data = line.split(",");
+
+	            Contact contact = new Contact(
+	                data[0], data[1], data[2], data[3],
+	                data[4], data[5], data[6], data[7]
+	            );
+
+	            addContact(addressBookName, contact);
+	        }
+
+	        reader.close();
+	        System.out.println("Contacts loaded from file successfully!");
+
+	    } catch (IOException e) {
+	        System.out.println("Error reading file!");
+	    }
+	}
+
+	// UC-14: Write Address Book to CSV using OpenCSV
+	public void writeToCSV(String addressBookName, String fileName) {
+		ArrayList<Contact> list = addressBookMap.get(addressBookName);
+
+		if (list == null) {
+			System.out.println("Address Book not found!");
+			return;
+		}
+
+		try (CSVWriter writer = new CSVWriter(new FileWriter(fileName))) {
+
+			// header
+			String[] header = { "FirstName", "LastName", "Address", "City", "State", "Zip", "Phone", "Email" };
+			writer.writeNext(header);
+
+			for (Contact c : list) {
+				String[] data = { c.getFirstName(), c.getLastName(), c.getAddress(), c.getCity(), c.getState(),
+						c.getZipCode(), c.getPhone(), c.getEmail() };
+				writer.writeNext(data);
+			}
+
+			System.out.println("Address Book written to CSV successfully!");
+
+		} catch (Exception e) {
+			System.out.println("Error writing CSV: " + e.getMessage());
+		}
+	}
+	// UC-14: Read Address Book from CSV using OpenCSV
+	public void readFromCSV(String addressBookName, String fileName) {
+
+	    try (CSVReader reader = new CSVReader(new FileReader(fileName))) {
+
+	        addressBookMap.putIfAbsent(addressBookName, new ArrayList<Contact>());
+	        ArrayList<Contact> list = addressBookMap.get(addressBookName);
+
+	        String[] row;
+	        reader.readNext(); 
+
+	        while ((row = reader.readNext()) != null) {
+
+	            Contact contact = new Contact(
+	                row[0], row[1], row[2], row[3],
+	                row[4], row[5], row[6], row[7]
+	            );
+
+	            list.add(contact);
+	            updateCityStateMap(contact); 
+	        }
+
+	        System.out.println("Address Book loaded from CSV successfully!");
+
+	    } catch (Exception e) {
+	        System.out.println("Error reading CSV: " + e.getMessage());
+	    }
+	}
+	// UC-15: Write Address Book to JSON
+	public void writeToJson(String addressBookName, String fileName) {
+	    try {
+	        com.google.gson.Gson gson = new com.google.gson.GsonBuilder().setPrettyPrinting().create();
+	        java.io.FileWriter writer = new java.io.FileWriter(fileName);
+
+	        ArrayList<Contact> list = getAllContacts(addressBookName);
+	        gson.toJson(list, writer);
+
+	        writer.close();
+	        System.out.println("Address Book written to JSON successfully!");
+
+	    } catch (Exception e) {
+	        System.out.println("Error writing JSON: " + e.getMessage());
+	    }
+	}
+
+	// UC-15: Read Address Book from JSON
+	public void readFromJson(String addressBookName, String fileName) {
+	    try {
+	        com.google.gson.Gson gson = new com.google.gson.Gson();
+	        java.io.FileReader reader = new java.io.FileReader(fileName);
+
+	        Contact[] contacts = gson.fromJson(reader, Contact[].class);
+
+	        for (Contact c : contacts) {
+	            addContact(addressBookName, c);
+	        }
+
+	        reader.close();
+	        System.out.println("Address Book loaded from JSON successfully!");
+
+	    } catch (Exception e) {
+	        System.out.println("Error reading JSON: " + e.getMessage());
+	    }
+	}
+
+}
