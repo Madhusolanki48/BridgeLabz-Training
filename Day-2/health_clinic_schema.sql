@@ -120,3 +120,59 @@ JOIN patients p ON a.patient_id = p.patient_id
 JOIN doctors d ON a.doctor_id = d.doctor_id
 JOIN billing b ON a.appointment_id = b.appointment_id
 JOIN visit_history v ON a.appointment_id = v.appointment_id;
+
+
+-- ----------------------------------------------------
+-- DAY 2 ASSIGNMENT
+-- Health Clinic Schema Extension & Index Analysis
+-- ----------------------------------------------------
+
+USE health_clinic_db;
+-- Task1:Add Rooms Table and Doctor-Room Relationship
+
+-- Drop tables if they already exist
+DROP TABLE IF EXISTS doctor_room;
+DROP TABLE IF EXISTS rooms;
+
+-- Create rooms table to store consultation room details
+CREATE TABLE rooms (
+    room_id INT AUTO_INCREMENT PRIMARY KEY,
+    room_number VARCHAR(20) NOT NULL UNIQUE,
+    floor_no INT,
+    room_type VARCHAR(50)
+);
+
+-- Junction table representing doctor-room assignments
+CREATE TABLE doctor_room (
+    doctor_id INT,
+    room_id INT,
+
+    PRIMARY KEY (doctor_id, room_id),
+
+    FOREIGN KEY (doctor_id)
+        REFERENCES doctors(doctor_id)
+        ON DELETE CASCADE,
+    FOREIGN KEY (room_id)
+        REFERENCES rooms(room_id)
+        ON DELETE CASCADE
+);
+
+-- sample room data
+INSERT INTO rooms (room_number, floor_no, room_type)
+VALUES ('R101', 1, 'General Consultation');
+
+-- Assigning doctor with ID 1 to room with ID 1
+INSERT INTO doctor_room (doctor_id, room_id)
+VALUES (1, 1);
+
+-- Verifying doctor-room relationship
+SELECT
+    d.first_name,
+    d.last_name,
+    r.room_number,
+    r.room_type
+FROM doctor_room dr
+JOIN doctors d
+    ON dr.doctor_id = d.doctor_id
+JOIN rooms r
+    ON dr.room_id = r.room_id;
