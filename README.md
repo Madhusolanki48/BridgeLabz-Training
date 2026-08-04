@@ -12,7 +12,7 @@ This repository contains my daily assignments, practice work, notes, and applica
 
 | Phase | Topics |
 |---------|---------|
-| Database Programming | ☑ DBMS Fundamentals & RDBMS Basics<br>☑ ER Diagram, Indexing & Normalization<br>☐ Joins, Stored Procedures & Triggers<br>☐ JDBC & Health Clinic Application |
+| Database Programming | ☑ DBMS Fundamentals & RDBMS Basics<br>☑ ER Diagram, Indexing & Normalization<br>☑ Joins, Stored Procedures & Triggers<br>☐ JDBC & Health Clinic Application |
 | Backend Fundamentals | ☐ Tomcat & Servlets<br>☐ Spring Framework Fundamentals<br>☐ Spring MVC<br>☐ REST APIs & Request Handling<br>☐ API Testing Tools & SDLC |
 | Spring Boot Development | ☐ Spring Boot Fundamentals<br>☐ Dependency Injection & H2 Database<br>☐ Spring Services<br>☐ Spring JPA & Spring JDBC<br>☐ Logging, Maven & Postman |
 | Advanced Backend Development | ☐ Spring Security & JWT Authentication<br>☐ Authorization & Notes Management<br>☐ Search, Filter & Tags Management<br>☐ JMS & Redis Caching<br>☐ RabbitMQ & Spring Batch<br>☐ Exception Handling, AOP & Spring Cloud |
@@ -33,6 +33,9 @@ BridgeLabz-Training/
 │   ├── day2_assignment.sql
 │   └── health_clinic_schema.sql
 │   └── ER-Diagram.png
+|
+├── Day-3/
+│   └── day3_practice.sql
 |    
 │
 ├── Day-3/
@@ -83,6 +86,33 @@ BridgeLabz-Training/
 - Applied normalization principles to eliminate redundancy
 - Created single-column, composite, and covering indexes
 - Analyzed query performance using `EXPLAIN`
+
+---
+
+### Day 3 — 04-08-2026
+
+#### Focus Area - SQL Joins, Stored Procedures & Triggers
+
+**Topics Covered**
+- SQL Join Operations
+- INNER, LEFT, RIGHT, FULL OUTER, SELF & CROSS Joins
+- Multi-Table Joins
+- Stored Procedures
+- IN, OUT & INOUT Parameters
+- Transaction Management
+- Error Handling in Procedures
+- Database Triggers
+- BEFORE and AFTER Triggers
+
+**Practiced**
+- Retrieved clinic data using different join operations
+- Generated reports using multi-table joins
+- Created stored procedures with parameter handling
+- Implemented transaction control using COMMIT and ROLLBACK
+- Added error handling using EXIT HANDLER
+- Created triggers for data validation and activity logging
+- Automated billing and visit history updates through triggers
+- Enforced business rules and data integrity at the database level
 
 ---
 
