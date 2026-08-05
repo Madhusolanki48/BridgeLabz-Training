@@ -36,9 +36,13 @@ BridgeLabz-Training/
 |
 ├── Day-3/
 │   └── day3_practice.sql
+|
+├── Day-4/
+│   └── HealthClinicApp/
+|
 |    
 │
-├── Day-3/
+├── Day-/
 │
 ├── ...
 │
@@ -114,6 +118,54 @@ BridgeLabz-Training/
 - Automated billing and visit history updates through triggers
 - Enforced business rules and data integrity at the database level
 
+---
+### Day 4 — 05-08-2026
+
+#### Focus Area - JDBC & Health Clinic Console Application
+
+**Topics Covered**
+- JDBC fundamentals and database connectivity
+- Maven project setup for Java applications
+- MySQL connection handling using JDBC
+- DAO design pattern for database operations
+- DTO classes for transferring data
+- Service layer for business logic
+- HikariCP connection pooling
+- Console-based interactive menu development
+
+**Practiced**
+- Created a complete Health Clinic Management Console App
+- Connected Java application with MySQL database
+- Implemented patient, doctor, specialization, appointment, billing, and visit history modules
+- Added CRUD operations using DAO classes
+- Used prepared statements for safer SQL execution
+- Added appointment booking and cancellation features
+- Implemented appointment completion with billing and visit history
+- Organized the project using config, dao, dto, service, and ui packages
+- Added a simple project README with setup and run instructions
+#### The project structure is as follows: 
+```
+├── Day-4/
+│   └── HealthClinicApp/
+│       ├── database/
+│       │   └── health_clinic_schema.sql
+│       ├── src/main/java/com/clinic/
+│       │   ├── config/
+│       │   │   └── HikariConnectionPool.java
+│       │   ├── dao/
+│       │   │   ├── impl/
+│       │   │   └── DAO interfaces
+│       │   ├── dto/
+│       │   │   └── Data model classes
+│       │   ├── service/
+│       │   │   └── AppointmentService.java
+│       │   ├── ui/
+│       │   │   └── ConsoleMenu.java
+│       │   └── Main.java
+│       ├── pom.xml
+│       └── README.md
+
+```
 ---
 
 
