@@ -12,8 +12,8 @@ This repository contains my daily assignments, practice work, notes, and applica
 
 | Phase | Topics |
 |---------|---------|
-| Database Programming | ☑ DBMS Fundamentals & RDBMS Basics<br>☑ ER Diagram, Indexing & Normalization<br>☑ Joins, Stored Procedures & Triggers<br>☐ JDBC & Health Clinic Application |
-| Backend Fundamentals | ☐ Tomcat & Servlets<br>☐ Spring Framework Fundamentals<br>☐ Spring MVC<br>☐ REST APIs & Request Handling<br>☐ API Testing Tools & SDLC |
+| Database Programming | ☑ DBMS Fundamentals & RDBMS Basics<br>☑ ER Diagram, Indexing & Normalization<br>☑ Joins, Stored Procedures & Triggers<br>☑ JDBC & Health Clinic Application |
+| Backend Fundamentals | ☑ Tomcat & Servlets<br>☐ Spring Framework Fundamentals<br>☑ Spring MVC<br>☐ REST APIs & Request Handling<br>☐ API Testing Tools & SDLC |
 | Spring Boot Development | ☐ Spring Boot Fundamentals<br>☐ Dependency Injection & H2 Database<br>☐ Spring Services<br>☐ Spring JPA & Spring JDBC<br>☐ Logging, Maven & Postman |
 | Advanced Backend Development | ☐ Spring Security & JWT Authentication<br>☐ Authorization & Notes Management<br>☐ Search, Filter & Tags Management<br>☐ JMS & Redis Caching<br>☐ RabbitMQ & Spring Batch<br>☐ Exception Handling, AOP & Spring Cloud |
 | Microservices Architecture | ☐ Monolith vs Microservices<br>☐ API Gateway<br>☐ Service Registry (Eureka)<br>☐ Microservices Architecture & Integration |
@@ -40,6 +40,8 @@ BridgeLabz-Training/
 ├── Day-4/
 │   └── HealthClinicApp/
 |
+├──Day-5/
+|   └──MyGreetingApp/
 |    
 │
 ├── Day-/
@@ -95,7 +97,7 @@ BridgeLabz-Training/
 
 ### Day 3 — 04-08-2026
 
-#### Focus Area - SQL Joins, Stored Procedures & Triggers
+## Focus Area - SQL Joins, Stored Procedures & Triggers
 
 **Topics Covered**
 - SQL Join Operations
@@ -121,7 +123,7 @@ BridgeLabz-Training/
 ---
 ### Day 4 — 05-08-2026
 
-#### Focus Area - JDBC & Health Clinic Console Application
+## Focus Area - JDBC & Health Clinic Console Application
 
 **Topics Covered**
 - JDBC fundamentals and database connectivity
@@ -167,6 +169,51 @@ BridgeLabz-Training/
 
 ```
 ---
+
+### Day 5 - 06-08-2026
+
+## Focus Area - Spring MVC Fundamentals
+
+**Topics Covered**
+- Spring MVC Architecture
+- Tomcat Servlet
+- Spring IOC
+- Dependency Injection
+- Spring vs Spring Boot
+- Model
+- View
+- Controller
+- Request Lifecycle
+
+**Practiced**
+- Created `MyGreetingApp`, a beginner greeting web application
+- Built an HTML form to accept the user's name
+- Added `GreetingServlet` to handle form submission
+- Used `request.getParameter()` to read form data
+- Used request attributes to pass data from Servlet to JSP
+- Used `greeting.jsp` as the view to display a personalized greeting
+- Understood the MVC-style flow: Client Request -> Tomcat -> Servlet -> JSP -> Response
+- Packaged the application as `MyGreetingApp.war` using Maven
+- Added screenshots and setup instructions in `Day-5/README.md`
+
+#### The project structure is as follows:
+```
+├── Day-5/
+│   ├── README.md
+│   ├── screenshots/
+│   │   ├── home-page.png
+│   │   └── old-result-page.png
+│   └── MyGreetingApp/
+│       ├── pom.xml
+│       └── src/main/
+│           ├── java/com/greetings/
+│           │   └── GreetingServlet.java
+│           └── webapp/
+│               ├── index.html
+│               ├── greeting.jsp
+│               ├── css/styles.css
+│               └── WEB-INF/web.xml
+```
 
 
 
