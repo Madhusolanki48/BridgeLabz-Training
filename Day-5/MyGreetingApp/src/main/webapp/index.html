@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Greeting App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Welcome to MyGreetingApp</h1>
+
+      <p>Enter your name below and click <strong>Greet Me</strong>.</p>
+
+      <form method="post" action="greeting" class="form">
+        <label for="username">Your name</label>
+        <input
+          id="username"
+          name="username"
+          type="text"
+          placeholder="e.g. Maddy"
+          required
+        />
+        <button type="submit" class="btn">Greet Me</button>
+      </form>
+
+      <footer>
+        <p class="muted">
+          This is a simple servlet demo - built with Maven and Tomcat.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
