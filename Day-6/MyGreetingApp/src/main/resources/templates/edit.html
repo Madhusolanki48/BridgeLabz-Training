@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>Edit Greeting</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+  </head>
+  <body>
+    <div class="container small">
+      <div class="header">
+        <h1>Edit Greeting</h1>
+        <p>Update an existing greeting message</p>
+      </div>
+
+      <div class="card">
+        <!-- Form to update greeting -->
+        <form class="form" th:action="@{/greetings/{id}(id=${greeting.id})}" method="post">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" th:value="${greeting.name}" required>
+
+          <label for="message">Greeting Message</label>
+          <input id="message" type="text" name="message" th:value="${greeting.message}" required>
+
+          <button class="button" type="submit">Update</button>
+          <a th:href="@{/}">Cancel</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

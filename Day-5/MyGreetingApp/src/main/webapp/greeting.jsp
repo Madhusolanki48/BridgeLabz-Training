@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="greeting-page">
-    <main class="container">
+    <main class="result-card">
+      <div class="result-badge">Greeting Result</div>
       <h1>Hello, ${username}!</h1>
-      <p>Nice to meet you.</p>
-      <a class="btn" href="index.html">Back</a>
+      <p class="result-text">Your greeting is ready. This simple page shows the servlet response and lets you go back to try another name.</p>
+      <a class="btn secondary" href="index.html">Back to form</a>
     </main>
   </body>
 </html>

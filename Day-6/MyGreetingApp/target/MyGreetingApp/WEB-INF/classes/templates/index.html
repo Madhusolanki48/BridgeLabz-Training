@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Greeting App</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>MyGreetingApp</h1>
+        <p>A Simple Greeting Management Application</p>
+      </div>
+
+      <div class="card">
+        <h2>Add Greeting</h2>
+
+        <!-- Form to add a new greeting -->
+        <form class="form" th:action="@{/greetings}" method="post">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="Enter name" required>
+
+          <label for="message">Greeting Message</label>
+          <input id="message" type="text" name="message" placeholder="Enter message" required>
+
+          <button class="button" type="submit">Save</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <div class="table-header">
+          <h2>Greeting List</h2>
+          <a class="button" href="#name">+ Add Greeting</a>
+        </div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Greeting Message</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- th:each works like a loop -->
+            <tr th:each="greeting : ${greetings}">
+              <td th:text="${greeting.id}">1</td>
+              <td th:text="${greeting.name}">Name</td>
+              <td th:text="${greeting.message}">Hello World</td>
+              <td>
+                <a th:href="@{/greetings/{id}(id=${greeting.id})}">View</a>
+                <a th:href="@{/greetings/{id}/edit(id=${greeting.id})}">Edit</a>
+
+                <form class="delete-form" th:action="@{/greetings/{id}/delete(id=${greeting.id})}" method="post">
+                  <button class="button-delete" type="submit">Delete</button>
+                </form>
+              </td>
+            </tr>
+
+            <tr th:if="${#lists.isEmpty(greetings)}">
+              <td colspan="4">No greetings added yet.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

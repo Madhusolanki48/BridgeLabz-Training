@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>View Greeting</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+  </head>
+  <body>
+    <div class="container compact">
+      <!-- Showing one greeting -->
+      <div class="details-card">
+        <div class="details-topbar">
+          <a class="back-link" th:href="@{/}">← All Greetings</a>
+          <span class="id-pill">#<span th:text="${greeting.id}">1</span></span>
+        </div>
+
+        <div class="details-hero">
+          <h1 th:text="${greeting.name}">Name</h1>
+          <span class="details-label">Saved greeting</span>
+        </div>
+
+        <div class="message-box">
+          <p th:text="${greeting.message}">Greeting message</p>
+        </div>
+
+        <div class="details-actions">
+          <a class="button" th:href="@{/greetings/{id}/edit(id=${greeting.id})}">Edit</a>
+          <a class="button-light" th:href="@{/}">Home</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
