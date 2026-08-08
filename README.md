@@ -13,7 +13,7 @@ This repository contains my daily assignments, practice work, notes, and applica
 | Phase | Topics |
 |---------|---------|
 | Database Programming | ☑ DBMS Fundamentals & RDBMS Basics<br>☑ ER Diagram, Indexing & Normalization<br>☑ Joins, Stored Procedures & Triggers<br>☑ JDBC & Health Clinic Application |
-| Backend Fundamentals | ☑ Tomcat & Servlets<br>☐ Spring Framework Fundamentals<br>☑ Spring MVC<br>☐ REST APIs & Request Handling<br>☐ API Testing Tools & SDLC |
+| Backend Fundamentals | ☑ Tomcat & Servlets<br>☑ Spring Framework Fundamentals<br>☑ Spring MVC<br>☐ REST APIs & Request Handling<br>☐ API Testing Tools & SDLC |
 | Spring Boot Development | ☐ Spring Boot Fundamentals<br>☐ Dependency Injection & H2 Database<br>☐ Spring Services<br>☐ Spring JPA & Spring JDBC<br>☐ Logging, Maven & Postman |
 | Advanced Backend Development | ☐ Spring Security & JWT Authentication<br>☐ Authorization & Notes Management<br>☐ Search, Filter & Tags Management<br>☐ JMS & Redis Caching<br>☐ RabbitMQ & Spring Batch<br>☐ Exception Handling, AOP & Spring Cloud |
 | Microservices Architecture | ☐ Monolith vs Microservices<br>☐ API Gateway<br>☐ Service Registry (Eureka)<br>☐ Microservices Architecture & Integration |
@@ -214,6 +214,73 @@ BridgeLabz-Training/
 │               ├── css/styles.css
 │               └── WEB-INF/web.xml
 ```
+
+---
+
+### Day-06: 07-08-26
+
+## Focus Area - Spring MVC CRUD Application
+
+**Topics Covered**
+- Spring MVC Architecture
+- Tomcat Servlet
+- Spring IOC
+- Dependency Injection
+- Spring vs Spring Boot
+- Model, View, and Controller
+- DispatcherServlet
+- Request Lifecycle
+
+### Project: MyGreetingApp
+
+Built a simple Spring Boot MVC CRUD application to manage greeting messages using Thymeleaf.
+
+### Key Concepts Practiced
+
+- **Spring MVC Architecture** - Follows the Model-View-Controller pattern to separate application logic.
+- **DispatcherServlet** - Front controller that receives requests and routes them to the appropriate controller.
+- **Controller (`@Controller`)** - Handles HTTP requests and prepares data for the view.
+- **Views (Thymeleaf)** - Dynamic HTML templates used to render responses.
+- **`@GetMapping`** - Maps HTTP GET requests to controller methods.
+- **`@PostMapping`** - Maps form submissions to controller methods.
+- **`@RequestParam`** - Retrieves form values from the request.
+- **Model** - Passes data from the controller to the view.
+- **Request Lifecycle** - Client Request -> DispatcherServlet -> Controller -> Model -> View -> Response.
+
+### MyGreetingApp
+
+- Created a Spring Boot MVC application named `MyGreetingApp`.
+- Configured the application using `@SpringBootApplication`.
+- Implemented `GreetingController` with:
+  - `GET /` - Displays the add greeting form and greeting list.
+  - `POST /greetings` - Saves a new greeting.
+  - `GET /greetings/{id}` - Displays one greeting.
+  - `GET /greetings/{id}/edit` - Opens the edit form.
+  - `POST /greetings/{id}` - Updates an existing greeting.
+  - `POST /greetings/{id}/delete` - Deletes a greeting.
+- Used Thymeleaf templates to render dynamic content.
+- Used an in-memory repository to store greeting records.
+- Gained hands-on experience with the complete Spring MVC CRUD request flow.
+
+#### Project Screenshots
+
+**Home Page**
+
+![MyGreetingApp home page](Day-6/MyGreetingApp/screenshots/home.png)
+
+**Greeting Details Page**
+
+![MyGreetingApp greeting details page](Day-6/MyGreetingApp/screenshots/greeting.png)
+
+**Edit Greeting Page**
+
+![MyGreetingApp edit greeting page](Day-6/MyGreetingApp/screenshots/edit%20greeting.png)
+
+---
+
+
+
+
 
 
 
