@@ -278,6 +278,68 @@ Built a simple Spring Boot MVC CRUD application to manage greeting messages usin
 
 ---
 
+### Day 7 - 10-08-2026
+
+## Focus Area - Spring REST API and Request Handling
+
+**Topics Covered**
+- Spring Boot REST API
+- RESTful API request handling
+- `@RestController`, `@RequestMapping`, `@PostMapping`, and `@RequestBody`
+- Spring Data JPA and Hibernate
+- Entity, Repository, Service, and Controller layers
+- DTO Pattern
+- H2 In-Memory Database
+- H2 Database Console
+- HikariCP Connection Pool
+
+**Project: Contacts Management REST API**
+
+Built a Contacts Management REST API using Spring Boot, Spring Data JPA, Hibernate, and H2 Database.
+
+**Key Concepts Practiced**
+- Implemented the Add Contact API using POST.
+- Followed layered architecture: Controller -> Service -> Repository -> Database.
+- Created `Contact` entity for database mapping.
+- Used Request DTO and Response DTO for clean API data transfer.
+- Configured H2 in-memory database and H2 Console.
+- Used `JpaRepository` for database operations.
+- Tested the API using Postman.
+
+**API Implemented**
+- `POST /contactApp/create` - Adds a new contact
+
+
+#### The project structure is as follows:
+```text
+Day-7/
+`-- ContactsApp/
+    |-- pom.xml
+    `-- src/
+        |-- main/
+        |   |-- java/
+        |   |   `-- com/bridgelabz/contactsapp/
+        |   |       |-- ContactsAppApplication.java
+        |   |       |-- controller/
+        |   |       |   `-- ContactAppController.java
+        |   |       |-- dto/
+        |   |       |   |-- ContactRequestDTO.java
+        |   |       |   `-- ContactResponseDTO.java
+        |   |       |-- model/
+        |   |       |   `-- Contact.java
+        |   |       |-- repository/
+        |   |       |   `-- ContactRepository.java
+        |   |       `-- service/
+        |   |           `-- ContactService.java
+        |   `-- resources/
+        |       `-- application.properties
+        `-- test/
+            `-- java/com/bridgelabz/contactsapp/
+                `-- ContactsAppApplicationTests.java
+```
+
+---
+
 
 
 
