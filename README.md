@@ -13,7 +13,7 @@ This repository contains my daily assignments, practice work, notes, and applica
 | Phase | Topics |
 |---------|---------|
 | Database Programming | ☑ DBMS Fundamentals & RDBMS Basics<br>☑ ER Diagram, Indexing & Normalization<br>☑ Joins, Stored Procedures & Triggers<br>☑ JDBC & Health Clinic Application |
-| Backend Fundamentals | ☑ Tomcat & Servlets<br>☑ Spring Framework Fundamentals<br>☑ Spring MVC<br>☐ REST APIs & Request Handling<br>☐ API Testing Tools & SDLC |
+| Backend Fundamentals | ☑ Tomcat & Servlets<br>☑ Spring Framework Fundamentals<br>☑ Spring MVC<br>☑ REST APIs & Request Handling<br>☑ API Testing Tools & SDLC |
 | Spring Boot Development | ☐ Spring Boot Fundamentals<br>☐ Dependency Injection & H2 Database<br>☐ Spring Services<br>☐ Spring JPA & Spring JDBC<br>☐ Logging, Maven & Postman |
 | Advanced Backend Development | ☐ Spring Security & JWT Authentication<br>☐ Authorization & Notes Management<br>☐ Search, Filter & Tags Management<br>☐ JMS & Redis Caching<br>☐ RabbitMQ & Spring Batch<br>☐ Exception Handling, AOP & Spring Cloud |
 | Microservices Architecture | ☐ Monolith vs Microservices<br>☐ API Gateway<br>☐ Service Registry (Eureka)<br>☐ Microservices Architecture & Integration |
@@ -340,6 +340,39 @@ Day-7/
 
 ---
 
+
+### Day 8 - 11-08-2026
+
+## Focus Area - Spring Boot Contacts App Complete CRUD
+
+**Topics Covered**
+- Built a Contacts REST API using Spring Boot
+- H2 Database integration with JPA/Hibernate
+- DTO, Service, Repository and Controller layers
+- Lombok and Builder Pattern
+- Bean Validation and Exception Handling
+- H2 Console integration
+- Tested REST APIs using Postman
+
+**Project: Contacts Management REST API**
+
+Built a complete Contacts REST API using Spring Boot, Spring Data JPA, Hibernate, H2 Database, DTOs, validation, and exception handling.
+
+**CRUD Operations**
+- **Create** - Add a new contact with name, phone number and email.
+- **Read** - Fetch all contacts or fetch a specific contact by ID.
+- **Update** - Modify the details of an existing contact using its ID.
+- **Delete** - Remove an existing contact using its ID.
+
+**API Implemented**
+- `POST /api/v1/contacts` - Adds a new contact
+- `GET /api/v1/contacts` - Fetches all contacts
+- `GET /api/v1/contacts/{id}` - Fetches a contact by ID
+- `PUT /api/v1/contacts/{id}` - Updates an existing contact
+- `DELETE /api/v1/contacts/{id}` - Deletes a contact
+
+
+---
 
 
 
