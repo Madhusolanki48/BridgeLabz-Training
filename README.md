@@ -14,7 +14,7 @@ This repository contains my daily assignments, practice work, notes, and applica
 |---------|---------|
 | Database Programming | ☑ DBMS Fundamentals & RDBMS Basics<br>☑ ER Diagram, Indexing & Normalization<br>☑ Joins, Stored Procedures & Triggers<br>☑ JDBC & Health Clinic Application |
 | Backend Fundamentals | ☑ Tomcat & Servlets<br>☑ Spring Framework Fundamentals<br>☑ Spring MVC<br>☑ REST APIs & Request Handling<br>☑ API Testing Tools & SDLC |
-| Spring Boot Development | ☐ Spring Boot Fundamentals<br>☐ Dependency Injection & H2 Database<br>☐ Spring Services<br>☐ Spring JPA & Spring JDBC<br>☐ Logging, Maven & Postman |
+| Spring Boot Development | ☑ Spring Boot Fundamentals<br>☐ Dependency Injection & H2 Database<br>☐ Spring Services<br>☐ Spring JPA & Spring JDBC<br>☐ Logging, Maven & Postman |
 | Advanced Backend Development | ☐ Spring Security & JWT Authentication<br>☐ Authorization & Notes Management<br>☐ Search, Filter & Tags Management<br>☐ JMS & Redis Caching<br>☐ RabbitMQ & Spring Batch<br>☐ Exception Handling, AOP & Spring Cloud |
 | Microservices Architecture | ☐ Monolith vs Microservices<br>☐ API Gateway<br>☐ Service Registry (Eureka)<br>☐ Microservices Architecture & Integration |
 
@@ -42,6 +42,18 @@ BridgeLabz-Training/
 |
 ├──Day-5/
 |   └──MyGreetingApp/
+|
+├──Day-6/
+|   └──MyGreetingApp/ (with CRUD)
+|
+├──Day-7/
+|   └──ContactsApp/ 
+|
+├──Day-8/
+|   └──ContactsApp/ (with CRUD)
+|
+├──Day-9/
+|   └──CollegeManagementSystem/
 |    
 │
 ├── Day-/
@@ -371,6 +383,29 @@ Built a complete Contacts REST API using Spring Boot, Spring Data JPA, Hibernate
 - `PUT /api/v1/contacts/{id}` - Updates an existing contact
 - `DELETE /api/v1/contacts/{id}` - Deletes a contact
 
+
+---
+
+### Day 9 - 12-08-2026
+
+## Focus Area - Spring Boot College Management System
+
+**Project: College Management System**
+
+Built a Spring Boot REST API to manage students and faculty records using MySQL, Spring Data JPA and layered architecture.
+
+**Topics Covered**
+- Spring Boot REST API with MySQL and JPA/Hibernate
+- Entity, Repository, Service and Controller layers
+- CRUD operations for Student and Faculty modules
+- Custom JPA queries using `@Query`
+- API testing using Postman
+
+**APIs Implemented**
+- `/api/students` - Create, read, update and delete student records
+- `/api/faculty` - Create, read, update and delete faculty records
+- `/api/faculty/highest-paid-by-department` - Highest paid faculty by department
+- `/api/faculty/above-department-average` - Faculty above department average salary
 
 ---
 
