@@ -14,7 +14,7 @@ This repository contains my daily assignments, practice work, notes, and applica
 |---------|---------|
 | Database Programming | ☑ DBMS Fundamentals & RDBMS Basics<br>☑ ER Diagram, Indexing & Normalization<br>☑ Joins, Stored Procedures & Triggers<br>☑ JDBC & Health Clinic Application |
 | Backend Fundamentals | ☑ Tomcat & Servlets<br>☑ Spring Framework Fundamentals<br>☑ Spring MVC<br>☑ REST APIs & Request Handling<br>☑ API Testing Tools & SDLC |
-| Spring Boot Development | ☑ Spring Boot Fundamentals<br>☐ Dependency Injection & H2 Database<br>☐ Spring Services<br>☐ Spring JPA & Spring JDBC<br>☐ Logging, Maven & Postman |
+| Spring Boot Development | ☑ Spring Boot Fundamentals<br>☑ Dependency Injection & H2 Database<br>☐ Spring Services<br>☐ Spring JPA & Spring JDBC<br>☐ Logging, Maven & Postman |
 | Advanced Backend Development | ☐ Spring Security & JWT Authentication<br>☐ Authorization & Notes Management<br>☐ Search, Filter & Tags Management<br>☐ JMS & Redis Caching<br>☐ RabbitMQ & Spring Batch<br>☐ Exception Handling, AOP & Spring Cloud |
 | Microservices Architecture | ☐ Monolith vs Microservices<br>☐ API Gateway<br>☐ Service Registry (Eureka)<br>☐ Microservices Architecture & Integration |
 
@@ -54,6 +54,9 @@ BridgeLabz-Training/
 |
 ├──Day-9/
 |   └──CollegeManagementSystem/
+|
+├──Day-10/
+|   └──EmployeePayrollApp/
 |    
 │
 ├── Day-/
@@ -406,6 +409,32 @@ Built a Spring Boot REST API to manage students and faculty records using MySQL,
 - `/api/faculty` - Create, read, update and delete faculty records
 - `/api/faculty/highest-paid-by-department` - Highest paid faculty by department
 - `/api/faculty/above-department-average` - Faculty above department average salary
+
+---
+### Day 10 - 13-08-2026
+
+## Focus Area - Dependency Injection and H2 Database
+
+**Topics Covered**
+- Dependency Injection and IoC in Spring Boot
+- Constructor, Field and Setter Injection
+- Spring Bean creation and Component Scanning
+- Circular Dependency and how to avoid it
+- H2 in-memory database configuration
+- H2 Console usage
+- Basic JPA entity and repository setup
+
+**Practiced**
+- Created `EmployeePayrollApp`
+- Configured H2 Database
+- Created `Employee` entity
+- Created `EmployeeRepository`
+- Injected repository into controller using Constructor Injection
+- Added basic APIs to save and fetch employees
+
+**APIs Implemented**
+- `POST /employees` - Add an employee
+- `GET /employees` - Fetch all employees
 
 ---
 
