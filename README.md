@@ -281,15 +281,15 @@ Built a simple Spring Boot MVC CRUD application to manage greeting messages usin
 
 **Home Page**
 
-![MyGreetingApp home page](Day-6/MyGreetingApp/screenshots/home.png)
+![MyGreetingApp home page](Day-06/MyGreetingApp/screenshots/home.png)
 
 **Greeting Details Page**
 
-![MyGreetingApp greeting details page](Day-6/MyGreetingApp/screenshots/greeting.png)
+![MyGreetingApp greeting details page](Day-06/MyGreetingApp/screenshots/greeting.png)
 
 **Edit Greeting Page**
 
-![MyGreetingApp edit greeting page](Day-6/MyGreetingApp/screenshots/edit%20greeting.png)
+![MyGreetingApp edit greeting page](Day-06/MyGreetingApp/screenshots/edit%20greeting.png)
 
 ---
 
@@ -435,6 +435,38 @@ Built a Spring Boot REST API to manage students and faculty records using MySQL,
 **APIs Implemented**
 - `POST /employees` - Add an employee
 - `GET /employees` - Fetch all employees
+
+---
+
+### Day 12 - 15-08-2026
+
+## Focus Area - Spring Bean Scopes, Logging, Maven and Postman
+
+**Topics Covered**
+- Spring Bean Scopes: singleton, prototype, request and session
+- Difference between singleton and prototype beans
+- Request scope and session scope in web applications
+- Problems with mutable state in singleton beans
+- Logging in Spring Boot using SLF4J and Logback
+- Log levels: `TRACE`, `DEBUG`, `INFO`, `WARN` and `ERROR`
+- Maven dependency resolution and transitive dependencies
+- Maven build lifecycle: clean, compile, test and package
+- Postman collections, environments, variables and assertions
+- Postman request chaining and Collection Runner workflow
+
+**Practiced**
+- Continued the `EmployeePayrollApp` from Day 11.
+- Completed employee CRUD APIs using controller, service and repository layers.
+- Used Spring Data JPA repository methods for database operations.
+- Added proper logging in the Payroll App instead of using `System.out.println()`.
+- Used meaningful log levels like `INFO`, `WARN` and `ERROR`.
+- Configured logging levels in `application.properties`.
+- Checked Maven dependency flow and build lifecycle for the Payroll App.
+- Ran Maven commands to compile/package the project.
+- Created Postman requests for Payroll App APIs.
+- Used Postman environment variable `{{baseUrl}}` for reusable API URLs.
+- Tested create, get, update and delete employee APIs through Postman.
+- Added basic Postman assertions for response status and employee data.
 
 ---
 
