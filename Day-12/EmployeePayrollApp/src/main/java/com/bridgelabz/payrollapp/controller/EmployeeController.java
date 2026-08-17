@@ -1,6 +1,7 @@
 package com.bridgelabz.payrollapp.controller;
 
-import com.bridgelabz.payrollapp.model.Employee;
+import com.bridgelabz.payrollapp.dto.EmployeeRequestDTO;
+import com.bridgelabz.payrollapp.dto.EmployeeResponseDTO;
 import com.bridgelabz.payrollapp.service.EmployeeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,24 +27,26 @@ public class EmployeeController {
     }
 
     @PostMapping
-    public ResponseEntity<Employee> addEmployee(@RequestBody Employee employee) {
+    public ResponseEntity<EmployeeResponseDTO> addEmployee(@RequestBody EmployeeRequestDTO employeeRequestDTO) {
         return ResponseEntity.status(HttpStatus.CREATED)
-                .body(employeeService.addEmployee(employee));
+                .body(employeeService.addEmployee(employeeRequestDTO));
     }
 
     @GetMapping
-    public List<Employee> getAllEmployees() {
+    public List<EmployeeResponseDTO> getAllEmployees() {
         return employeeService.getAllEmployees();
     }
 
     @GetMapping("/{id}")
-    public Employee getEmployeeById(@PathVariable Long id) {
+    public EmployeeResponseDTO getEmployeeById(@PathVariable Long id) {
         return employeeService.getEmployeeById(id);
     }
 
     @PutMapping("/{id}")
-    public Employee updateEmployee(@PathVariable Long id, @RequestBody Employee employee) {
-        return employeeService.updateEmployee(id, employee);
+    public EmployeeResponseDTO updateEmployee(
+            @PathVariable Long id,
+            @RequestBody EmployeeRequestDTO employeeRequestDTO) {
+        return employeeService.updateEmployee(id, employeeRequestDTO);
     }
 
     @DeleteMapping("/{id}")
