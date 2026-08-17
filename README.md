@@ -438,63 +438,69 @@ Built a Spring Boot REST API to manage students and faculty records using MySQL,
 
 ---
 
-### Day 12 - 15-08-2026
+### Day 11 - 14-08-2026
+
+## Focus Area - Spring Services, Spring JPA & Spring JDBC
+
+**Topics Covered**
+- Spring REST API service-layer design
+- Spring Data JPA repositories and entity mapping
+- Spring JDBC and `JdbcTemplate` based data access
+- Controller, Service and Repository responsibility split
+- Difference between Entity and DTO
+- Comparison of hand-written JDBC, `JdbcTemplate` and Spring Data JPA
+- Rebuilding Employee Payroll App using Spring Data JPA and Spring JDBC
+
+**Practiced**
+- Built Employee Payroll App backend using Spring JPA and Spring JDBC.
+- Created `Employee` entity and mapped it to the database table.
+- Created `EmployeeRepository` using `JpaRepository`.
+- Added service layer to keep business logic separate from controller logic.
+- Used repository methods like `save()`, `findById()`, `findAll()` and `deleteById()`.
+- Used `JdbcTemplate` where direct SQL access was required.
+- Understood when to use JDBC, `JdbcTemplate` and Spring Data JPA.
+
+**APIs Implemented**
+- `POST /employees` - Add an employee
+- `GET /employees` - Fetch all employees
+- `GET /employees/count` - Count employee records using `JdbcTemplate`
+
+---
+
+### Day 12 - 17-08-2026
 
 ## Focus Area - Spring Bean Scopes, Logging, Maven and Postman
 
 **Topics Covered**
 - Spring Bean Scopes: singleton, prototype, request and session
-- Difference between singleton and prototype beans
-- Request scope and session scope in web applications
-- Problems with mutable state in singleton beans
 - Logging in Spring Boot using SLF4J and Logback
-- Log levels: `TRACE`, `DEBUG`, `INFO`, `WARN` and `ERROR`
-- Maven dependency resolution and transitive dependencies
-- Maven build lifecycle: clean, compile, test and package
-- Postman collections, environments, variables and assertions
-- Postman request chaining and Collection Runner workflow
+- Maven dependency management
+- Maven build lifecycle
+- Postman API testing workflow
+- Employee Payroll App backend completion
 
 **Practiced**
-- Continued the `EmployeePayrollApp` from Day 11.
-- Completed employee CRUD APIs using controller, service and repository layers.
-- Used Spring Data JPA repository methods for database operations.
-- Added proper logging in the Payroll App instead of using `System.out.println()`.
-- Used meaningful log levels like `INFO`, `WARN` and `ERROR`.
+- Continued the `EmployeePayrollApp`.
+- Completed REST CRUD APIs for employee payroll records.
+- Used Spring Data JPA repository for database operations.
+- Used `JdbcTemplate` to count employee records.
+- Added request and response DTOs for employee APIs.
+- Added validation for required employee fields.
+- Added duplicate email handling.
+- Added custom exception handling for not found, bad request and duplicate email cases.
+- Replaced console-style debugging with proper SLF4J logging.
 - Configured logging levels in `application.properties`.
-- Checked Maven dependency flow and build lifecycle for the Payroll App.
-- Ran Maven commands to compile/package the project.
-- Created Postman requests for Payroll App APIs.
-- Used Postman environment variable `{{baseUrl}}` for reusable API URLs.
-- Tested create, get, update and delete employee APIs through Postman.
-- Added basic Postman assertions for response status and employee data.
+
+**APIs Implemented**
+- `POST /employees` - Create employee
+- `GET /employees` - Fetch all employees
+- `GET /employees/{id}` - Fetch employee by ID
+- `PUT /employees/{id}` - Update employee
+- `DELETE /employees/{id}` - Delete employee
+- `GET /employees/count` - Get employee count
+
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
