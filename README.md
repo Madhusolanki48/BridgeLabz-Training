@@ -14,8 +14,8 @@ This repository contains my daily assignments, practice work, notes, and applica
 |---------|---------|
 | Database Programming | ☑ DBMS Fundamentals & RDBMS Basics<br>☑ ER Diagram, Indexing & Normalization<br>☑ Joins, Stored Procedures & Triggers<br>☑ JDBC & Health Clinic Application |
 | Backend Fundamentals | ☑ Tomcat & Servlets<br>☑ Spring Framework Fundamentals<br>☑ Spring MVC<br>☑ REST APIs & Request Handling<br>☑ API Testing Tools & SDLC |
-| Spring Boot Development | ☑ Spring Boot Fundamentals<br>☑ Dependency Injection & H2 Database<br>☐ Spring Services<br>☐ Spring JPA & Spring JDBC<br>☐ Logging, Maven & Postman |
-| Advanced Backend Development | ☐ Spring Security & JWT Authentication<br>☐ Authorization & Notes Management<br>☐ Search, Filter & Tags Management<br>☐ JMS & Redis Caching<br>☐ RabbitMQ & Spring Batch<br>☐ Exception Handling, AOP & Spring Cloud |
+| Spring Boot Development | ☑ Spring Boot Fundamentals<br>☑ Dependency Injection & H2 Database<br>☑ Spring Services<br>☑ Spring JPA & Spring JDBC<br>☑ Logging, Maven & Postman |
+| Advanced Backend Development | ☑ Spring Security & JWT Authentication<br>☐ Authorization & Notes Management<br>☐ Search, Filter & Tags Management<br>☐ JMS & Redis Caching<br>☐ RabbitMQ & Spring Batch<br>☐ Exception Handling, AOP & Spring Cloud |
 | Microservices Architecture | ☐ Monolith vs Microservices<br>☐ API Gateway<br>☐ Service Registry (Eureka)<br>☐ Microservices Architecture & Integration |
 
 ---
@@ -57,6 +57,15 @@ BridgeLabz-Training/
 |
 ├──Day-10/
 |   └──EmployeePayrollApp/
+|
+├──Day-11/
+|   └──EmployeePayrollApp/
+|
+├──Day-12/
+|   └──EmployeePayrollApp/
+|
+├──Day-13/
+|   └──FundooNotesApp/
 |    
 │
 ├── Day-/
@@ -501,6 +510,39 @@ Built a Spring Boot REST API to manage students and faculty records using MySQL,
 
 
 ---
+## Day 13 - 18-08-2026
+
+## Focus Area - Spring Security & JWT Authentication
+
+**Topics Covered**
+
+- Spring Security fundamentals and `SecurityFilterChain`
+- Authentication and authorization in Spring Boot
+- JWT (JSON Web Token) based authentication
+- JWT generation and token-based authentication
+- Password encryption using `BCryptPasswordEncoder`
+- Securing endpoints using Spring Security
+- Request validation using Jakarta Bean Validation
+- Custom exception handling for authentication and registration errors
+
+## Project : FundooNotesApp
+**Practiced**
+- Implemented user registration and login functionality for the Fundoo Notes App.
+- Created `User` entity and persisted user details using Spring Data JPA.
+- Created `UserRepository` using `JpaRepository`.
+- Added `UserService` to handle user-related business logic.
+- Implemented password encryption using `BCryptPasswordEncoder` instead of storing plain-text passwords.
+- Implemented JWT token generation after successful authentication.
+- Configured Spring Security to allow public access to registration and login endpoints.
+- Added validation for registration and login request DTOs.
+- Implemented duplicate email validation during user registration.
+- Tested registration and login APIs using Postman.
+- Verified JWT token generation and successful authentication flow.
+
+**APIs Implemented**
+
+- `POST /user/userSignUp` - Register a new user and generate JWT token
+- `POST /user/login` - Authenticate user credentials and generate JWT token
 
 
 
