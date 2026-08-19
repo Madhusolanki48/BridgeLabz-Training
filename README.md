@@ -547,6 +547,46 @@ Built a Spring Boot REST API to manage students and faculty records using MySQL,
 
 
 
+---
+## Day 14 - 19-08-2026
+
+## Focus Area - Authorization & Notes Management
+
+**Topics Covered**
+
+- JWT authorization for secured APIs
+- Custom JWT filter using `OncePerRequestFilter`
+- Spring Security filter chain configuration
+- Notes CRUD operation flow
+- Mapping notes with registered users using JPA relationships
+- Protecting user notes so one user can access only their own notes
+- Soft delete using trash flag
+- Archive and unarchive note functionality
+
+## Project : FundooNotesApp
+
+**Practiced**
+- Continued the Fundoo Notes App from Day 13.
+- Added secured notes management APIs.
+- Created `Note` entity and mapped each note with a `User`.
+- Created `NoteRepository` using Spring Data JPA.
+- Added `NoteService` to handle notes business logic.
+- Added `NoteController` for note APIs.
+- Implemented JWT filter to read bearer token from request header.
+- Used logged-in user email from JWT token to create, fetch, update, archive and delete notes.
+- Added custom exception handling for note not found case.
+- Tested secured APIs using Postman with JWT token.
+
+**APIs Implemented**
+
+- `POST /notes` - Create note for logged-in user
+- `GET /notes` - Fetch all active notes of logged-in user
+- `GET /notes/{noteId}` - Fetch note by ID
+- `PUT /notes/{noteId}` - Update note by ID
+- `DELETE /notes/{noteId}` - Move note to trash
+- `PUT /notes/{noteId}/archive` - Archive or unarchive note
+
+
 ## Maintained By
 
 **Madhu Solanki**
