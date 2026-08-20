@@ -550,7 +550,7 @@ Built a Spring Boot REST API to manage students and faculty records using MySQL,
 ---
 ## Day 14 - 19-08-2026
 
-## Focus Area - Authorization & Notes Management
+## Focus Area - Authorization & JPA for Notes Management
 
 **Topics Covered**
 
@@ -585,6 +585,51 @@ Built a Spring Boot REST API to manage students and faculty records using MySQL,
 - `PUT /notes/{noteId}` - Update note by ID
 - `DELETE /notes/{noteId}` - Move note to trash
 - `PUT /notes/{noteId}/archive` - Archive or unarchive note
+
+---
+## Day 15 - 20-08-2026
+
+## Focus Area - Organization Modules: Pin/Archive/Trash, Search & Tag 
+
+**Topics Covered**
+
+- Notes state management with pin, archive, trash and permanent delete
+- Label/tag management using JPA relationships
+- Many-to-many mapping between notes and labels
+- Search and filter using Spring Data JPA Specification
+- User-wise ownership checks for notes and labels
+- State validation and custom exception handling
+
+## Project : FundooNotesApp
+
+**Practiced**
+- Continued the Fundoo Notes App from Day 14.
+- Added pin and unpin functionality for notes.
+- Added archive notes, trash notes and permanent delete flows.
+- Created `NoteLabel` entity and mapped labels with users.
+- Added label CRUD APIs with user-wise duplicate label checks.
+- Added add/remove label APIs for notes.
+- Added search API to filter notes by title, state and label.
+- Added dedicated API to fetch notes by label.
+- Kept all secured note and label APIs dependent on the logged-in JWT user.
+
+**APIs Implemented**
+
+- `PUT /notes/{noteId}/pin` - Pin or unpin note
+- `POST /notes/pinUnpinNotes?noteId={id}` - PDF-style pin or unpin note
+- `POST /notes/archiveNotes?noteId={id}` - PDF-style archive or unarchive note
+- `POST /notes/trashNotes?noteId={id}` - PDF-style move note to trash
+- `POST /notes/deleteForeverNotes?noteId={id}` - Permanently delete trashed note
+- `GET /notes/getArchiveNotesList` - Fetch archived notes
+- `GET /notes/getTrashNotesList` - Fetch trashed notes
+- `POST /noteLabels` - Create label
+- `GET /noteLabels/getNoteLabelList` - Fetch active labels
+- `PATCH /noteLabels/{id}` - Update label
+- `DELETE /noteLabels/{id}/deleteNoteLabel` - Soft delete label
+- `POST /notes/{noteId}/addLabelToNotes/{labelId}/add` - Add label to note
+- `POST /notes/{noteId}/addLabelToNotes/{labelId}/remove` - Remove label from note
+- `GET /notes/search?title={text}&state={active|pined|archived|trashed}&label={name}` - Search/filter notes
+- `GET /notes/getNotesListByLabel/{labelName}` - Fetch notes by label
 
 
 ## Maintained By
