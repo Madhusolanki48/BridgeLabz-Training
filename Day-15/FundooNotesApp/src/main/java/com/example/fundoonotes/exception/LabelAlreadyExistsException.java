@@ -1,0 +1,7 @@
+package com.example.fundoonotes.exception;
+
+public class LabelAlreadyExistsException extends RuntimeException {
+    public LabelAlreadyExistsException(String message) {
+        super(message);
+    }
+}
