@@ -631,6 +631,46 @@ Built a Spring Boot REST API to manage students and faculty records using MySQL,
 - `GET /notes/search?title={text}&state={active|pined|archived|trashed}&label={name}` - Search/filter notes
 - `GET /notes/getNotesListByLabel/{labelName}` - Fetch notes by label
 
+---
+## Day 16 - 21-08-2026
+
+## Focus Area - JMS & Redis Caching
+
+**Topics Covered**
+
+- Reminder handling using JMS producer and listener
+- ActiveMQ in-memory broker setup for local development
+- Storing multiple reminders for one note using `@ElementCollection`
+- Redis-backed JWT validation caching
+- Cache TTL based on remaining JWT expiry time
+- Safe fallback when Redis is not running
+
+## Project : FundooNotesApp
+
+**Practiced**
+- Continued the Fundoo Notes App from Day 15.
+- Added reminder list support to notes.
+- Added JMS producer using `JmsTemplate` to send reminder messages.
+- Added JMS listener using `@JmsListener` to consume reminder messages.
+- Added Redis token cache in `JwtService` to reduce repeated JWT validation work.
+- Added debug logs for Redis cache hit, miss and fallback cases.
+- Moved JWT secret and expiry values to `application.properties`.
+
+**APIs Implemented**
+
+- `POST /notes/addUpdateReminderNotes` - Add or replace note reminders
+- `POST /notes/removeReminderNotes` - Remove reminder values from note
+- `GET /notes/getReminderNotesList` - Fetch notes having reminders
+
+**Reminder Request Format**
+
+```json
+{
+  "noteId": 1,
+  "reminder": ["2026-08-25T18:30:00"]
+}
+```
+
 
 ## Maintained By
 
