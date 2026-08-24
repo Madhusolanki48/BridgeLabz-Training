@@ -15,7 +15,7 @@ This repository contains my daily assignments, practice work, notes, and applica
 | Database Programming | ☑ DBMS Fundamentals & RDBMS Basics<br>☑ ER Diagram, Indexing & Normalization<br>☑ Joins, Stored Procedures & Triggers<br>☑ JDBC & Health Clinic Application |
 | Backend Fundamentals | ☑ Tomcat & Servlets<br>☑ Spring Framework Fundamentals<br>☑ Spring MVC<br>☑ REST APIs & Request Handling<br>☑ API Testing Tools & SDLC |
 | Spring Boot Development | ☑ Spring Boot Fundamentals<br>☑ Dependency Injection & H2 Database<br>☑ Spring Services<br>☑ Spring JPA & Spring JDBC<br>☑ Logging, Maven & Postman |
-| Advanced Backend Development | ☑ Spring Security & JWT Authentication<br>☐ Authorization & Notes Management<br>☐ Search, Filter & Tags Management<br>☐ JMS & Redis Caching<br>☐ RabbitMQ & Spring Batch<br>☐ Exception Handling, AOP & Spring Cloud |
+| Advanced Backend Development | ☑ Spring Security & JWT Authentication<br>☐ Authorization & Notes Management<br>☐ Search, Filter & Tags Management<br>☐ JMS & Redis Caching<br>☑ RabbitMQ & Spring Batch<br>☐ Exception Handling, AOP & Spring Cloud |
 | Microservices Architecture | ☐ Monolith vs Microservices<br>☐ API Gateway<br>☐ Service Registry (Eureka)<br>☐ Microservices Architecture & Integration |
 
 ---
@@ -668,6 +668,60 @@ Built a Spring Boot REST API to manage students and faculty records using MySQL,
 {
   "noteId": 1,
   "reminder": ["2026-08-25T18:30:00"]
+}
+```
+
+---
+## Day 17 - 24-08-2026
+
+## Focus Area - RabbitMQ & Spring Batch
+
+**Topics Covered**
+
+- RabbitMQ exchange, queue, binding and routing key setup
+- Publishing note-sharing events through RabbitMQ
+- Multiple consumers listening to the same note-sharing event
+- Excel import/export for notes using batch-style processing
+- Row count tracking for read, written and skipped Excel records
+
+## Project : FundooNotesApp
+
+**Practiced**
+- Continued the Fundoo Notes App from Day 16.
+- Added RabbitMQ as a second messaging path separate from JMS reminders.
+- Created `notes-exchange` with `note.shared` routing key.
+- Added collaborator notification and activity log consumers for the same event.
+- Added Excel note import with invalid-row skipping.
+- Added Excel export for the logged-in user's active notes.
+- Fixed Day-17 source structure so Java files are under `src/main/java`.
+
+**APIs Implemented**
+
+- `POST /notes/{noteId}/share` - Publish RabbitMQ note-sharing event
+- `POST /notes/importExcel` - Import notes from `.xlsx` file
+- `GET /notes/exportExcel` - Export logged-in user's active notes to `.xlsx`
+
+**Share Request Format**
+
+```json
+{
+  "collaboratorEmail": "friend@example.com"
+}
+```
+
+**Excel Import Headers**
+
+```text
+title, description, color, typeOfNote, imageUrl, linkUrl
+```
+
+**Excel Import Response**
+
+```json
+{
+  "readCount": 50,
+  "writeCount": 48,
+  "skipCount": 2
 }
 ```
 
