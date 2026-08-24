@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import java.io.IOException;
 import java.time.format.DateTimeParseException;
 
 @RestControllerAdvice
@@ -49,5 +50,12 @@ public class GlobalExceptionHandler {
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
                 .body("Reminder must use ISO date-time format, like 2026-08-25T18:30:00");
+    }
+
+    @ExceptionHandler(IOException.class)
+    public ResponseEntity<String> handleExcelFileError(IOException exception) {
+        return ResponseEntity
+                .status(HttpStatus.BAD_REQUEST)
+                .body("Unable to process Excel file");
     }
 }

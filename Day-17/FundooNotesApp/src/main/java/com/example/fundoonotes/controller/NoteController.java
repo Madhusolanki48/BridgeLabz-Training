@@ -4,22 +4,31 @@ import com.example.fundoonotes.dto.NoteRequest;
 import com.example.fundoonotes.dto.NoteResponse;
 import com.example.fundoonotes.dto.ReminderRequest;
 import com.example.fundoonotes.dto.ShareNoteRequest;
+import com.example.fundoonotes.dto.NoteImportResult;
+import com.example.fundoonotes.service.NoteExcelBatchService;
 import com.example.fundoonotes.service.NoteService;
 import jakarta.validation.Valid;
+import org.springframework.core.io.ByteArrayResource;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 
 @RestController
 @RequestMapping("/notes")
 public class NoteController {
     private final NoteService noteService;
+    private final NoteExcelBatchService noteExcelBatchService;
 
-    public NoteController(NoteService noteService) {
+    public NoteController(NoteService noteService, NoteExcelBatchService noteExcelBatchService) {
         this.noteService = noteService;
+        this.noteExcelBatchService = noteExcelBatchService;
     }
 
     @PostMapping
@@ -184,5 +193,22 @@ public class NoteController {
     @GetMapping("/getReminderNotesList")
     public ResponseEntity<List<NoteResponse>> getReminderNotesList(Authentication authentication) {
         return ResponseEntity.ok(noteService.getReminderNotes(authentication.getName()));
+    }
+
+    // UC-11: Import notes from Excel with read/write/skip counts
+    @PostMapping(value = "/importExcel", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<NoteImportResult> importExcel(@RequestParam("file") MultipartFile file,
+                                                        Authentication authentication) throws IOException {
+        return ResponseEntity.ok(noteExcelBatchService.importNotes(file, authentication.getName()));
+    }
+
+    // UC-11: Export logged-in user's active notes to Excel
+    @GetMapping("/exportExcel")
+    public ResponseEntity<ByteArrayResource> exportExcel(Authentication authentication) throws IOException {
+        byte[] excelFile = noteExcelBatchService.exportNotes(authentication.getName());
+        return ResponseEntity.ok()
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=notes.xlsx")
+                .contentType(MediaType.parseMediaType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"))
+                .body(new ByteArrayResource(excelFile));
     }
 }
